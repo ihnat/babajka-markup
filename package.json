@@ -1,0 +1,24 @@
+{
+  "name": "babajka-markup",
+  "version": "0.0.1",
+  "description": "Markups",
+  "scripts": {
+    "lint": "stylelint src/**/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babajka/babajka-markup.git"
+  },
+  "author": "babajka team <github.com/babajka>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babajka/babajka-markup/issues"
+  },
+  "homepage": "https://github.com/babajka/babajka-markup#readme",
+  "devDependencies": {
+    "bulma": "^0.4.2",
+    "font-awesome": "github:fortawesome/Font-Awesome",
+    "stylelint": "^7.12.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
