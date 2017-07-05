@@ -3,3 +3,10 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/595ac98d0fb24f006c059d06/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/595ac98d0fb24f006c059d06)
 
 Styles &amp; Markup
+
+## scripts
+
+* `npm run build` for buld production, minfied css bundle
+* `npm run build-dev` for build dev css bundle
+* `npm run watch` for watch and recompile styles on change
+* `npm run lint` for checking codestyle
