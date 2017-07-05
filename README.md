@@ -8,5 +8,4 @@ Styles &amp; Markup
 
 * `npm run build` for buld production, minfied css bundle
 * `npm run build-dev` for build dev css bundle
-* `npm run watch` for watch and recompile styles on change
-* `npm run lint` for checking codestyle
+* `npm run watch` for watch, check codestyle and recompile styles on change

@@ -6,7 +6,6 @@
     "build": "gulp build",
     "build-dev": "gulp build:dev",
     "watch": "gulp watch",
-    "lint": "stylelint src/**/*.scss",
     "postinstall": "build"
   },
   "repository": {
@@ -23,8 +22,10 @@
     "bulma": "^0.4.2",
     "font-awesome": "github:fortawesome/Font-Awesome",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-concat-css": "^2.3.0",
     "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^3.9.0",
     "stylelint": "^7.12.0",
     "stylelint-config-standard": "^16.0.0"
   }
