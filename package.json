@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Markups",
   "scripts": {
-    "build": "gulp sass:prod",
-    "build-dev": "gulp sass:dev",
+    "build": "gulp build",
     "watch": "gulp watch",
     "lint": "gulp sass:lint",
     "postinstall": "npm run build"
