@@ -7,7 +7,7 @@ const cleanCSS = require('gulp-clean-css');
 
 var config = {
 	libsPath: 'node_modules',
-   stylesPath: 'dist',
+	stylesPath: 'dist',
 	fontsPath : 'fonts'
 };
 
