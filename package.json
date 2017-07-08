@@ -6,7 +6,9 @@
     "build": "gulp build",
     "watch": "gulp watch",
     "lint": "gulp sass:lint",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "npm run build",
+    "postversion": "git push"
   },
   "repository": {
     "type": "git",
