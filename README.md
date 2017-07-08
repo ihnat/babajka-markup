@@ -23,3 +23,4 @@ Styles &amp; Markup for babajka team project
 	* `fonts/` - FontAwesome fonts
 * `npm run watch` for watch, check codestyle and recompile styles on change
 * `npm run lint` for check codestyle
+* `npm publish` for publish new version of markups
