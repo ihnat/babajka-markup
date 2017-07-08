@@ -7,8 +7,9 @@ Styles &amp; Markup for babajka team project
 ## How to use
 
 * run `npm install babajka-markup`
-* import bundle.min.css from your node_modules '../node_modules/babajka-markup/dist/bundle.min.css'
-* import assets.min.css from your node_modules '../node_modules/babajka-markup/dist/assets.min.css'
+* import files from your node_modules:
+    * `../node_modules/babajka-markup/dist/bundle.min.css` - all our styles in one file
+    * `../node_modules/babajka-markup/dist/assets.min.css` - all 3dparty libs in one file
 
 
 ## Development
