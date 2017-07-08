@@ -7,7 +7,7 @@
     "watch": "gulp watch",
     "lint": "gulp sass:lint",
     "prepublish": "npm run build && npm version patch",
-    "postversion": "git push"
+    "postpublish": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
