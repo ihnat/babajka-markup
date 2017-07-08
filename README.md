@@ -6,7 +6,10 @@ Styles &amp; Markup
 
 ## scripts
 
-* `npm run build` for buld production, minfied css bundle
-* `npm run build-dev` for build dev css bundle
-* `npm run lint` for check codestyle
+* `npm run build` for buld css bundles, after that you will have:
+	* `dist/bundle.css` - all our styles in one file
+	* `dist/bundle.min.css` - minified production build
+	* `dist/assets.min.css` - all 3dparty libs in one file
+	* `fonts/` - FontAwesome fonts
 * `npm run watch` for watch, check codestyle and recompile styles on change
+* `npm run lint` for check codestyle

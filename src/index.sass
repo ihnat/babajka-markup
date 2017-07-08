@@ -1,0 +1,26 @@
+// Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables"
+
+// Set your own initial variables
+// Update blue
+$blue: #72d0eb
+// Add pink and its invert
+$pink: #ffb3b3
+$pink-invert: #fff
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif
+
+// Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink
+$primary-invert: $pink-invert
+// Use the existing orange as the danger color
+$danger: $orange
+// Use the new serif family
+$family-primary: $family-serif
+
+// Import the rest of Bulma
+@import "../node_modules/bulma/bulma"
+
+// Improt FontAwesome
+@import "../node_modules/font-awesome/scss/font-awesome.scss"
