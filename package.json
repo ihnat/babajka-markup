@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Markups",
   "scripts": {
     "build": "gulp build",
