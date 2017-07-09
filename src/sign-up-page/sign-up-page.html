@@ -8,39 +8,62 @@
 </head>
 <body>
 
-<div class="login-container">
-	<section class="hero is-fullheight">
-		<div class="hero-heading">
-			<div class="section has-text-centered">
-				LOGO
+<div class="login-navbar-container">
+	<nav class="navbar">
+		<div class="navbar-menu">
+			<div class="navbar-end">
+				<div class="login-form navbar-item">
+					<p class="control has-icon has-icon-right">
+						<input class="input email-input" type="text" placeholder="Імя">
+					</p>
+
+					<p class="control has-icon has-icon-right">
+						<input class="input password-input" type="password" placeholder="Пароль">
+					</p>
+
+					<a class="button is-success is-outlined">Увайсці</a>
+				</div>
+				<div class="social-buttons navbar-item">
+					<a class="social-button button">
+						<span class="icon"><i class="fa fa-vk fa-fw"></i></span>
+					</a>
+
+					<a class="social-button button">
+						<span class="icon"> <i class="fa fa-facebook fa-fw"></i></span>
+					</a>
+
+					<a class="social-button button">
+						<span class="icon"> <i class="fa fa-twitter fa-fw"></i></span>
+					</a>
+				</div>
 			</div>
 		</div>
+	</nav>
 
+</div>
+
+<div class="login-main-container">
+	<section class="hero is-fullheight">
 		<div class="hero-body">
 			<div class="container">
-				<div class="column is-4 is-offset-4">
+				<div class="column is-6 is-offset-3">
 					<div class="login-form">
 						<p class="control has-icon has-icon-right">
-							<input class="input email-input" type="text" placeholder="jsmith@example.org">
-							<span class="icon user">
-									<i class="fa fa-user"></i>
-							</span>
+							<input class="input email-input" type="text" placeholder="Імя">
+							<span class="icon user"><i class="fa fa-user"></i></span>
 						</p>
+
 						<p class="control has-icon has-icon-right">
-							<input class="input password-input" type="password" placeholder="●●●●●●●">
-							<span class="icon user">
-									<i class="fa fa-lock"></i>
-              </span>
+							<input class="input email-input" type="text" placeholder="Пошта">
+							<span class="icon user"><i class="fa fa-envelope-o"></i></span>
+						</p>
+
+						<p class="control has-icon has-icon-right">
+							<input class="input password-input" type="password" placeholder="Пароль">
+							<span class="icon user"><i class="fa fa-lock"></i></span>
 						</p>
 						<p class="control login">
-							<button class="button is-success is-outlined is-large is-fullwidth">Уваход</button>
-						</p>
-					</div>
-
-					<div class="section forgot-password">
-						<p class="has-text-centered">
-							<a href="#">Забылі пароль?</a>
-							<a href="#">Дапамога</a>
+							<button class="button is-success is-outlined is-large is-fullwidth">Зарэгістравацца</button>
 						</p>
 					</div>
 				</div>

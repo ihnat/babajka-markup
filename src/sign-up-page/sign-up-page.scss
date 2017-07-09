@@ -1,3 +1,22 @@
-.login-container .login-form .control {
-	margin: 0.5rem;
+@import '../index';
+
+.login-main-container {
+	.login-form .control {
+		margin: 1rem 0;
+	}
+}
+
+.login-navbar-container {
+	.login-form .control {
+		margin-right: 0.5rem;
+	}
+
+	.social-buttons .social-button {
+		color: $grey;
+		margin-left: 0.5rem;
+
+		&:hover {
+			color: $grey-dark;
+		}
+	}
 }
