@@ -4,19 +4,47 @@
 	.login-form .control {
 		margin: 1rem 0;
 	}
-}
 
-.login-navbar-container {
-	.login-form .control {
-		margin-right: 0.5rem;
+	.social-buttons {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0.5rem;
+
+		.social-btn {
+			color: $grey;
+			margin-left: 0.5rem;
+
+			i {
+				color: $white;
+			}
+		}
+
+		/*maybe it's better to store this color in js*/
+		.facebook {
+			background-color: $facebook;
+		}
+
+		.twitter {
+			background-color: $twitter;
+		}
+
+		.google {
+			background-color: $google;
+		}
+
+		.vk {
+			background-color: $vk;
+		}
+
+		.form-mode-checkbox {
+			color: $pink;
+			margin: auto;
+			margin-left: 0;
+		}
 	}
 
-	.social-buttons .social-button {
-		color: $grey;
-		margin-left: 0.5rem;
-
-		&:hover {
-			color: $grey-dark;
-		}
+	.round-btn {
+		border-color: $white;
+		border-radius: 20px;
 	}
 }

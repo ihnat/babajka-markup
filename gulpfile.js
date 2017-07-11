@@ -40,7 +40,7 @@ gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
 	}))
 );
 
-gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, () => {
+gulp.task('sass:watch', () => watch([`${config.srcPath}/**/*.scss`, `${config.srcPath}/index.sass`], () => {
 	gulp.start('sass:bundle');
 	gulp.start('sass:lint');
 }));
