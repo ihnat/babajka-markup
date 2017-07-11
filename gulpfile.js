@@ -23,7 +23,7 @@ gulp.task('sass:bundle', () => gulp.src(`${config.srcPath}/**/*.scss`)
 	.pipe(gulp.dest(config.stylesPath))
 );
 
-gulp.task('sass:assets', () => gulp.src(`${config.srcPath}/index.sass`)
+gulp.task('sass:assets', () => gulp.src(`${config.srcPath}/index.scss`)
 	.pipe(sass().on('error', sass.logError))
 	.pipe(concatCss('assets.min.css'))
 	.pipe(cleanCSS())
@@ -40,8 +40,9 @@ gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
 	}))
 );
 
-gulp.task('sass:watch', () => watch([`${config.srcPath}/**/*.scss`, `${config.srcPath}/index.sass`], () => {
+gulp.task('sass:watch', () => watch([`${config.srcPath}/**/*.scss`, `${config.srcPath}/index.scss`], () => {
 	gulp.start('sass:bundle');
+	gulp.start('sass:assets');
 	gulp.start('sass:lint');
 }));
 

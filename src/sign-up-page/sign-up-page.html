@@ -8,33 +8,30 @@
 </head>
 <body>
 
-<!--TODO: add valid/invalid/disable/loader classes-->
-
 <div class="login-main-container">
 	<section class="hero is-fullheight">
 		<div class="hero-body">
 			<div class="container">
-				<div class="column is-6 is-offset-3">
+				<div class="column is-4 is-offset-4">
 					<div class="social-buttons">
-
 						<span class="form-mode-checkbox field">
-							<p class="control">
+							<span class="control">
 								<label class="checkbox">
-									<input type="checkbox"> Я тут першы раз</label></p>
-						</span>
+									<input type="checkbox"> Я тут першы раз</label></span></span>
 
 						<a class="social-btn round-btn vk button">
 							<span class="icon"><i class="fa fa-vk"></i></span></a>
 
 						<a class="social-btn round-btn facebook button">
-							<span class="icon"> <i class="fa fa-facebook"></i></span></a>
+							<span class="icon"><i class="fa fa-facebook"></i></span></a>
 
 						<a class="social-btn round-btn twitter button">
-							<span class="icon"> <i class="fa fa-twitter"></i></span></a>
+							<span class="icon"><i class="fa fa-twitter"></i></span></a>
 
 						<a class="social-btn round-btn google button">
-							<span class="icon"> <i class="fa fa-google"></i></span></a>
+							<span class="icon"><i class="fa fa-google"></i></span></a>
 					</div>
+
 					<div class="login-form">
 						<p class="control has-icon has-icon-right">
 							<input class="input email-input" type="text" placeholder="Імя">
@@ -47,6 +44,28 @@
 						<p class="control has-icon has-icon-right">
 							<input class="input password-input" type="password" placeholder="Пароль">
 							<span class="icon user"><i class="fa fa-lock"></i></span></p>
+
+						<!--LOADING-->
+						<!--need to hide 'has-icon' and 'has-icon-right' classes and icon itself-->
+						<!--<p class="control is-loading">
+							<input class="input password-input" type="password" placeholder="Пароль">
+						</p>-->
+
+						<!--WARNING-->
+						<!--need to hide usual icon and show the warning one and warning message as well-->
+						<!--<p class="control has-icon has-icon-right">
+							<input class="input password-input is-danger" type="password" placeholder="Пошта">
+							<span class="icon is-right"><i class="fa fa-warning"></i></span>
+							<span class="help is-danger">З поштай нешта не так</span>
+						</p>-->
+
+						<!--SUCCESS-->
+						<!--need to hide usual icon and show the success one and success message as well-->
+						<!--<p class="control has-icon has-icon-right">-->
+							<!--<input class="input password-input is-success" type="password" placeholder="Пароль">-->
+							<!--<span class="icon is-right"><i class="fa fa-check"></i></span>-->
+							<!--<span class="help is-success">Пароль падцверджаны!</span>-->
+						<!--</p>-->
 
 						<p class="control">
 							<input class="input password-input" type="password" placeholder="Падцвердзіце пароль"></p>
