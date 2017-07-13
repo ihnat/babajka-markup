@@ -13,7 +13,7 @@ const config = {
 	srcPath: 'src'
 };
 
-gulp.task('sass:bundle', () => gulp.src(`${config.srcPath}/**/*.scss`)
+gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`,  `!${config.srcPath}/index.scss`])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer())
 	.pipe(concatCss('bundle.css'))
@@ -40,7 +40,7 @@ gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
 	}))
 );
 
-gulp.task('sass:watch', () => watch([`${config.srcPath}/**/*.scss`, `${config.srcPath}/index.scss`], () => {
+gulp.task('sass:watch', () => watch([`${config.srcPath}/**/*.scss`], () => {
 	gulp.start('sass:bundle');
 	gulp.start('sass:assets');
 	gulp.start('sass:lint');

@@ -4,7 +4,6 @@
 		"stylelint-scss"
 	],
 	"rules": {
-		"indentation": "tab",
 		"max-nesting-depth": 4,
 		"selector-max-compound-selectors": 4
 	}
