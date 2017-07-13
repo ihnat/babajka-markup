@@ -1,0 +1,8 @@
+.idea/
+fonts/
+src/
+build/
+.eslintrc
+.stylelintrc
+gulpfile.js
+*.DS_Store

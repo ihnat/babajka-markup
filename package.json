@@ -1,12 +1,13 @@
 {
   "name": "babajka-markup",
-  "version": "0.0.1",
+  "version": "0.0.16",
   "description": "Markups",
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
     "lint": "gulp sass:lint",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build && npm version patch",
+    "postpublish": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
