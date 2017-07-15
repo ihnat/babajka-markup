@@ -1,15 +1,13 @@
-body {
-  font-family: Arial;
-}
+.main-page-container {
+  .main-block {
+    background-color: #f62459;
+  }
 
-.main-block {
-  background-color: #f62459;
-}
+  .stat-img {
+    border-radius: 500px;
+  }
 
-.stat-img {
-  border-radius: 500px;
-}
-
-.stat-tile {
-  padding: 1.5em 1em;
+  .stat-tile {
+    padding: 1.5em 1em;
+  }
 }
