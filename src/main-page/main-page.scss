@@ -1,16 +1,13 @@
-.navigation-container {
-  margin: 2rem;
-
-  .nav-item {
-    font-size: 2rem;
-    font-weight: 700;
+.main-page-container {
+  .main-block {
+    background-color: #f62459;
   }
 
-  .logo {
-    font-size: 2rem;
+  .stat-img {
+    border-radius: 500px;
   }
 
-  .search-field {
-    margin: auto;
+  .stat-tile {
+    padding: 1.5em 1em;
   }
 }
