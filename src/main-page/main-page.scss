@@ -1,13 +1,94 @@
+@import '../variables';
+
+@mixin social-button($color) {
+  i {
+    color: $color;
+  }
+}
+
+.is-3by1 {
+  padding-top: 30%;
+
+  img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.navbar-container {
+  .navbar,
+  .navbar-brand {
+    height: 5rem;
+  }
+
+  .navbar-item {
+    font-size: 1.5rem;
+
+    img {
+      max-height: 4.5rem;
+    }
+  }
+
+  .logo-text {
+    color: #44494d;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 13px;
+    margin-left: 1.5rem;
+  }
+}
+
 .main-page-container {
   .main-block {
-    background-color: #f62459;
+    background-color: $body-background;
   }
 
-  .stat-img {
-    border-radius: 500px;
+  .card-content {
+    display: flex;
+    flex-direction: column;
   }
 
-  .stat-tile {
-    padding: 1.5em 1em;
+  .notification {
+    background-color: $abbey;
+  }
+
+  .diary {
+    font-style: italic;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem;
+
+  .social-btn {
+    color: $grey;
+    margin-left: 0.5rem;
+  }
+
+  .facebook {
+    @include social-button($wedgewood);
+  }
+
+  .twitter {
+    @include social-button($picton-blue);
+  }
+
+  .google {
+    @include social-button($punch);
+  }
+
+  .vk {
+    @include social-button($chambray);
+  }
+
+  .round-btn {
+    border-radius: 20px;
   }
 }
