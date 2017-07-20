@@ -16,10 +16,11 @@ Styles &amp; Markup for babajka team project
 
 ### scripts
 
-* `npm run build` for buld css bundles, after that you will have:
+* `npm run build` for build css bundles and ejs templates, after that you will have:
 	* `dist/bundle.css` - all our styles in one file
 	* `dist/bundle.min.css` - minified production build
 	* `dist/assets.min.css` - all 3dparty libs in one file
+	* `build/` - compiled html files
 	* `fonts/` - FontAwesome fonts
 * `npm run watch` for watch, check codestyle and recompile styles on change
 * `npm run lint` for check codestyle

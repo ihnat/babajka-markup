@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<% var title = 'Main Page' %>
+<% include ../head/head.ejs %>
+<body>
+<% include ../navbar/navbar.ejs %>
+
+<div class="main-page-container">
+    <section class="section main-block">
+        <div class="tile is-ancestor">
+            <!-- stat-tile is my class -->
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-warning has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle"><%= loremIpsumShort %></p>
+                    <div class="content">
+                        <%= loremIpsumMedium %>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-info has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle"><%= loremIpsumShort %></p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-danger has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle"><%= loremIpsumShort %></p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-dark has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle"><%= loremIpsumShort %></p>
+                </article>
+            </div>
+        </div>
+
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle"><%= loremIpsumShort %></p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle"><%= loremIpsumShort %></p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <!-- stat-img is my classes -->
+                        <article class="tile is-child notification is-info">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle"><%= loremIpsumShort %></p>
+                            <figure class="image is-1by1">
+                                <img class="stat-img" src="<%= imagesPath %>/placeholder.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <h1 class="title">Lorem Ipsum</h1>
+                        <p class="subtitle"><%= loremIpsumMedium %></p>
+                        <div class="content">
+                            <%= loremIpsumLarge %>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <h1 class="title">Lorem Ipsum</h1>
+                    <p class="subtitle"><%= loremIpsumShort %></p>
+                    <div class="content">
+                        <%= loremIpsumLarge %>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>
+
+<% include ../footer/footer.ejs %>
+</body>
+</html>
