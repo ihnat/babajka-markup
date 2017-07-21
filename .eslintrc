@@ -1,9 +1,9 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 6
-    },
-    "rules": {
-        "semi": 2,
-        "quotes": ["error", "single"]
-    }
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "semi": 2,
+    "quotes": ["error", "single"]
+  }
 }
