@@ -3,9 +3,10 @@
   "version": "0.0.16",
   "description": "Markups",
   "scripts": {
+    "start": "npm run watch",
     "build": "gulp build",
     "watch": "gulp watch",
-    "lint": "gulp sass:lint",
+    "lint": "gulp lint",
     "prepublish": "npm run build && npm version patch",
     "postpublish": "git push && git push --tags"
   },
@@ -27,6 +28,7 @@
     "gulp-clean-css": "^3.5.0",
     "gulp-concat-css": "^2.3.0",
     "gulp-ejs": "^3.0.1",
+    "gulp-htmlhint": "^0.3.1",
     "gulp-sass": "^3.1.0",
     "gulp-stylelint": "^3.9.0",
     "gulp-watch": "^4.3.11",

@@ -1,13 +1,16 @@
 const gulp = require('gulp');
 const watch = require('gulp-watch');
 const connect = require('gulp-connect');
+const gutil = require('gulp-util');
+
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
 const stylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
+
 const ejs = require('gulp-ejs');
-const gutil = require('gulp-util');
+const htmlhint = require('gulp-htmlhint');
 
 const fs = require('fs');
 const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
@@ -65,14 +68,17 @@ gulp.task('ejs:compile', () => gulp.src(`${config.srcPath}/**/*.ejs`)
   .pipe(gulp.dest(config.templatesPath))
 );
 
-gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('ejs:compile')));
+gulp.task('html:lint', ['ejs:compile'], () => gulp.src(`${config.templatesPath}/**/*.html`)
+  .pipe(htmlhint('.htmlhintrc'))
+  .pipe(htmlhint.reporter())
+);
 
-gulp.task('serve', function () {
-  connect.server({
-    livereload: true,
-    root: ['.', './build', './dist']
-  });
-});
+gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
+
+gulp.task('serve', () => connect.server({
+  livereload: true,
+  root: ['.', './build', './dist']
+}));
 
 gulp.task('livereload', () => watch(
   [`${config.templatesPath}/**/*.html`, `${config.stylesPath}/**/*.css`]).pipe(connect.reload())
@@ -80,4 +86,5 @@ gulp.task('livereload', () => watch(
 
 // export tasks
 gulp.task('build', ['sass:bundle', 'sass:assets', 'fa:fonts', 'ejs:compile']);
-gulp.task('watch', ['build', 'serve', 'livereload', 'sass:watch', 'ejs:watch']);
+gulp.task('watch', ['build', 'serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch']);
+gulp.task('lint', ['sass:lint', 'html:lint']);

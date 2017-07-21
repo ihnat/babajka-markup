@@ -22,10 +22,10 @@ Styles &amp; Markup for babajka team project
 	* `dist/assets.min.css` - all 3dparty libs in one file
 	* `build/` - compiled html files
 	* `fonts/` - FontAwesome fonts
-* `npm run watch`:
+* `npm start` or `npm run watch`:
     * build all static
     * start dev server on [`localhost:8080`](http://localhost:8080)
     * watch for changes, recompile styles and templates and reload page
 > enjoy coding!
-* `npm run lint` for check codestyle
+* `npm run lint` for check `sass` & `html` codestyle
 * `npm publish` for publish new version of markups
