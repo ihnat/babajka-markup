@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const watch = require('gulp-watch');
+const connect = require('gulp-connect');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
@@ -40,6 +41,21 @@ gulp.task('sass:assets', () => gulp.src(`${config.srcPath}/index.scss`)
   .pipe(gulp.dest(config.stylesPath))
 );
 
+gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
+  .pipe(stylelint({
+    reporters: [{ formatter: 'string', console: true }]
+  }))
+);
+
+// gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, ['sass:bundle', 'sass:assets', 'sass:lint']));
+
+gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, () => {
+  gulp.start('sass:bundle');
+  gulp.start('sass:assets');
+  gulp.start('sass:lint');
+}));
+
+
 gulp.task('fa:fonts', () => gulp.src(`${config.libsPath}/font-awesome/fonts/fontawesome-webfont.*`)
   .pipe(gulp.dest(config.fontsPath))
 );
@@ -49,18 +65,19 @@ gulp.task('ejs:compile', () => gulp.src(`${config.srcPath}/**/*.ejs`)
   .pipe(gulp.dest(config.templatesPath))
 );
 
-gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
-  .pipe(stylelint({
-    reporters: [{ formatter: 'string', console: true }]
-  }))
-);
+gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('ejs:compile')));
 
-gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, () => {
-  gulp.start('sass:bundle');
-  gulp.start('sass:assets');
-  gulp.start('sass:lint');
-}));
+gulp.task('serve', function () {
+  connect.server({
+    livereload: true,
+    root: ['.', './build', './dist']
+  });
+});
+
+gulp.task('livereload', () => watch(
+  [`${config.templatesPath}/**/*.html`, `${config.stylesPath}/**/*.css`]).pipe(connect.reload())
+);
 
 // export tasks
 gulp.task('build', ['sass:bundle', 'sass:assets', 'fa:fonts', 'ejs:compile']);
-gulp.task('watch', ['build', 'sass:watch']);
+gulp.task('watch', ['build', 'serve', 'livereload', 'sass:watch', 'ejs:watch']);
