@@ -6,7 +6,7 @@
   }
 }
 
-.is-3by1 {
+.image .is-3by1 {
   padding-top: 30%;
 
   img {
@@ -35,7 +35,7 @@
   }
 
   .logo-text {
-    color: #44494d;
+    color: $primary-mako;
     font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: 13px;
@@ -45,7 +45,7 @@
 
 .main-page-container {
   .main-block {
-    background-color: $body-background;
+    background-color: $primary-swiss-coffee;
   }
 
   .card-content {

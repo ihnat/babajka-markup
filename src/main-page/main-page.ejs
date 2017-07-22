@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<% var title = 'Main Page' %>
+<% include ../head/head.ejs %>
+<body>
+<% include ../navbar/navbarTyndria.ejs %>
+
+<div class="main-page-container">
+    <section class="section main-block">
+
+        <div class="first-line tile is-ancestor">
+            <!-- stat-tile is my class -->
+            <div class="main-article tile is-parent is-5">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="<%= imagesPath %>/photo2.jpg"/>
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced"><a>Крама "як з крамы"</a></span>
+                        <p class="subtitle">Новы альбом: як, дзе і для каго</p>
+                        <p class="subtitle is-4">Змітр Корнеў</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child notification">
+                    <figure class="image is-3by2">
+                        <img src="<%= imagesPath %>/photo3.jpg"/>
+                    </figure>
+                    <div class="card-content flex">
+                        <span class="title is-spaced"><a>"Гэта не тое, што склеіць разбіты кубак..."</a></span>
+                        <p class="subtitle">Вальжына Морт пра адносіны з сусветам</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child notification">
+                    <figure class="image is-3by2">
+                        <img src="<%= imagesPath %>/photo5.jpg"/>
+                    </figure>
+                    <div class="card-content">
+                        <span class="title is-spaced"><a>"Некоратка аб Ахматавай"</a></span>
+                        <p class="subtitle">"Настоящую нежность не спутаешь ни с чем..."</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="second-line tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="card tile is-child notification">
+                            <figure class="image is-3by2">
+                                <img src="<%= imagesPath %>/photo3.jpg"/>
+                            </figure>
+                            <div class="card-content flex">
+                                <span class="title is-spaced"><a>Ад біяграфія да творчасці: Алесь Дудар</a></span>
+                                <p class="subtitle">Лекцыі з Ганнай Севярынец</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tile is-parent">
+                        <!-- stat-img is my classes -->
+                        <article class="card tile is-child">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="<%= imagesPath %>/photo4.jpg"/>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <span class="title is-spaced"><a>"Культура і псіхалогія"</a></span>
+                                    <p class="subtitle">Выкладчык з ЕГУ распавядзе</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="main-article tile is-parent">
+                    <article class="card tile is-child">
+                        <div class="card-content">
+                            <span class="title is-spaced"><a>Eўрапейскі Мадэрнізм</a></span>
+                            <p class="subtitle">Наталля Ламека. Серыя лекцый</p>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-3by1">
+                                <img src="<%= imagesPath %>/photo6.jpg"/>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="tile is-parent">
+                <article class="tile is-child notification">
+                    <h1 class="title">Дзённік дня</h1>
+                    <div class="content diary">
+                        <%= diaryText %>
+                    </div>
+                    <p class="subtitle">Іосіф Бродскі</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</div>
+
+<% include ../footer/footer.ejs %>
+
+</body>
+
+</html>
