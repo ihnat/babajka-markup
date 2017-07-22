@@ -1,0 +1,24 @@
+@import '../variables';
+
+.navbar-container {
+  .navbar,
+  .navbar-brand {
+    height: 5rem;
+  }
+
+  .navbar-item {
+    font-size: 1.5rem;
+
+    img {
+      max-height: 4.5rem;
+    }
+  }
+
+  .logo-text {
+    color: $primary-mako;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 13px;
+    margin-left: 1.5rem;
+  }
+}
