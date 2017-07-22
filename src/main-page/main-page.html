@@ -1,54 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Main page</title>
-	<link rel="stylesheet" href="../../build/main-page/main-page.css">
-	<link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main-page</title>
+    <link rel="stylesheet" href="../../dist/assets.min.css">
+    <link rel="stylesheet" href="../../dist/bundle.css">
 </head>
+
 <body>
 
-<div class="main-container">
-	<div class="navigation-container">
-		<nav class="nav">
-			<div class="nav-left">
-				<a class="nav-item logo">
-					LOGO
-				</a>
-			</div>
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="">
+            babajka&nbsp<img src="../images/logo.png">
+        </a>
 
-			<div class="nav-center nav-menu">
-				<a class="nav-item">
-					ГЛЯДЗЕЦЬ
-				</a>
-				<a class="nav-item">
-					ЧЫТАЦЬ
-				</a>
-				<a class="nav-item">
-					ГУЛЯЦЬ
-				</a>
-			</div>
+        <div class="navbar-burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-			<div class="nav-right">
-				<div class="field search-field">
-					<p class="control has-icons-left">
-						<input class="input" type="text" placeholder="Пошук">
-						<span class="icon is-small is-left">
-							<i class="fa fa-search"></i>
-    					</span>
-					</p>
-				</div>
-			</div>
-		</nav>
-	</div>
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item " href="">
+                Глядзець
+            </a>
+            <a class="navbar-item" href="">
+                Чытаць
+            </a>
+            <a class="navbar-item" href="">
+                Гуляць
+            </a>
 
-	<div class="content">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control is-primary">
+                        <a class="button is-primary" href="">
+                            <span>Увайсці</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
-	</div>
+<div class="main-page-container">
+    <section class="section main-block">
+        <div class="tile is-ancestor">
+            <!-- stat-tile is my class -->
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-warning has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-info has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-danger has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-dark has-text-centered stat-tile">
+                    <h1 class="title is-spaced">Lorem Ipsum</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+            </div>
+        </div>
 
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-primary">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor
+                                sit amet, consectetur
+                                adipiscing elit.</p>
+                        </article>
+                        <article class="tile is-child notification is-warning">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor
+                                sit amet, consectetur
+                                adipiscing elit.</p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <!-- stat-img is my classes -->
+                        <article class="tile is-child notification is-info">
+                            <h1 class="title is-spaced">Lorem Ipsum</h1>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <figure class="image is-1by1">
+                                <img class="stat-img" src="../images/placeholder.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                        <h1 class="title">Lorem Ipsum</h1>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum id mauris eu
+                            pulvinar.
+                            Vestibulum vel ultrices elit,
+                            mollis posuere purus. In vestibulum congue sapien, eget vestibulum massa dignissim sed.
+                            Pellentesque
+                            maximus dictum libero vel dictum. Mauris arcu leo, commodo vel sapien non, convallis
+                            placerat
+                            lectus. Donec lacinia consectetur augue ultricies vestibulum. Cras at augue eu dui pulvinar
+                            commodo.
+                            Sed ac commodo nisl. Aliquam ultrices tempus consequat. Duis ullamcorper mi non ante aliquet
+                            sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus.
+                            Vestibulum iaculis venenatis arcu, a lacinia lacus ullamcorper id. Praesent scelerisque,
+                            eros
+                            eu bibendum pulvinar, ante erat sagittis leo, a condimentum magna ligula dapibus lorem.
+                            Aliquam
+                            rhoncus posuere eros, eget imperdiet est fermentum quis. Praesent sed massa eu sem faucibus
+                            tincidunt
+                            eu non urna. Etiam pretium neque in faucibus sagittis.
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-success">
+                    <h1 class="title">Lorem Ipsum</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum id mauris eu pulvinar.
+                        Vestibulum vel ultrices elit,
+                        mollis posuere purus. In vestibulum congue sapien, eget vestibulum massa dignissim sed.
+                        Pellentesque
+                        maximus dictum libero vel dictum. Mauris arcu leo, commodo vel sapien non, convallis placerat
+                        lectus.
+                        Donec lacinia consectetur augue ultricies vestibulum. Cras at augue eu dui pulvinar commodo. Sed
+                        ac commodo nisl. Aliquam ultrices tempus consequat. Duis ullamcorper mi non ante aliquet
+                        sodales.
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Vestibulum
+                        iaculis venenatis arcu, a lacinia lacus ullamcorper id. Praesent scelerisque, eros eu bibendum
+                        pulvinar,
+                        ante erat sagittis leo, a condimentum magna ligula dapibus lorem. Aliquam rhoncus posuere eros,
+                        eget
+                        imperdiet est fermentum quis. Praesent sed massa eu sem faucibus tincidunt eu non urna. Etiam
+                        pretium
+                        neque in faucibus sagittis.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 </div>
 
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p><a href="">bla</a> bla <strong>bla</strong> bla.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
+
 </html>

@@ -1,40 +1,51 @@
 const gulp = require('gulp');
+const watch = require('gulp-watch');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
 const stylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
 
-const buildDir = 'build';
+const config = {
+	libsPath: 'node_modules',
+	stylesPath: 'dist',
+	fontsPath : 'fonts',
+	srcPath: 'src'
+};
 
-gulp.task('sass:compile', () => gulp.src('./src/**/*.scss')
-	.pipe(sass().on('error', sass.logError))
-	.pipe(autoprefixer())
-	.pipe(gulp.dest(buildDir))
-);
-
-gulp.task('sass:dev', () => gulp.src('./src/**/*.scss')
+gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`,  `!${config.srcPath}/index.scss`])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer())
 	.pipe(concatCss('bundle.css'))
-	.pipe(gulp.dest(buildDir))
-);
-
-gulp.task('sass:prod', () => gulp.src('./src/**/*.scss')
-	.pipe(sass().on('error', sass.logError))
-	.pipe(concatCss('bundle.css'))
-	.pipe(autoprefixer())
+	.pipe(gulp.dest(config.stylesPath))
+	.pipe(concatCss('bundle.min.css')) 
 	.pipe(cleanCSS())
-	.pipe(gulp.dest(buildDir))
+	.pipe(gulp.dest(config.stylesPath))
 );
 
-gulp.task('sass:lint', () => gulp.src('./src/**/*.scss')
+gulp.task('sass:assets', () => gulp.src(`${config.srcPath}/index.scss`)
+	.pipe(sass().on('error', sass.logError))
+	.pipe(concatCss('assets.min.css'))
+	.pipe(cleanCSS())
+	.pipe(gulp.dest(config.stylesPath))
+);
+
+gulp.task('fa:fonts', () => gulp.src(`${config.libsPath}/font-awesome/fonts/fontawesome-webfont.*`) 
+	.pipe(gulp.dest(config.fontsPath))
+);
+
+gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
 	.pipe(stylelint({
-		reporters: [
-			{formatter: 'string', console: true}
-		]
+		reporters: [{ formatter: 'string', console: true }]
 	}))
 );
 
-gulp.task('sass:watch', () => gulp.watch('./src/**/*.scss', ['sass:compile', 'sass:lint']));
-gulp.task('watch', ['sass:compile', 'sass:watch']);
+gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, () => {
+	gulp.start('sass:bundle');
+	gulp.start('sass:assets');
+	gulp.start('sass:lint');
+}));
+
+// export tasks
+gulp.task('build', ['sass:bundle', 'sass:assets', 'fa:fonts']);
+gulp.task('watch', ['build', 'sass:watch']);
