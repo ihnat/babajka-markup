@@ -5,7 +5,6 @@
   "attr-no-duplication": true,
   "doctype-first": false,
   "tag-pair": true,
-  "tag-self-close": true,
   "spec-char-escape": true,
   "id-unique": true,
   "id-class-value": "dash",
