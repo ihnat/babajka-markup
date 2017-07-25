@@ -23,16 +23,21 @@
 .main-page-container {
   .main-block {
     background-color: $primary-swiss-coffee;
+    padding: 3rem 4rem;
   }
 
   .card-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
   }
 
   .secondary-article {
-    .notification {
+    article {
       background-color: $abbey;
+      display: flex;
+      flex-direction: column;
 
       a:not(.button) {
         text-decoration: none;
