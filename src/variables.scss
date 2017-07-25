@@ -1,19 +1,19 @@
 // Import the initial variables
 @import '../node_modules/bulma/sass/utilities/initial-variables';
 
-// Update blue
-$blue: #72d0eb;
-// Add pink and its invert
-$pink: #ffb3b3;
-$pink-invert: #fff;
+// Primary pallete
+// https://coolors.co/ae42ff-d1caca-44494d-ff5e42-9a9d9f
+$primary: #ff5e42;
+$primary-heliotrope: #82e0dd;
+$primary-mako: #44494d;
+$primary-swiss-coffee: #dfe0da;
+
 // Add a serif family
 $family-serif: 'Merriweather', 'Georgia', serif;
 
 // Set the derived variables
-$success: #5ed086;
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+$success: $primary-heliotrope;
+$info: $primary-mako;
 // Use the existing orange as the danger color
 $danger: $orange;
 // Use the new serif family
@@ -24,3 +24,9 @@ $punch: #dd4b39;
 $chambray: #3b5998;
 $wedgewood: #4c75a3;
 $picton-blue: #55acee;
+
+$abbey: rgba(255, 255, 255, 0.9);
+
+$body-background: $primary-swiss-coffee;
+
+

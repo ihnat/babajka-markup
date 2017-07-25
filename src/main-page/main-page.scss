@@ -1,13 +1,77 @@
+@import '../variables';
+
+@mixin social-button($color) {
+  i {
+    color: $color;
+  }
+}
+
+.image .is-3by1 {
+  padding-top: 30%;
+
+  img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
 .main-page-container {
   .main-block {
-    background-color: #f62459;
+    background-color: $primary-swiss-coffee;
   }
 
-  .stat-img {
-    border-radius: 500px;
+  .card-content {
+    display: flex;
+    flex-direction: column;
   }
 
-  .stat-tile {
-    padding: 1.5em 1em;
+  .secondary-article {
+    .notification {
+      background-color: $abbey;
+
+      a:not(.button) {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .diary {
+    font-style: italic;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem;
+
+  .social-btn {
+    color: $grey;
+    margin-left: 0.5rem;
+  }
+
+  .facebook {
+    @include social-button($wedgewood);
+  }
+
+  .twitter {
+    @include social-button($picton-blue);
+  }
+
+  .google {
+    @include social-button($punch);
+  }
+
+  .vk {
+    @include social-button($chambray);
+  }
+
+  .round-btn {
+    border-radius: 20px;
   }
 }

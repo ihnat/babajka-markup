@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Markups",
   "scripts": {
     "start": "npm run watch",
@@ -27,6 +27,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.5.0",
     "gulp-concat-css": "^2.3.0",
+    "gulp-connect": "^5.0.0",
     "gulp-ejs": "^3.0.1",
     "gulp-htmlhint": "^0.3.1",
     "gulp-sass": "^3.1.0",
