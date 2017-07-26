@@ -1,10 +1,11 @@
 @import '../variables';
 
-.article-page-container {
-  background: $abbey;
-  margin: 4rem;
+.article-page {
+  .page-content {
+    background-color: $white;
+  }
 
-  .content {
+  .card-content {
     padding: 0 4rem 1rem;
 
     .heading {
@@ -28,9 +29,23 @@
     .text {
       font-size: 1.5rem;
     }
+  }
 
-    .articles-links {
-      margin: 2rem;
+  .articles-links {
+    font-size: 1.4rem;
+    margin: 4rem;
+
+    .more-articles-text {
+      font-size: 2rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 4rem;
+
+      li {
+        padding: 0.5rem;
+      }
     }
   }
 }

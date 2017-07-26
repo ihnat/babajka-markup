@@ -20,29 +20,25 @@
   }
 }
 
-.main-page-container {
-  .main-block {
-    background-color: $primary-swiss-coffee;
-    padding: 3rem 4rem;
-  }
+.page-content {
+  margin: 3rem 4rem;
+}
 
+.page-container {
+  background-color: $primary-swiss-coffee;
+}
+
+.main-page {
   .card-content {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
 
-  .secondary-article {
-    article {
-      background-color: $abbey;
-      display: flex;
-      flex-direction: column;
-
-      a:not(.button) {
-        text-decoration: none;
-      }
-    }
+  article {
+    display: flex;
+    flex-direction: column;
   }
 
   .diary {
