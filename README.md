@@ -7,25 +7,30 @@ Styles &amp; Markup for babajka team project
 ## How to use
 
 * run `npm install babajka-markup`
-* import files from your node_modules:
-    * `../node_modules/babajka-markup/dist/bundle.min.css` - all our styles in one file
-    * `../node_modules/babajka-markup/dist/assets.min.css` - all 3dparty libs in one file
-
+* import files from your `node_modules`:
+    * `../node_modules/babajka-markup/dist/styles/bundle.min.css` - all our styles in one file
+    * `../node_modules/babajka-markup/dist/styles/assets.min.css` - all 3dparty libs in one file
+    * `../node_modules/babajka-markup/dist/fonts`
 
 ## Development
 
 ### scripts
 
 * `npm run build` for build css bundles and html templates, after that you will have:
-	* `dist/bundle.css` - all our styles in one file
-	* `dist/bundle.min.css` - minified production build
-	* `dist/assets.min.css` - all 3dparty libs in one file
-	* `build/` - compiled html files
-	* `fonts/` - FontAwesome fonts
+	* `dist/` - compiled html files
+	* `dist/styles/bundle.css` - all our styles in one file
+	* `dist/styles/bundle.min.css` - minified production build
+	* `dist/styles/assets.min.css` - all 3dparty libs in one file
+	* `dist/fonts/` - FontAwesome fonts
+	* `dist/images` - images
+
 * `npm start` or `npm run watch`:
     * build all static
     * start dev server on [`localhost:8080`](http://localhost:8080)
     * watch for changes, recompile styles and templates and reload page
+
 > enjoy coding!
+
 * `npm run lint` for check `sass` & `html` codestyle
+* `npm run deploy` for hosting templates under [`github-pages`](https://babajka.github.io/babajka-markup/)
 * `npm publish` for publish new version of markups
