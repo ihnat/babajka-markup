@@ -1,16 +1,46 @@
 @import '../variables';
 
 .navbar-container {
+
+
+  padding: 1rem 3rem 0;
+
   .navbar,
   .navbar-brand {
-    height: 5rem;
+    background-color: rgba(255, 255, 255, 0);
+    //background-color: $primary-swiss-coffee;
+    height: 3.2rem;
   }
 
   .navbar-item {
-    font-size: 1.5rem;
+    color: $primary-black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0);
+    }
 
     img {
       max-height: 4.5rem;
+    }
+  }
+
+  .span-text {
+    border-left: 2px solid $primary-black;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+  }
+
+  .navbar-end {
+    .left-span {
+      border: 0;
+    }
+
+    .right-span {
+      border-right: 2px solid $primary-black;
     }
   }
 
@@ -24,6 +54,7 @@
     right: 0;
 
     .lang {
+      background-color: $primary-swiss-coffee;
       margin-left: 5px;
       padding: 5px;
     }
@@ -33,11 +64,46 @@
     }
   }
 
-  .logo-text {
-    color: $primary-mako;
-    font-size: 3.5rem;
-    font-weight: 600;
-    letter-spacing: 13px;
-    margin-left: 1.5rem;
+  .icon {
+    padding: 0 1rem;
   }
+
+  .lang {
+    padding: 0 1rem;
+
+    .lang-item {
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0 0.5rem;
+    }
+
+    .center {
+      border-left: 2px solid $primary-black;
+      border-right: 2px solid $primary-black;
+    }
+  }
+
+  .span-icon {
+    border-left: 2px solid $primary-black;
+  }
+  
+
+  .logo-text {
+    color: $primary-black;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 13px;
+    padding-left: 1rem;
+    // margin-left: 1.5rem;
+  }
+
+  // @media screen and (max-width: 1100px) {
+  //   .logo-text {
+  //     font-size: 2rem;
+  //     letter-spacing: 10px;
+  //     margin-left: 1rem;
+  //   }
+  // }
 }
+
+

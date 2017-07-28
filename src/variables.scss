@@ -7,9 +7,12 @@ $primary: #ff5e42;
 $primary-heliotrope: #82e0dd;
 $primary-mako: #44494d;
 $primary-swiss-coffee: #dfe0da;
+$primary-gray: rgb(242, 242, 242);
+$primary-black: rgb(0, 0, 0);
 
 // Add a serif family
 $family-serif: 'Merriweather', 'Georgia', serif;
+$family-arial: Arial, Helvetica, sans-serif;
 
 // Set the derived variables
 $success: $primary-heliotrope;
@@ -17,7 +20,7 @@ $info: $primary-mako;
 // Use the existing orange as the danger color
 $danger: $orange;
 // Use the new serif family
-$family-primary: $family-serif;
+$family-primary: $family-arial;
 
 // Generated with http://chir.ag/projects/name-that-color
 $punch: #dd4b39;
@@ -27,6 +30,6 @@ $picton-blue: #55acee;
 
 $abbey: rgba(255, 255, 255, 0.9);
 
-$body-background: $primary-swiss-coffee;
+//$body-background: $primary-swiss-coffee;
 
 

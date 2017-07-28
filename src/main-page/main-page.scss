@@ -6,6 +6,11 @@
   }
 }
 
+//background image
+body {
+  background: url('../swirl_pattern.png');
+}
+
 .image .is-3by1 {
   padding-top: 30%;
 
@@ -22,7 +27,8 @@
 
 .main-page-container {
   .main-block {
-    background-color: $primary-swiss-coffee;
+    background-color: rgba(255, 255, 255, 0);
+    //background-color: $primary-swiss-coffee;
     padding: 3rem 4rem;
   }
 
