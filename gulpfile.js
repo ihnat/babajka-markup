@@ -17,31 +17,32 @@ const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.js
 
 const config = {
   libsPath: 'node_modules',
-  templatesPath: 'build',
-  stylesPath: 'dist',
+  buildPath: 'dist',
+  stylesPath: 'styles',
   fontsPath: 'fonts',
+  imagesPath: 'images',
   srcPath: 'src',
 };
 
-templateVariables.bundlePath = `../../${config.stylesPath}/bundle.css`;
-templateVariables.assetsPath = `../../${config.stylesPath}/assets.min.css`;
-templateVariables.imagesPath = `../../${config.srcPath}/images`;
+templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
+templateVariables.assetsPath = `../${config.stylesPath}/assets.min.css`;
+templateVariables.imagesPath = `../${config.imagesPath}`;
 
 gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`])
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer())
   .pipe(concatCss('bundle.css'))
-  .pipe(gulp.dest(config.stylesPath))
+  .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
   .pipe(concatCss('bundle.min.css'))
   .pipe(cleanCSS())
-  .pipe(gulp.dest(config.stylesPath))
+  .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
 );
 
 gulp.task('sass:assets', () => gulp.src(`${config.srcPath}/index.scss`)
   .pipe(sass().on('error', sass.logError))
   .pipe(concatCss('assets.min.css'))
   .pipe(cleanCSS())
-  .pipe(gulp.dest(config.stylesPath))
+  .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
 );
 
 gulp.task('sass:lint', () => gulp.src(`${config.srcPath}/**/*.scss`)
@@ -56,14 +57,13 @@ gulp.task('sass:watch', () => watch(`${config.srcPath}/**/*.scss`, () => {
   gulp.start('sass:lint');
 }));
 
-
 gulp.task('fa:fonts', () => gulp.src(`${config.libsPath}/font-awesome/fonts/fontawesome-webfont.*`)
-  .pipe(gulp.dest(config.fontsPath))
+  .pipe(gulp.dest(`${config.buildPath}/${config.fontsPath}`))
 );
 
 gulp.task('ejs:compile', () => gulp.src(`${config.srcPath}/**/*.ejs`)
   .pipe(ejs(templateVariables, {}, { ext: '.html' }).on('error', gutil.log))
-  .pipe(gulp.dest(config.templatesPath))
+  .pipe(gulp.dest(config.buildPath))
 );
 
 gulp.task('html:lint', ['ejs:compile'], () => gulp.src(`${config.templatesPath}/**/*.html`)
@@ -71,18 +71,22 @@ gulp.task('html:lint', ['ejs:compile'], () => gulp.src(`${config.templatesPath}/
   .pipe(htmlhint.reporter())
 );
 
+gulp.task('images:copy', () => gulp.src(`${config.srcPath}/images/**/*`)
+  .pipe(gulp.dest(`${config.buildPath}/${config.imagesPath}`))
+);
+
 gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
 
 gulp.task('serve', () => connect.server({
   livereload: true,
-  root: ['.', './build', './dist']
+  root: config.buildPath
 }));
 
 gulp.task('livereload', () => watch(
-  [`${config.templatesPath}/**/*.html`, `${config.stylesPath}/**/*.css`]).pipe(connect.reload())
+  [`${config.buildPath}/**/*.html`, `${config.buildPath}/${config.stylesPath}/**/*.css`]).pipe(connect.reload())
 );
 
 // export tasks
-gulp.task('build', ['sass:bundle', 'sass:assets', 'fa:fonts', 'ejs:compile']);
+gulp.task('build', ['ejs:compile', 'sass:bundle', 'sass:assets', 'fa:fonts', 'images:copy']);
 gulp.task('watch', ['build', 'serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch']);
 gulp.task('lint', ['sass:lint', 'html:lint']);
