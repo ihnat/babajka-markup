@@ -1,17 +1,13 @@
 
-.footer {
-  background-color: #7E8FAF !important;
-}
-.article-page-container {
-  background: rgba(255, 255, 255, 0.9);
-  margin: 4rem;
+.article-page .page-content {
+  background-color: white;
 }
 
-.article-page-container .content {
+.article-page .card-content {
   padding: 0 4rem 1rem;
 }
 
-.article-page-container .content .heading {
+.article-page .card-content .heading {
   font-family: PT sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
@@ -19,78 +15,43 @@
   text-align: center;
 }
 
-.article-page-container .content .author {
+.article-page .card-content .author {
   font-family: PT sans-serif;
   font-size: 2rem;
   margin: 1.5rem 0;
 }
 
-.article-page-container .content .tags {
+.article-page .card-content .tags {
   font-size: 1.2rem;
 }
 
-.article-page-container .content .text {
+.article-page .card-content .text {
   font-size: 1.5rem;
 }
 
-.article-page-container .content .articles-links {
-  margin: 2rem;
-}
-.image .is-3by1 {
-  padding-top: 30%;
+.article-page .articles-links {
+  font-size: 1.4rem;
+  padding: 4rem;
 }
 
-.image .is-3by1 img {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+.article-page .articles-links .more-articles-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.main-page-container .main-block {
-  background-color: #dfe0da;
-  padding: 3rem 4rem;
+.article-page .articles-links ul {
+  list-style-type: disc;
+  margin-left: 4rem;
 }
 
-.main-page-container .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.article-page .articles-links ul li {
+  padding: 0.5rem;
+}
+.login-page .login-form .control {
+  margin: 1rem 0;
 }
 
-.main-page-container .secondary-article article {
-  background-color: rgba(255, 255, 255, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.main-page-container .secondary-article article a:not(.button) {
-  text-decoration: none;
-}
-
-.main-page-container .diary {
-  font-style: italic;
-}
-
-.social-buttons {
+.login-page .social-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,33 +61,44 @@
   margin: 0.5rem;
 }
 
-.social-buttons .social-btn {
+.login-page .social-buttons .social-btn {
   color: #7a7a7a;
   margin-left: 0.5rem;
 }
 
-.social-buttons .facebook i {
-  color: #4c75a3;
+.login-page .social-buttons .social-btn i {
+  color: white;
 }
 
-.social-buttons .twitter i {
-  color: #55acee;
+.login-page .social-buttons .facebook {
+  background-color: #4c75a3;
 }
 
-.social-buttons .google i {
-  color: #dd4b39;
+.login-page .social-buttons .twitter {
+  background-color: #55acee;
 }
 
-.social-buttons .vk i {
-  color: #3b5998;
+.login-page .social-buttons .google {
+  background-color: #dd4b39;
 }
 
-.social-buttons .round-btn {
+.login-page .social-buttons .vk {
+  background-color: #3b5998;
+}
+
+.login-page .social-buttons .form-mode-checkbox {
+  color: #44494d;
+  margin: auto;
+  margin-left: 0;
+}
+
+.login-page .round-btn {
+  border-color: white;
   border-radius: 20px;
 }
 .navbar-container .navbar,
 .navbar-container .navbar-brand {
-  height: 5rem;
+  height: 8rem;
 }
 
 .navbar-container .navbar-item {
@@ -165,11 +137,19 @@
   letter-spacing: 13px;
   margin-left: 1.5rem;
 }
-.login-main-container .login-form .control {
-  margin: 1rem 0;
+.main-page .title a {
+  font-weight: bold;
 }
 
-.login-main-container .social-buttons {
+.main-page .author {
+  letter-spacing: 0.3rem;
+}
+
+.main-page .diary {
+  font-style: italic;
+}
+
+.social-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,38 +159,27 @@
   margin: 0.5rem;
 }
 
-.login-main-container .social-buttons .social-btn {
+.social-buttons .social-btn {
   color: #7a7a7a;
   margin-left: 0.5rem;
 }
 
-.login-main-container .social-buttons .social-btn i {
-  color: white;
+.social-buttons .facebook i {
+  color: #4c75a3;
 }
 
-.login-main-container .social-buttons .facebook {
-  background-color: #4c75a3;
+.social-buttons .twitter i {
+  color: #55acee;
 }
 
-.login-main-container .social-buttons .twitter {
-  background-color: #55acee;
+.social-buttons .google i {
+  color: #dd4b39;
 }
 
-.login-main-container .social-buttons .google {
-  background-color: #dd4b39;
+.social-buttons .vk i {
+  color: #3b5998;
 }
 
-.login-main-container .social-buttons .vk {
-  background-color: #3b5998;
-}
-
-.login-main-container .social-buttons .form-mode-checkbox {
-  color: #44494d;
-  margin: auto;
-  margin-left: 0;
-}
-
-.login-main-container .round-btn {
-  border-color: white;
+.social-buttons .round-btn {
   border-radius: 20px;
 }
