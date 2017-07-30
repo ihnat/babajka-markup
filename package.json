@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.0.22",
+  "version": "0.0.21",
   "description": "Markups",
   "scripts": {
     "start": "npm run watch",

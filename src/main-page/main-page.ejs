@@ -5,14 +5,14 @@
 <body>
 <% include ../navbar/navbar.ejs %>
 
-<div class="main-page-container">
-    <section class="section main-block">
+<div class="main-page page-container">
+    <div class="page-content">
 
         <!-- FIRST LINE -->
 
         <div class="first-line tile is-ancestor">
 
-            <div class="primary-article tile is-parent is-5">
+            <div class="tile is-parent is-5">
                 <article class="card tile is-child">
                     <div class="card-image">
                         <figure class="image is-16by9">
@@ -26,13 +26,13 @@
                             </a>
                         </span>
                         <p class="subtitle">Новы альбом: як, дзе і для каго</p>
-                        <p class="subtitle is-4">Змітр Корнеў</p>
+                        <p class="subtitle author is-4">Змітр Корнеў</p>
                     </div>
                 </article>
             </div>
 
-            <div class="secondary-article tile is-parent">
-                <article class="card tile is-child notification">
+            <div class="tile is-parent">
+                <article class="card tile is-child">
                     <div class="card-image">
                         <figure class="image is-3by2">
                             <img src="<%= imagesPath %>/photo3.jpg"/>
@@ -49,8 +49,8 @@
                 </article>
             </div>
 
-            <div class="secondary-article tile is-parent">
-                <article class="card tile is-child notification">
+            <div class="tile is-parent">
+                <article class="card tile is-child">
                     <div class="card-image">
                         <figure class="image is-3by2">
                             <img src="<%= imagesPath %>/photo5.jpg"/>
@@ -74,8 +74,8 @@
         <div class="second-line tile is-ancestor">
             <div class="tile is-vertical is-8">
                 <div class="tile">
-                    <div class="secondary-article tile is-parent">
-                        <article class="card tile is-child notification">
+                    <div class="tile is-parent">
+                        <article class="card tile is-child">
                             <div class="card-image">
                                 <figure class="image is-3by2">
                                     <img src="<%= imagesPath %>/photo3.jpg"/>
@@ -92,7 +92,7 @@
                         </article>
                     </div>
 
-                    <div class="primary-article tile is-parent">
+                    <div class="tile is-parent">
                         <article class="card tile is-child">
                             <div class="card-image">
                                 <figure class="image is-4by3">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="primary-article tile is-parent">
+                <div class="tile is-parent">
                     <article class="card tile is-child">
                         <div class="card-content">
                             <span class="title is-spaced">
@@ -132,18 +132,64 @@
             </div>
 
             <!--NEED TO TRUNCATE TEXT DEPENDING ON THE SCREEN SIZE AND MODE-->
-            <div class="diary-article tile is-parent">
-                <article class="tile is-child notification">
-                    <h1 class="title">Дзённік дня</h1>
-                    <div class="content diary">
-                        <%= diaryText %>
-                    </div>
-                    <p class="subtitle">Іосіф Бродскі</p>
-                </article>
-            </div>
 
+            <div class="tile is-vertical">
+                <div class="diary-article tile is-parent">
+                    <article class="tile is-child notification">
+                        <h1 class="title">Дзённік дня</h1>
+                        <div class="content diary">
+                            <%= diaryText %>
+                        </div>
+                        <p class="subtitle">Іосіф Бродскі</p>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="card tile is-child">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <img src="<%= imagesPath %>/photo5.jpg"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <span class="title is-spaced"><a>Некоратка аб Ахматавай</a></span>
+                            <p class="subtitle">"Настоящую нежность не спутаешь ни с чем..."</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="pagination-container">
+            <nav class="pagination is-centered is-large">
+                <a class="pagination-previous">Previous</a>
+                <a class="pagination-next">Next page</a>
+                <ul class="pagination-list">
+                    <li>
+                        <a class="pagination-link">1</a>
+                    </li>
+                    <li>
+                        <span class="pagination-ellipsis">&hellip;</span>
+                    </li>
+                    <li>
+                        <a class="pagination-link">6</a>
+                    </li>
+                    <li>
+                        <a class="pagination-link is-current">7</a>
+                    </li>
+                    <li>
+                        <a class="pagination-link">8</a>
+                    </li>
+                    <li>
+                        <span class="pagination-ellipsis">&hellip;</span>
+                    </li>
+                    <li>
+                        <a class="pagination-link">13</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
 
 <% include ../footer/footer.ejs %>

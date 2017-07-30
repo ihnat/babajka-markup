@@ -6,43 +6,13 @@
   }
 }
 
-.image .is-3by1 {
-  padding-top: 30%;
-
-  img {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-}
-
-.main-page-container {
-  .main-block {
-    background-color: $primary-swiss-coffee;
-    padding: 3rem 4rem;
+.main-page {
+  .title a {
+    font-weight: bold;
   }
 
-  .card-content {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .secondary-article {
-    article {
-      background-color: $abbey;
-      display: flex;
-      flex-direction: column;
-
-      a:not(.button) {
-        text-decoration: none;
-      }
-    }
+  .author {
+    letter-spacing: 0.3rem;
   }
 
   .diary {
