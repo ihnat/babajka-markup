@@ -6,39 +6,13 @@
   }
 }
 
-.image .is-3by1 {
-  padding-top: 30%;
-
-  img {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-}
-
-.page-content {
-  margin: 3rem 4rem;
-}
-
-.page-container {
-  background-color: $primary-swiss-coffee;
-}
-
 .main-page {
-  .card-content {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-around;
+  .title a {
+    font-weight: bold;
   }
 
-  article {
-    display: flex;
-    flex-direction: column;
+  .author {
+    letter-spacing: 0.3rem;
   }
 
   .diary {
