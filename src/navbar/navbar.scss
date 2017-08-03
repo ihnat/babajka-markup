@@ -76,6 +76,7 @@
       padding: 0 0.5rem;
     }
 
+    /* @tonia: I think, it's better to rename some classes, this one and 'span-text, 'right-span'... */
     .center {
       border-left: 2px solid $primary-black;
       border-right: 2px solid $primary-black;
@@ -85,7 +86,6 @@
   .span-icon {
     border-left: 2px solid $primary-black;
   }
-  
 
   .logo-text {
     color: $primary-black;
@@ -94,7 +94,6 @@
     letter-spacing: 13px;
     padding-left: 1rem;
   }
-
 }
 
 
