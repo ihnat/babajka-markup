@@ -96,14 +96,6 @@
   border-color: white;
   border-radius: 20px;
 }
-.main-page .title a {
-  font-weight: bold;
-}
-
-.main-page .author {
-  letter-spacing: 0.3rem;
-}
-
 .main-page .diary {
   font-style: italic;
 }
