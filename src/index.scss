@@ -50,6 +50,28 @@
   }
 }
 
-/*.page-container {
-  background-color: $body-background;
-}*/
+.special-heading {
+  background-color: #fffb37;
+  border-radius: 5px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  .media-content {
+    align-self: center;
+    display: none;
+    font-size: inherit;
+    padding-right: 0.5rem;
+  }
+
+  &:hover {
+    .media-content {
+      display: block;
+    }
+  }
+
+  .media-left {
+    margin-right: 0;
+  }
+}
+
