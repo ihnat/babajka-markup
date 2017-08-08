@@ -96,47 +96,6 @@
   border-color: white;
   border-radius: 20px;
 }
-.navbar-container .navbar,
-.navbar-container .navbar-brand {
-  height: 8rem;
-}
-
-.navbar-container .navbar-item {
-  font-size: 1.5rem;
-}
-
-.navbar-container .navbar-item img {
-  max-height: 4.5rem;
-}
-
-.navbar-container .langs {
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 2rem;
-  margin-right: 4rem;
-  padding-top: 2rem;
-  position: absolute;
-  right: 0;
-}
-
-.navbar-container .langs .lang {
-  margin-left: 5px;
-  padding: 5px;
-}
-
-.navbar-container .langs .underline {
-  text-decoration: underline;
-}
-
-.navbar-container .logo-text {
-  color: #44494d;
-  font-size: 3.5rem;
-  font-weight: 600;
-  letter-spacing: 13px;
-  margin-left: 1.5rem;
-}
 .main-page .diary {
   font-style: italic;
 }
@@ -174,4 +133,97 @@
 
 .social-buttons .round-btn {
   border-radius: 20px;
+}
+.navbar-container {
+  padding: 1rem 3rem 0;
+}
+
+.navbar-container .navbar,
+.navbar-container .navbar-brand {
+  background-color: rgba(255, 255, 255, 0);
+  height: 3.2rem;
+}
+
+.navbar-container .navbar-item {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-container .navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-container .navbar-item img {
+  max-height: 4.5rem;
+}
+
+.navbar-container .span-text {
+  border-left: 2px solid black;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.navbar-container .navbar-end .left-span {
+  border: 0;
+}
+
+.navbar-container .navbar-end .right-span {
+  border-right: 2px solid black;
+}
+
+.navbar-container .langs {
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  margin-right: 4rem;
+  padding-top: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.navbar-container .langs .lang {
+  background-color: #dfe0da;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.navbar-container .langs .underline {
+  text-decoration: underline;
+}
+
+.navbar-container .icon {
+  padding: 0 1rem;
+}
+
+.navbar-container .lang {
+  padding: 0 1rem;
+  /* @tonia: I think, it's better to rename some classes, this one and 'span-text, 'right-span'... */
+}
+
+.navbar-container .lang .lang-item {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+
+.navbar-container .lang .center {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.navbar-container .span-icon {
+  border-left: 2px solid black;
+}
+
+.navbar-container .logo-text {
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 13px;
+  padding-left: 1rem;
 }
