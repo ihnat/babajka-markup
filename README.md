@@ -34,4 +34,4 @@ Styles &amp; Markup for babajka team project
 
 * `npm run lint` for check `sass` & `html` codestyle
 * `npm run deploy` for hosting templates under [`github-pages`](https://babajka.github.io/babajka-markup/)
-* `npm publish` for publish new version of markups
+* `npm run release` for publish new version of markups

@@ -8,8 +8,9 @@
     "watch": "gulp watch",
     "lint": "gulp lint",
     "deploy": "npm run build && gh-pages -d dist -a",
-    "prepublish": "npm run deploy && npm version patch",
-    "postpublish": "git push && git push --tags"
+    "prerelease": "npm run deploy && npm version patch",
+    "postpublish": "git push && git push --tags",
+    "release": "npm run prerelease && npm run publish && npm run postrelease"
   },
   "repository": {
     "type": "git",
