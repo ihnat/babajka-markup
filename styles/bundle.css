@@ -47,6 +47,44 @@
 .article-page .articles-links ul li {
   padding: 0.5rem;
 }
+.main-page .diary {
+  font-style: italic;
+}
+
+.social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+
+.social-buttons .social-btn {
+  color: #7a7a7a;
+  margin-left: 0.5rem;
+}
+
+.social-buttons .facebook i {
+  color: #4c75a3;
+}
+
+.social-buttons .twitter i {
+  color: #55acee;
+}
+
+.social-buttons .google i {
+  color: #dd4b39;
+}
+
+.social-buttons .vk i {
+  color: #3b5998;
+}
+
+.social-buttons .round-btn {
+  border-radius: 20px;
+}
 .login-page .login-form .control {
   margin: 1rem 0;
 }
@@ -96,82 +134,17 @@
   border-color: white;
   border-radius: 20px;
 }
-.main-page .diary {
-  font-style: italic;
-}
-
-.social-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin: 0.5rem;
-}
-
-.social-buttons .social-btn {
-  color: #7a7a7a;
-  margin-left: 0.5rem;
-}
-
-.social-buttons .facebook i {
-  color: #4c75a3;
-}
-
-.social-buttons .twitter i {
-  color: #55acee;
-}
-
-.social-buttons .google i {
-  color: #dd4b39;
-}
-
-.social-buttons .vk i {
-  color: #3b5998;
-}
-
-.social-buttons .round-btn {
-  border-radius: 20px;
-}
-.navbar-container {
-  padding: 1rem 3rem 0;
-}
-
 .navbar-container .navbar,
 .navbar-container .navbar-brand {
-  background-color: rgba(255, 255, 255, 0);
-  height: 3.2rem;
+  height: 8rem;
 }
 
 .navbar-container .navbar-item {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.navbar-container .navbar-item:hover {
-  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.5rem;
 }
 
 .navbar-container .navbar-item img {
   max-height: 4.5rem;
-}
-
-.navbar-container .span-text {
-  border-left: 2px solid black;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
-}
-
-.navbar-container .navbar-end .left-span {
-  border: 0;
-}
-
-.navbar-container .navbar-end .right-span {
-  border-right: 2px solid black;
 }
 
 .navbar-container .langs {
@@ -187,7 +160,6 @@
 }
 
 .navbar-container .langs .lang {
-  background-color: #dfe0da;
   margin-left: 5px;
   padding: 5px;
 }
@@ -196,34 +168,10 @@
   text-decoration: underline;
 }
 
-.navbar-container .icon {
-  padding: 0 1rem;
-}
-
-.navbar-container .lang {
-  padding: 0 1rem;
-  /* @tonia: I think, it's better to rename some classes, this one and 'span-text, 'right-span'... */
-}
-
-.navbar-container .lang .lang-item {
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 0 0.5rem;
-}
-
-.navbar-container .lang .center {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-
-.navbar-container .span-icon {
-  border-left: 2px solid black;
-}
-
 .navbar-container .logo-text {
-  color: black;
-  font-size: 3rem;
-  font-weight: 700;
+  color: #44494d;
+  font-size: 3.5rem;
+  font-weight: 600;
   letter-spacing: 13px;
-  padding-left: 1rem;
+  margin-left: 1.5rem;
 }
