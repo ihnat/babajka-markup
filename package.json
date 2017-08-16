@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/babajka/babajka-markup#readme",
   "dependencies": {
-    "bulma": "^0.4.2",
+    "bulma": "^0.5.1",
     "font-awesome": "^4.7.0",
     "gh-pages": "^1.0.0",
     "gulp": "^3.9.1",
@@ -34,9 +34,9 @@
     "gulp-ejs": "^3.0.1",
     "gulp-htmlhint": "^0.3.1",
     "gulp-sass": "^3.1.0",
-    "gulp-stylelint": "^3.9.0",
+    "gulp-stylelint": "^4.0.0",
     "gulp-watch": "^4.3.11",
-    "stylelint": "^7.12.0",
-    "stylelint-config-sass-guidelines": "^2.2.0"
+    "stylelint": "^8.0.0",
+    "stylelint-config-sass-guidelines": "^3.1.0"
   }
 }
