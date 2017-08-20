@@ -13,7 +13,7 @@
 }
 
 body {
-  background: url("/images/swirl_pattern.png");
+  background: url("../images/swirl_pattern.png");
 }
 
 .page-content {
