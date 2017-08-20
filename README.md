@@ -2,6 +2,7 @@
 [![npm version](https://badge.fury.io/js/babajka-markup.svg)](https://badge.fury.io/js/babajka-markup)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/001d83b6ff434a2fb5ce86517b7955b4)](https://www.codacy.com/app/babajka/babajka-markup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=babajka/babajka-markup&amp;utm_campaign=Badge_Grade)
 [![Dependency Status](https://www.versioneye.com/user/projects/595ac98d0fb24f006c059d06/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/595ac98d0fb24f006c059d06)
+[![Build Status](https://travis-ci.org/babajka/babajka-markup.svg?branch=master)](https://travis-ci.org/babajka/babajka-markup)
 
 Styles &amp; Markup for babajka team project
 
@@ -34,4 +35,4 @@ Styles &amp; Markup for babajka team project
 
 * `npm run lint` for check `sass` & `html` codestyle
 * `npm run deploy` for hosting templates under [`github-pages`](https://babajka.github.io/babajka-markup/)
-* `npm publish` for publish new version of markups
+* `npm run release` for publish new version of markups
