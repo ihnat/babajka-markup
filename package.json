@@ -33,6 +33,7 @@
     "gulp-connect": "^5.0.0",
     "gulp-ejs": "^3.0.1",
     "gulp-htmlhint": "^0.3.1",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-stylelint": "^4.0.0",
     "gulp-watch": "^4.3.11",
