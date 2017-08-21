@@ -1,7 +1,5 @@
 node_modules/
 .idea/
 dist/
-fonts/
-build/
 *.DS_Store
 npm-debug.log
