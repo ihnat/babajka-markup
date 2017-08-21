@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
 const stylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
+const replace = require('gulp-replace');
 
 const ejs = require('gulp-ejs');
 const htmlhint = require('gulp-htmlhint');
@@ -28,12 +29,13 @@ templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
 templateVariables.assetsPath = `../${config.stylesPath}/assets.min.css`;
 templateVariables.imagesPath = `../${config.imagesPath}`;
 
-gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`])
+gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`], {base: config.srcPath})
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer())
-  .pipe(concatCss('bundle.css'))
+  .pipe(replace('url("/images/', 'url("../images/'))
+  .pipe(concatCss('bundle.css', {rebaseUrls: false}))
   .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
-  .pipe(concatCss('bundle.min.css'))
+  .pipe(concatCss('bundle.min.css', {rebaseUrls: false}))
   .pipe(cleanCSS())
   .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
 );
