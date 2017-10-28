@@ -1,3 +1,5 @@
+@import 'variables';
+
 .image .is-3by1 {
   padding-top: 30%;
 
@@ -26,19 +28,84 @@ body {
     display: flex;
     flex-direction: column;
 
+    .title {
+      margin-bottom: 0;
+      padding: 10px;
+    }
+
     .title a {
       font-weight: bold;
     }
 
-    .author {
-      letter-spacing: 0.3rem;
+    .subtitle {
+      font-size: 12pt;
+      margin: 10px;
     }
 
     .card-content {
       display: flex;
       flex: 1;
       flex-direction: column;
-      justify-content: space-around;
+      padding: 0.8rem;
+    }
+
+    .subtext {
+      font-size: 11pt;
+      padding-bottom: 50px;
+    }
+
+    .author {
+      background-color: $author-background;
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+      bottom: 0;
+      margin-top: 15px;
+      padding: 5px;
+      position: absolute;
+      vertical-align: bottom;
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        float: left;
+        margin-right: 10px;
+        width: 40px;
+      }
+
+      .name {
+        font-weight: 600;
+        padding: 8px;
+        text-overflow: ellipsis;
+        vertical-align: bottom;
+      }
+    }
+
+    .author-top {
+      background-color: $author-background;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      height: 5px;
+      margin-bottom: 5px;
+    }
+
+    .special {
+      background-color: $special-color1;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+      height: 30px;
+      margin-bottom: 5px;
+      padding-top: 3px;
+      text-align: center;
+    }
+
+    .special-bottom {
+      background-color: $special-color1;
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+      bottom: 0;
+      height: 5px;
+      position: absolute;
+      width: 100%;
     }
 
     &:hover {

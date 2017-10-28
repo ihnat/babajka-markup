@@ -12,44 +12,89 @@
 
         <div class="first-line tile is-ancestor">
 
-            <div class="tile is-parent is-5">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-16by9">
-                            <img src="<%= imagesPath %>/photo2.jpg" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">
-                                Крама "як з крамы"
-                            </a>
-                        </span>
-                        <p class="subtitle">Новы альбом: як, дзе і для каго</p>
-                        <p class="subtitle author is-4">Змітр Корнеў</p>
-                    </div>
-                </article>
+            <div class="tile is-parent">
+              <article class="card tile is-child">
+                <div class="author-top"></div>
+                <span class="title">
+                  <a href="../article-page/article-page.html">Крама "як з крамы"</a>
+                </span>
+                <div class="card-image">
+                    <figure class="image is-16by9">
+                        <img src="<%= imagesPath %>/photo2.jpg" />
+                    </figure>
+                </div>
+                <p class="subtitle">Новы альбом: як, дзе і для каго</p>
+                <div class="author">
+                  <img src="<%= imagesPath %>/vajc.jpg"/>
+                  <div class="name">
+                    <span>Змітр Корнеў</span>
+                  </div>
+                </div>
+              </article>
             </div>
 
             <div class="tile is-parent">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-3by2">
-                            <img src="<%= imagesPath %>/photo3.jpg" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">
-                                "Гэта ня тое як склеіць разьбіты кубак..."
-                            </a>
-                        </span>
-                        <p class="subtitle">Вальжына Морт пра адносіны з сусветам</p>
-                    </div>
-                </article>
+              <article class="card tile is-child">
+                <div class="author-top"></div>
+                <span class="title">
+                  <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
+                </span>
+                <div class="card-image">
+                    <figure class="image is-16by9">
+                        <img src="<%= imagesPath %>/photo3.jpg" />
+                    </figure>
+                </div>
+                <p class="subtitle subtext">Вальжына Морт пра адносіны з сусветам</p>
+                <div class="author">
+                  <img src="<%= imagesPath %>/mort.jpg"/>
+                  <div class="name">
+                    <span>Вальжына Морт</span>
+                  </div>
+                </div>
+              </article>
             </div>
 
             <div class="tile is-parent">
+              <article class="card tile is-child">
+                <div class="author-top"></div>
+                <span class="title">
+                  <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
+                </span>
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="<%= imagesPath %>/photo5.jpg" />
+                    </figure>
+                </div>
+                <p class="subtitle subtext">"Настоящую нежность не спутаешь ни с чем..."</p>
+                <div class="author">
+                  <img src="<%= imagesPath %>/mort.jpg"/>
+                  <div class="name">
+                    <span>Вальжына Морт</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="tile is-parent">
+              <article class="card tile is-child">
+                <div class="special">
+                  <span>Курылка Гутэнберга</span>
+                </div>
+                <span class="title">
+                  <a href="../article-page/article-page.html">Культура і псіхалогія</a>
+                </span>
+                <div class="card-image">
+                    <figure class="image is-3by2">
+                        <img src="<%= imagesPath %>/photo4.jpg" />
+                    </figure>
+                </div>
+                <p class="subtitle subtext">Выкладчык з ЕГУ распавядзе</p>
+                <div class="special-bottom" style="margin-bottom: 0; height: 5px; bottom: 0;">
+                </div>
+              </article>
+            </div>
+
+        <!--    <div class="tile is-parent">
                 <article class="card tile is-child">
                     <div class="card-image">
                         <figure class="image is-3by2">
@@ -75,7 +120,7 @@
                         <p class="subtitle">"Настоящую нежность не спутаешь ни с чем..."</p>
                     </div>
                 </article>
-            </div>
+            </div> -->
         </div>
 
         <!--FIRST LINE END-->
@@ -179,34 +224,8 @@
 
         </div>
 
-        <div class="pagination-container">
-            <nav class="pagination is-centered is-large">
-                <a class="pagination-previous">Previous</a>
-                <a class="pagination-next">Next page</a>
-                <ul class="pagination-list">
-                    <li>
-                        <a class="pagination-link">1</a>
-                    </li>
-                    <li>
-                        <span class="pagination-ellipsis">&hellip;</span>
-                    </li>
-                    <li>
-                        <a class="pagination-link">6</a>
-                    </li>
-                    <li>
-                        <a class="pagination-link is-current">7</a>
-                    </li>
-                    <li>
-                        <a class="pagination-link">8</a>
-                    </li>
-                    <li>
-                        <span class="pagination-ellipsis">&hellip;</span>
-                    </li>
-                    <li>
-                        <a class="pagination-link">13</a>
-                    </li>
-                </ul>
-            </nav>
+        <div align="center">
+          <a class="button">Загрузіць яшчэ!</a>
         </div>
     </div>
 </div>
