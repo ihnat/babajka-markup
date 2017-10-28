@@ -29,7 +29,7 @@ body {
     flex-direction: column;
 
     .title {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       margin-bottom: 0;
       padding: 10px;
     }
@@ -56,56 +56,75 @@ body {
     }
 
     .author {
-      background-color: $author-background;
       border-bottom-left-radius: inherit;
       border-bottom-right-radius: inherit;
       bottom: 0;
-      margin-top: 15px;
-      padding: 5px;
+      margin-top: 18px;
+      padding: 3px;
       position: absolute;
-      vertical-align: bottom;
       width: 100%;
 
       img {
         border-radius: 50%;
         float: left;
-        margin-right: 10px;
-        width: 40px;
+        margin-left: 5px;
+        margin-right: 8px;
+        width: 35px;
       }
 
       .name {
+        font-size: 0.95rem;
         font-weight: 600;
-        padding: 8px;
+        padding: 4px;
         text-overflow: ellipsis;
-        vertical-align: bottom;
       }
     }
 
     .author-top {
-      background-color: $author-background;
+      background-color: $primary;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
-      height: 5px;
+      height: 3px;
       margin-bottom: 5px;
     }
 
+    .no-author {
+      padding-bottom: 3px;
+    }
+
+    .special-title {
+      color: $special-color;
+    }
+
     .special {
-      background-color: $special-color1;
+      background-color: $special-color;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
       font-size: 0.8rem;
       font-weight: 400;
       margin-bottom: 5px;
-      padding-top: 3px;
-      text-align: center;
+
+      .special-image {
+        filter: invert(100%);
+        float: left;
+        margin-right: 5px;
+        width: 32px;
+      }
+
+      .special-name {
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding-top: 5px;
+      }
     }
 
     .special-bottom {
-      background-color: $special-color1;
+      background-color: $special-color;
       border-bottom-left-radius: inherit;
       border-bottom-right-radius: inherit;
       bottom: 0;
-      height: 5px;
+      height: 3px;
       position: absolute;
       width: 100%;
     }
@@ -113,38 +132,5 @@ body {
     &:hover {
       box-shadow: 2px 2px 5px #b5b5b5;
     }
-  }
-}
-
-.special-heading {
-  background-color: #fffb37;
-  border-radius: 5px;
-  margin: 0 1rem;
-  position: absolute;
-  top: 1rem;
-
-  .handmade {
-    font-weight: bold;
-    height: 100%;
-    line-height: 200%;
-    text-align: center;
-    text-shadow: 0.5px 0 #a9a9a9;
-  }
-
-  .media-content {
-    align-self: center;
-    display: none;
-    font-size: inherit;
-    padding-right: 0.5rem;
-  }
-
-  &:hover {
-    .media-content {
-      display: block;
-    }
-  }
-
-  .media-left {
-    margin-right: 0;
   }
 }
