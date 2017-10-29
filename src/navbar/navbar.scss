@@ -1,6 +1,7 @@
 @import '../variables';
 
 .navbar-container {
+  font-family: $family-navbar;
   padding: 1rem 3rem 0;
 
   .navbar,
@@ -85,9 +86,14 @@
     border-left: 2px solid $primary-black;
   }
 
+  .logo-image {
+    height: 70px;
+  }
+
   .logo-text {
     color: $primary-black;
     font-size: 2.5rem;
+    font-weight: bold;
     letter-spacing: 5px;
     padding-left: 1rem;
   }

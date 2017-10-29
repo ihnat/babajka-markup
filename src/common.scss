@@ -29,6 +29,7 @@ body {
     flex-direction: column;
 
     .title {
+      font-family: $tile-primary-text;
       font-size: 1.4rem;
       margin-bottom: 0;
       padding: 10px;
@@ -39,7 +40,8 @@ body {
     }
 
     .subtitle {
-      font-size: 12pt;
+      font-family: $tile-secondary-text;
+      font-size: 13pt;
       margin: 10px;
     }
 
@@ -51,7 +53,7 @@ body {
     }
 
     .subtext {
-      font-size: 11pt;
+      font-size: 10pt;
       padding-bottom: 50px;
     }
 
@@ -59,6 +61,7 @@ body {
       border-bottom-left-radius: inherit;
       border-bottom-right-radius: inherit;
       bottom: 0;
+      font-family: $tile-primary-text;
       margin-top: 18px;
       padding: 3px;
       position: absolute;
@@ -73,7 +76,7 @@ body {
       }
 
       .name {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
         font-weight: 600;
         padding: 4px;
         text-overflow: ellipsis;
@@ -84,7 +87,7 @@ body {
       background-color: $primary;
       border-top-left-radius: inherit;
       border-top-right-radius: inherit;
-      height: 3px;
+      height: 2px;
       margin-bottom: 5px;
     }
 
@@ -102,19 +105,20 @@ body {
       border-top-right-radius: inherit;
       font-size: 0.8rem;
       font-weight: 400;
+      height: 30px;
       margin-bottom: 5px;
 
       .special-image {
         filter: invert(100%);
         float: left;
-        margin-right: 5px;
-        width: 32px;
+        width: 30px;
       }
 
       .special-name {
         color: #fff;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 600;
+        margin-left: 10px;
         padding-top: 5px;
       }
     }
@@ -124,7 +128,7 @@ body {
       border-bottom-left-radius: inherit;
       border-bottom-right-radius: inherit;
       bottom: 0;
-      height: 3px;
+      height: 2px;
       position: absolute;
       width: 100%;
     }

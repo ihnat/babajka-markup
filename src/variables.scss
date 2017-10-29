@@ -1,6 +1,9 @@
 // Import the initial variables
 @import '../node_modules/bulma/sass/utilities/initial-variables';
 
+// Fonts.
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+
 // Primary pallete
 // https://coolors.co/ae42ff-d1caca-44494d-ff5e42-9a9d9f
 $primary: #ff5e42;
@@ -13,6 +16,9 @@ $primary-black: rgb(0, 0, 0);
 // Add a serif family
 $family-serif: 'Merriweather', 'Georgia', serif;
 $family-arial: Arial, Helvetica, sans-serif;
+$family-navbar: 'Comfortaa', cursive;
+$tile-primary-text: 'Cormorant', serif;
+$tile-secondary-text: 'Open Sans', sans-serif;
 
 // Set the derived variables
 $success: $primary-heliotrope;
@@ -30,4 +36,4 @@ $picton-blue: #55acee;
 
 $abbey: rgba(255, 255, 255, 0.9);
 
-$special-color: #0647af;
+$special-color: #032967;
