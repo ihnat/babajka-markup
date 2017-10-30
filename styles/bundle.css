@@ -1,3 +1,13 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 .image .is-3by1 {
   padding-top: 30%;
 }
@@ -92,53 +102,128 @@ body {
   margin-right: 0;
 }
 
-.article-page .page-content {
+.column.article {
+  padding: 0;
+}
+
+.article {
   background-color: white;
+  margin-left: 7rem;
 }
 
-.article-page .card-content {
-  padding: 0 4rem 1rem;
+.article-top {
+  padding: 0 3rem;
 }
 
-.article-page .card-content .heading {
-  font-family: PT sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 3.5rem 0 5.5rem;
-  text-align: center;
+.article-top__title {
+  padding-top: 2rem;
 }
 
-.article-page .card-content .author {
-  font-family: PT sans-serif;
-  font-size: 2rem;
-  margin: 1.5rem 0;
+.article-top__sub {
+  padding-bottom: 1rem;
 }
 
-.article-page .card-content .tags {
-  font-size: 1.2rem;
+.article-top__sub .tag.is-white {
+  color: #ff5e42;
 }
 
-.article-page .card-content .text {
-  font-size: 1.5rem;
+.article-top__author {
+  margin: 0 1rem;
 }
 
-.article-page .articles-links {
-  font-size: 1.4rem;
-  padding: 4rem;
+.article-top__topic {
+  border: 1px solid #ff5e42;
+  margin: 0 1rem;
 }
 
-.article-page .articles-links .more-articles-text {
-  font-size: 2rem;
+.article-top .level.has-text-centered {
   margin-bottom: 1rem;
 }
 
-.article-page .articles-links ul {
-  list-style-type: disc;
-  margin-left: 4rem;
+.article-top__details {
+  padding: 0 10rem;
 }
 
-.article-page .articles-links ul li {
-  padding: 0.5rem;
+.article-top__tags {
+  padding-bottom: 1.5rem;
+}
+
+.article-top__tags .tag {
+  background-color: #55acee;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.article-top__tag {
+  margin: 0 0.5rem;
+}
+
+.article-image {
+  padding-bottom: 1.5rem;
+}
+
+.article-text {
+  font-family: Lora;
+  padding: 0 3rem 1.5rem;
+}
+
+.article-bottom {
+  padding-bottom: 1.5rem;
+}
+
+.article-bottom__item {
+  margin: 0 1rem;
+}
+
+.article-bottom a {
+  color: #ff5e42;
+}
+
+.article-line {
+  margin: 0;
+}
+
+.article-more {
+  padding: 1.5rem 3rem;
+}
+
+.article-more__text {
+  padding-bottom: 1rem;
+}
+
+.article-side {
+  max-width: 7rem;
+}
+
+.article-side__buttons {
+  margin-left: 1.5rem;
+  position: fixed;
+  top: 150px;
+}
+
+.article-side .button {
+  border: 1px solid #ff5e42;
+  border-radius: 1.3rem;
+  -webkit-box-shadow: 0 0 3px 0 rgba(255, 94, 66, 0.5);
+  box-shadow: 0 0 3px 0 rgba(255, 94, 66, 0.5);
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.article-side .button:hover {
+  border: 1px solid #ff5e42;
+}
+
+.article-side__button {
+  margin: 0.2rem;
+}
+
+.article-side__button--bookmark {
+  margin-bottom: 2.3rem;
+}
+
+.article-side__icon {
+  color: #ff5e42;
 }
 .login-page .login-form .control {
   margin: 1rem 0;
