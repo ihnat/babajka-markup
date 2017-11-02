@@ -14,7 +14,7 @@
 
 //background image
 body {
-  background: url('/images/swirl_pattern.png');
+  background: url('/images/swirl_pattern_edited.jpg');
 }
 
 .page-content {
@@ -50,9 +50,17 @@ body {
 .special-heading {
   background-color: #fffb37;
   border-radius: 5px;
+  margin: 0 1rem;
   position: absolute;
-  right: 1rem;
   top: 1rem;
+
+  .handmade {
+    font-weight: bold;
+    height: 100%;
+    line-height: 200%;
+    text-align: center;
+    text-shadow: 0.5px 0 #a9a9a9;
+  }
 
   .media-content {
     align-self: center;
