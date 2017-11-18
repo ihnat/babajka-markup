@@ -4,3 +4,7 @@ src/
 .stylelintrc
 gulpfile.js
 *.DS_Store
+dist/
+!dist/fonts/
+!dist/images/
+!dist/styles/
