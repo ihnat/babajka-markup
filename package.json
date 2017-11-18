@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Markups",
   "scripts": {
     "start": "export PORT=3001 && npm run watch",
