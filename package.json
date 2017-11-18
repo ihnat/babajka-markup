@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Markups",
   "scripts": {
-    "start": "npm run watch",
+    "start": "export PORT=3001 && npm run watch",
     "build": "gulp build",
     "watch": "gulp watch",
     "lint": "gulp lint",
