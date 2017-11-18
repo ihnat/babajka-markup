@@ -10,7 +10,7 @@
     "deploy": "npm run build && gh-pages -d dist -a",
     "prerelease": "npm version patch",
     "postrelease": "git push && git push --tags",
-    "release": "npm publish && npm run postrelease"
+    "release": "npm publish"
   },
   "repository": {
     "type": "git",
