@@ -1,10 +1,11 @@
 .idea/
 src/
+dist/*
+!dist/fonts
+!dist/images
+!dist/styles
 .eslintrc
 .stylelintrc
 gulpfile.js
 *.DS_Store
-dist/
-!dist/fonts/
-!dist/images/
-!dist/styles/
+.travis.yml
