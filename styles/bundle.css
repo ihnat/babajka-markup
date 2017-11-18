@@ -1,13 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 .image .is-3by1 {
   padding-top: 30%;
 }
@@ -73,17 +63,17 @@ body {
 .special-heading {
   background-color: #fffb37;
   border-radius: 5px;
-  position: absolute;
   margin: 0 1rem;
+  position: absolute;
   top: 1rem;
 }
 
 .special-heading .handmade {
+  font-weight: bold;
   height: 100%;
   line-height: 200%;
   text-align: center;
-  font-weight: bold;
-  text-shadow: 0.5px 0 darkgrey;
+  text-shadow: 0.5px 0 #a9a9a9;
 }
 
 .special-heading .media-content {
@@ -102,177 +92,122 @@ body {
   margin-right: 0;
 }
 
-.column.article {
-  padding: 0;
-}
-
-.article {
+.article-page .page-content {
   background-color: white;
-  margin-left: 7rem;
 }
 
-.article-top {
-  padding: 0 3rem;
+.article-page .card-content {
+  padding: 0 4rem 1rem;
 }
 
-.article-top__title {
-  padding-top: 2rem;
+.article-page .card-content .heading {
+  font-family: PT sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 3.5rem 0 5.5rem;
+  text-align: center;
 }
 
-.article-top__sub {
-  padding-bottom: 1rem;
+.article-page .card-content .author {
+  font-family: PT sans-serif;
+  font-size: 2rem;
+  margin: 1.5rem 0;
 }
 
-.article-top__sub .tag.is-white {
-  color: #ff5e42;
+.article-page .card-content .tags {
+  font-size: 1.2rem;
 }
 
-.article-top__author {
-  margin: 0 1rem;
+.article-page .card-content .text {
+  font-size: 1.5rem;
 }
 
-.article-top__topic {
-  border: 1px solid #ff5e42;
-  margin: 0 1rem;
+.article-page .articles-links {
+  font-size: 1.4rem;
+  padding: 4rem;
 }
 
-.article-top .level.has-text-centered {
+.article-page .articles-links .more-articles-text {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.article-top__details {
-  padding: 0 10rem;
+.article-page .articles-links ul {
+  list-style-type: disc;
+  margin-left: 4rem;
 }
 
-.article-top__tags {
-  padding-bottom: 1.5rem;
+.article-page .articles-links ul li {
+  padding: 0.5rem;
+}
+.container.login {
+  margin-top: 1rem;
+  width: 27.5rem;
 }
 
-.article-top__tags .tag {
+.login {
+  background-color: white;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 2rem 3rem;
+}
+
+.login .control {
+  font-size: 1.1rem;
+}
+
+.login__socials {
+  padding: 0 2rem;
+}
+
+.login .button {
+  border: 0;
+}
+
+.login__social--google {
+  color: #ea4033;
+}
+
+.login__social--facebook {
+  color: #395899;
+}
+
+.login__social--vk {
+  color: #507299;
+}
+
+.login__social--twitter {
+  color: #55aeee;
+}
+
+.login__social:hover {
+  font-size: 1.3rem;
+}
+
+.login .label {
+  font-size: 0.95rem;
+}
+
+.login__input-forgot {
+  color: #55acee;
+}
+
+.login .input:focus {
+  border-color: #55acee;
+  -webkit-box-shadow: 0 0 0 0.125em rgba(85, 172, 238, 0.25);
+  box-shadow: 0 0 0 0.125em rgba(85, 172, 238, 0.25);
+}
+
+.field .login__button {
   background-color: #55acee;
   color: white;
-  font-size: 0.85rem;
+  padding: 0 1.5rem;
 }
 
-.article-top__tag {
-  margin: 0 0.5rem;
-}
-
-.article-image {
-  padding-bottom: 1.5rem;
-}
-
-.article-text {
-  font-family: Lora;
-  padding: 0 3rem 1.5rem;
-}
-
-.article-bottom {
-  padding-bottom: 1.5rem;
-}
-
-.article-bottom__item {
-  margin: 0 1rem;
-}
-
-.article-bottom a {
-  color: #ff5e42;
-}
-
-.article-line {
-  margin: 0;
-}
-
-.article-more {
-  padding: 1.5rem 3rem;
-}
-
-.article-more__text {
-  padding-bottom: 1rem;
-}
-
-.article-side {
-  max-width: 7rem;
-}
-
-.article-side__buttons {
-  margin-left: 1.5rem;
-  position: fixed;
-  top: 150px;
-}
-
-.article-side .button {
-  border: 1px solid #ff5e42;
-  border-radius: 1.3rem;
-  -webkit-box-shadow: 0 0 3px 0 rgba(255, 94, 66, 0.5);
-  box-shadow: 0 0 3px 0 rgba(255, 94, 66, 0.5);
-  height: 2.6rem;
-  width: 2.6rem;
-}
-
-.article-side .button:hover {
-  border: 1px solid #ff5e42;
-}
-
-.article-side__button {
-  margin: 0.2rem;
-}
-
-.article-side__button--bookmark {
-  margin-bottom: 2.3rem;
-}
-
-.article-side__icon {
-  color: #ff5e42;
-}
-.login-page .login-form .control {
-  margin: 1rem 0;
-}
-
-.login-page .social-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin: 0.5rem;
-}
-
-.login-page .social-buttons .social-btn {
-  color: #7a7a7a;
-  margin-left: 0.5rem;
-}
-
-.login-page .social-buttons .social-btn i {
+.field .login__button:hover {
+  background-color: #4ba2e4;
   color: white;
-}
-
-.login-page .social-buttons .facebook {
-  background-color: #4c75a3;
-}
-
-.login-page .social-buttons .twitter {
-  background-color: #55acee;
-}
-
-.login-page .social-buttons .google {
-  background-color: #dd4b39;
-}
-
-.login-page .social-buttons .vk {
-  background-color: #3b5998;
-}
-
-.login-page .social-buttons .form-mode-checkbox {
-  color: #44494d;
-  margin: auto;
-  margin-left: 0;
-}
-
-.login-page .round-btn {
-  border-color: white;
-  border-radius: 20px;
 }
 .main-page .diary-article .diary {
   font-style: italic;
@@ -284,9 +219,9 @@ body {
 }
 
 .main-page .diary-article .arrow {
+  opacity: 0.3;
   position: absolute;
   top: 50%;
-  opacity: 0.3;
 }
 
 .main-page .diary-article .arrow:hover {
