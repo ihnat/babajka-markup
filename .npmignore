@@ -1,4 +1,5 @@
 .idea/
+.github/
 src/
 dist/*
 !dist/fonts
@@ -9,3 +10,4 @@ dist/*
 gulpfile.js
 *.DS_Store
 .travis.yml
+.htmlhintrc
