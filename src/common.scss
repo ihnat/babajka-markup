@@ -16,7 +16,7 @@
 
 //background image
 body {
-  background: url('/images/swirl_pattern_edited.jpg');
+  // background: url('/images/swirl_pattern_edited.jpg');
 }
 
 .page-content {
@@ -31,7 +31,7 @@ body {
 
     .title {
       font-family: $tile-primary-text;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-bottom: 0;
       padding: 10px;
     }
@@ -60,11 +60,13 @@ body {
       width: 100%;
 
       img {
-        border-radius: 50%;
+        border: 1px solid $primary;
+        border-radius: 5px;
         filter: grayscale(50%);
         float: left;
         margin-left: 5px;
         margin-right: 8px;
+        padding: 1px;
         width: 35px;
       }
 
@@ -83,8 +85,10 @@ body {
 }
 
 .special-heading {
-  background-color: #fffb37;
+  background-color: #fff;
+  border: 1px solid $primary;
   border-radius: 5px;
+  box-shadow: 0 0 0 1px #fff;
   margin: 0 1rem;
   position: absolute;
   top: 1rem;
@@ -93,6 +97,8 @@ body {
     font-weight: bold;
     height: 100%;
     line-height: 200%;
+    padding-left: 3px;
+    padding-right: 3px;
     text-align: center;
     text-shadow: 0.5px 0 #a9a9a9;
   }
