@@ -1,3 +1,24 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
 .image .is-3by1 {
   padding-top: 30%;
 }
@@ -12,16 +33,13 @@
   width: 100%;
 }
 
-body {
-  background: url("../images/swirl_pattern_edited.jpg");
-}
-
 .page-content {
   margin: 3rem 4rem;
 }
 
 .page-content article {
-  border-radius: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,12 +50,21 @@ body {
   flex-direction: column;
 }
 
+.page-content article .title {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
 .page-content article .title a {
   font-weight: bold;
 }
 
-.page-content article .author {
-  letter-spacing: 0.3rem;
+.page-content article .subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  margin: 10px;
 }
 
 .page-content article .card-content {
@@ -51,8 +78,33 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  padding: 0.2rem;
+}
+
+.page-content article .author {
+  font-family: "Cormorant", serif;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.page-content article .author img {
+  border: 1px solid #1a9582;
+  border-radius: 5px;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  float: left;
+  margin-left: 5px;
+  margin-right: 8px;
+  padding: 1px;
+  width: 35px;
+}
+
+.page-content article .author .name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 4px;
+  text-overflow: ellipsis;
 }
 
 .page-content article:hover {
@@ -61,8 +113,11 @@ body {
 }
 
 .special-heading {
-  background-color: #fffb37;
+  background-color: #fff;
+  border: 1px solid #1a9582;
   border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
   margin: 0 1rem;
   position: absolute;
   top: 1rem;
@@ -72,6 +127,8 @@ body {
   font-weight: bold;
   height: 100%;
   line-height: 200%;
+  padding-left: 3px;
+  padding-right: 3px;
   text-align: center;
   text-shadow: 0.5px 0 #a9a9a9;
 }
@@ -94,18 +151,24 @@ body {
 
 .article-page .page-content {
   background-color: white;
+  width: 75rem;
+}
+
+.article-page .heading {
+  font-family: PT sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.article-page .card-image {
+  width: 73rem;
 }
 
 .article-page .card-content {
   padding: 0 4rem 1rem;
-}
-
-.article-page .card-content .heading {
-  font-family: PT sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 3.5rem 0 5.5rem;
-  text-align: center;
 }
 
 .article-page .card-content .author {
@@ -119,7 +182,7 @@ body {
 }
 
 .article-page .card-content .text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .article-page .articles-links {
@@ -139,6 +202,112 @@ body {
 
 .article-page .articles-links ul li {
   padding: 0.5rem;
+}
+.all-contents {
+  margin: 0 7rem;
+}
+
+.article {
+  background-color: white;
+}
+
+.article-top {
+  padding: 0 3rem;
+}
+
+.article-top__title {
+  padding-top: 2rem;
+}
+
+.article-top__sub {
+  padding-bottom: 1rem;
+}
+
+.article-top__sub .tag.is-white {
+  color: #1a9582;
+}
+
+.article-top__author {
+  margin: 0 1rem;
+}
+
+.article-top__topic {
+  border: 1px solid #1a9582;
+  margin: 0 1rem;
+}
+
+.article-top .level.has-text-centered {
+  margin-bottom: 1rem;
+}
+
+.article-top__details {
+  padding: 0 10rem;
+}
+
+.article-top__tags {
+  padding-bottom: 1.5rem;
+}
+
+.article-top__tags .tag {
+  background-color: #55acee;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.article-top__tag {
+  margin: 0 0.5rem;
+}
+
+.article-image {
+  padding-bottom: 1.5rem;
+}
+
+.article-text {
+  font-family: "Merriweather", "Georgia", serif;
+  padding: 0 3rem 1.5rem;
+}
+
+.article-bottom {
+  padding-bottom: 1.5rem;
+}
+
+.article-bottom__item {
+  margin: 0 1rem;
+}
+
+.article-bottom a {
+  color: #55acee;
+}
+
+.article-line {
+  margin: 0;
+}
+
+.article-more {
+  padding: 1.5rem 3rem;
+}
+
+.article-more__text {
+  padding-bottom: 1rem;
+}
+
+.article-side {
+  position: fixed;
+  right: 250px;
+  top: 150px;
+}
+
+.article-side .button {
+  background-color: transparent;
+  border: 0;
+}
+
+.article-side .article-side__button {
+  padding: 1.2rem;
+}
+
+.article-side__icon {
+  color: #1a9582;
 }
 .container.login {
   margin-top: 1rem;
@@ -247,6 +416,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.main-page .load-more {
+  margin-top: 40px;
+}
+
 .social-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +455,7 @@ body {
   border-radius: 20px;
 }
 .navbar-container {
+  font-family: "Comfortaa", cursive;
   padding: 1rem 3rem 0;
 }
 
@@ -367,9 +541,15 @@ body {
   border-left: 2px solid black;
 }
 
+.navbar-container .logo-image {
+  height: 70px;
+  margin-left: 20px;
+}
+
 .navbar-container .logo-text {
   color: black;
   font-size: 2.5rem;
+  font-weight: bold;
   letter-spacing: 5px;
   padding-left: 1rem;
 }
