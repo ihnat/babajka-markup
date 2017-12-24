@@ -7,7 +7,6 @@
   .links {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
   }
 
   .about,
@@ -25,9 +24,19 @@
     text-align: left;
   }
 
+  .tags {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mission {
+    font-style: italic;
+    padding: 0 1rem;
+  }
+
   .copyright {
     margin-top: 3rem;
-    text-align: center;
+    text-align: left;
   }
 
   .email-input {
