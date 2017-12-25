@@ -24,17 +24,11 @@
             <div class="column">
                 <div class="content"><h4>#Тэгі</h4></div>
                 <div class="tags">
-                    <span class="tag is-primary">паэзія</span>
-                    <span class="tag is-primary">Мінск</span>
-                    <span class="tag is-primary">Лявон</span>
-                    <span class="tag is-primary">творчасць</span>
-                    <span class="tag is-primary">Бахарэвіч</span>
-                    <span class="tag is-primary">babajka</span>
-                    <span class="tag is-primary">мастацтва</span>
-                    <span class="tag is-primary">графіці</span>
-                    <span class="tag is-primary">выстава</span>
-                    <span class="tag is-primary">Ліцэй</span>
-                    <span class="tag is-primary">Курылка</span>
+                    <% for(var i = 0; i < JSON.parse(tags).length; i++) { %>
+                        <span class="tag is-primary">
+                            <%= JSON.parse(tags)[i] %>
+                        </span>
+                    <% } %>
                 </div>
             </div>
             <div class="column">
