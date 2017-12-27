@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<% var title = 'Login Page' %>
+<% include ../head/head.ejs %>
+<body>
+
+<% include ../navbar/navbar.ejs %>
+
+<div class="user-profile-page page-container">
+
+    <div class="page-content">
+        <div class="card personal-info">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="<%= imagesPath %>/photo3.jpg"/>
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Вальжына Морт</p>
+                        <p class="subtitle is-6">@valmort</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Вальжына Морт (сапр.: Вольга Мартынава (1981, Мінск) — беларуская пісьменніца, паэтэса, перакладчыца.
+                    Друкавалася ў беларускіх і замежных літаратурных выданнях (Nihil, Orient Express, Kafka).
+                    Аўтар кнігі «Я тоненькая як твае вейкі» (2005). Друкавался ў сумесных зборніках паэзіі «12+1.
+                    Конкурс маладых літаратараў імя Наталлі Арсенневай» (2004), «Frontlinie» і інш. Перакладае з польскай і англійскай.
+                    Паасобныя творы В. Морт перакладзеныя на нямецкую, польскую, шведскую, англійскую, літоўскую, латышскую, славенскую, балгарскую, украінскую мовы.
+                </div>
+            </div>
+        </div>
+
+        <section class="hero is-bold is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="title">
+                        <i class="fa fa-pencil"></i>
+                        Артыкулы
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-bold is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="title">
+                        <i class="fa fa-video-camera"></i>
+                        Лекцыі
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-bold is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="title">
+                        <i class="fa fa-snowflake-o"></i>
+                        Іншае
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</div>
+
+<% include ../footer/footer.ejs %>
+
+</body>
+</html>

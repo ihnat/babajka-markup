@@ -1,0 +1,22 @@
+@import '../variables';
+
+.user-profile-page {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    margin-bottom: 0.5rem;
+    background-color: rgba(28, 207, 186, 0.69);
+  }
+
+  .personal-info {
+    display: flex;
+
+    .card-image {
+      width: 30%;
+      flex-shrink: 0;
+    }
+  }
+}
+
