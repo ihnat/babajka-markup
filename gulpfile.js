@@ -16,6 +16,9 @@ const htmlhint = require('gulp-htmlhint');
 const fs = require('fs');
 const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
 
+console.log('process.env.PORT: ', process.env.PORT);
+const port = process.env.PORT || 3001;
+
 const config = {
   libsPath: 'node_modules',
   buildPath: 'dist',
@@ -29,13 +32,13 @@ templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
 templateVariables.assetsPath = `../${config.stylesPath}/assets.min.css`;
 templateVariables.imagesPath = `../${config.imagesPath}`;
 
-gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`], {base: config.srcPath})
+gulp.task('sass:bundle', () => gulp.src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`], { base: config.srcPath })
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer())
   .pipe(replace('url("/images/', 'url("../images/'))
-  .pipe(concatCss('bundle.css', {rebaseUrls: false}))
+  .pipe(concatCss('bundle.css', { rebaseUrls: false }))
   .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
-  .pipe(concatCss('bundle.min.css', {rebaseUrls: false}))
+  .pipe(concatCss('bundle.min.css', { rebaseUrls: false }))
   .pipe(cleanCSS())
   .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
 );
@@ -80,6 +83,7 @@ gulp.task('images:copy', () => gulp.src(`${config.srcPath}/images/**/*`)
 gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
 
 gulp.task('serve', () => connect.server({
+  port,
   livereload: true,
   root: config.buildPath
 }));

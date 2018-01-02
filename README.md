@@ -19,7 +19,6 @@ Styles &amp; Markup for babajka team project
 ### scripts
 
 * `npm run build` for build css bundles and html templates, after that you will have:
-	* `dist/` - compiled html files
 	* `dist/styles/bundle.css` - all our styles in one file
 	* `dist/styles/bundle.min.css` - minified production build
 	* `dist/styles/assets.min.css` - all 3dparty libs in one file
@@ -28,11 +27,11 @@ Styles &amp; Markup for babajka team project
 
 * `npm start` or `npm run watch`:
     * build all static
-    * start dev server on [`localhost:8080`](http://localhost:8080)
+    * start dev server on [`localhost:3001`](http://localhost:3001)
     * watch for changes, recompile styles and templates and reload page
 
 > enjoy coding!
 
 * `npm run lint` for check `sass` & `html` codestyle
 * `npm run deploy` for hosting templates under [`github-pages`](https://babajka.github.io/babajka-markup/)
-* `npm run release` for publish new version of markups
+* `npm run release` for publish new version of markups (automatically run `prerelease` & `postrelease` scripts)
