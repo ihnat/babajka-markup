@@ -68,99 +68,44 @@
         <div class="articles-links">
             <div class="more-articles-text">Чытайце таксама:</div>
 
-            <!-- TODO(uladbohdan): TO FIX. -->
-
             <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <article class="card tile is-child">
-                        <div class="author-top"></div>
-                        <span class="title">
-                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
-                        </span>
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="<%= imagesPath %>/photo2.jpg" />
-                            </figure>
-                        </div>
-                        <p class="subtitle subtext">Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...</p>
-                        <div class="author">
-                          <img src="<%= imagesPath %>/vajc.jpg"/>
-                          <div class="name">
-                              <span>Змітр Корнеў</span>
-                          </div>
-                        </div>
-                    </article>
-                </div>
 
-                <div class="tile is-parent">
-                    <article class="card tile is-child">
-                        <div class="author-top"></div>
-                        <span class="title">
-                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
-                        </span>
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="<%= imagesPath %>/photo3.jpg" />
-                            </figure>
-                        </div>
-                        <p class="subtitle subtext">Вальжына Морт пра адносіны з сусветам</p>
-                        <div class="author">
-                        <img src="<%= imagesPath %>/mort.jpg"/>
-                            <div class="name">
-                                <span>Вальжына Морт</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <%- include('../tiles/tile.ejs', {
+                  authorVar: 'Змітр Корнеў',
+                  authorPhotoVar: 'vajc.jpg',
+                  photoClassVar: 'is-16by9',
+                  photoVar: 'photo2.jpg',
+                  subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+                  titleVar: 'Крама "як з крамы"',
+                }); %>
 
-                <div class="tile is-parent">
-                    <article class="card tile is-child">
-                        <div class="author-top"></div>
-                        <span class="title">
-                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
-                        </span>
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="<%= imagesPath %>/photo5.jpg" />
-                            </figure>
-                        </div>
-                        <p class="subtitle subtext">"Настоящую нежность не спутаешь ни с чем..."</p>
-                        <div class="author">
-                            <img src="<%= imagesPath %>/mort.jpg"/>
-                            <div class="name">
-                                <span>Вальжына Морт</span>
-                            </div>
-                      </div>
-                    </article>
-                </div>
+                <%- include('../tiles/tile.ejs', {
+                  authorVar: 'Вальжына Морт',
+                  authorPhotoVar: 'mort.jpg',
+                  photoClassVar: 'is-3by2',
+                  photoVar: 'photo3.jpg',
+                  subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+                  titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+                }); %>
 
-                <div class="tile is-parent">
-                    <article class="card tile is-child">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <img src="<%= imagesPath %>/photo4.jpg" />
-                            </figure>
-                            <div class="media special-heading is-pulled-right">
-                                <div class="media-left">
-                                    <figure class="image is-32x32">
-                                        <img src="<%= imagesPath %>/kurilka_icon.png" />
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <span class="subtitle is-6">Курылка Гутэнберга</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <span class="title is-spaced">
-                                <a href="../article-page/article-page.html">Культура і псіхалогія</a>
-                            </span>
-                            <p class="subtitle">
-                                Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
-                            </p>
-                        </div>
-                    </article>
-                </div>
+                <%- include('../tiles/tile.ejs', {
+                  authorVar: 'Лявон Вольскі',
+                  authorPhotoVar: 'volski.jpg',
+                  photoClassVar: 'is-3by2',
+                  photoVar: 'photo5.jpg',
+                  subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+                  titleVar: 'Некоратка аб Ахматавай',
+                }); %>
+
+                <%- include('../tiles/tile.ejs', {
+                  photoClassVar: 'is-3by2',
+                  photoVar: 'photo4.jpg',
+                  specialHeadingNameVar: 'Курылка Гутэнберга',
+                  specialHeadingPhotoVar: 'kurilka_icon.png',
+                  subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+                  titleVar: 'Культура і псіхалогія',
+                }); %>
+
             </div>
         </div>
     </div>
