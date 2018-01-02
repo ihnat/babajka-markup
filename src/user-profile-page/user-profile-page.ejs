@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<% var title = 'Login Page' %>
+<% var title = 'User Profile Page' %>
 <% include ../head/head.ejs %>
 <body>
 
@@ -9,10 +9,10 @@
 <div class="user-profile-page page-container">
 
     <div class="page-content">
-        <div class="card personal-info">
-            <div class="card-image">
+        <div class="personal-info">
+            <div class="card-image is-rounded">
                 <figure class="image is-4by3">
-                    <img src="<%= imagesPath %>/photo3.jpg"/>
+                    <img class="profile-image" src="<%= imagesPath %>/photo3.jpg"/>
                 </figure>
             </div>
             <div class="card-content">
@@ -38,36 +38,452 @@
             </div>
         </div>
 
-        <section class="hero is-bold is-small">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="title">
-                        <i class="fa fa-pencil"></i>
-                        Артыкулы
-                    </div>
-                </div>
+        <div class="content-list">
+            <div class="divider">
             </div>
-        </section>
-        <section class="hero is-bold is-small">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="title">
-                        <i class="fa fa-video-camera"></i>
-                        Лекцыі
-                    </div>
-                </div>
+            <div class="content-title title">
+                Артыкулы
             </div>
-        </section>
-        <section class="hero is-bold is-small">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="title">
-                        <i class="fa fa-snowflake-o"></i>
-                        Іншае
-                    </div>
-                </div>
+            <div class="divider">
             </div>
-        </section>
+        </div>
+
+
+        <div class="first-line tile is-ancestor">
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="<%= imagesPath %>/photo2.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
+                        </span>
+                        <p class="subtitle">
+                            Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/vajc.jpg"/>
+                            <div class="name">
+                                <span>Змітр Корнеў</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo3.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
+                        </span>
+                        <p class="subtitle">
+                            Вальжына Морт пра адносіны з сусветам
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/mort.jpg"/>
+                            <div class="name">
+                                <span>Вальжына Морт</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo5.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
+                        </span>
+                        <p class="subtitle">
+                            "Настоящую нежность не спутаешь ни с чем..."
+                        </p>
+                        <div class="author">
+                            <img src="<%= imagesPath %>/volski.jpg"/>
+                            <div class="name">
+                                <span>Лявон Вольскі</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo4.jpg" />
+                        </figure>
+                        <div class="media special-heading is-pulled-right">
+                            <div class="media-left">
+                                <figure class="image is-32x32">
+                                    <img src="<%= imagesPath %>/kurilka_icon.png" />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <span class="subtitle is-6">Курылка Гутэнберга</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Культура і псіхалогія</a>
+                        </span>
+                        <p class="subtitle">
+                            Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+        <div class="first-line tile is-ancestor">
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo3.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
+                        </span>
+                        <p class="subtitle">
+                            Вальжына Морт пра адносіны з сусветам
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/mort.jpg"/>
+                            <div class="name">
+                                <span>Вальжына Морт</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="<%= imagesPath %>/photo2.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
+                        </span>
+                        <p class="subtitle">
+                            Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/vajc.jpg"/>
+                            <div class="name">
+                                <span>Змітр Корнеў</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo4.jpg" />
+                        </figure>
+                        <div class="media special-heading is-pulled-right">
+                            <div class="media-left">
+                                <figure class="image is-32x32">
+                                    <img src="<%= imagesPath %>/kurilka_icon.png" />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <span class="subtitle is-6">Курылка Гутэнберга</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Культура і псіхалогія</a>
+                        </span>
+                        <p class="subtitle">
+                            Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo5.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
+                        </span>
+                        <p class="subtitle">
+                            "Настоящую нежность не спутаешь ни с чем..."
+                        </p>
+                        <div class="author">
+                            <img src="<%= imagesPath %>/volski.jpg"/>
+                            <div class="name">
+                                <span>Лявон Вольскі</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+
+        <div class="content-list">
+            <div class="divider">
+            </div>
+            <div class="content-title title">
+               Лекцыі
+            </div>
+            <div class="divider">
+            </div>
+        </div>
+
+        <div class="first-line tile is-ancestor">
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="<%= imagesPath %>/photo2.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
+                        </span>
+                        <p class="subtitle">
+                            Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/vajc.jpg"/>
+                            <div class="name">
+                                <span>Змітр Корнеў</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo3.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
+                        </span>
+                        <p class="subtitle">
+                            Вальжына Морт пра адносіны з сусветам
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/mort.jpg"/>
+                            <div class="name">
+                                <span>Вальжына Морт</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo5.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
+                        </span>
+                        <p class="subtitle">
+                            "Настоящую нежность не спутаешь ни с чем..."
+                        </p>
+                        <div class="author">
+                            <img src="<%= imagesPath %>/volski.jpg"/>
+                            <div class="name">
+                                <span>Лявон Вольскі</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo4.jpg" />
+                        </figure>
+                        <div class="media special-heading is-pulled-right">
+                            <div class="media-left">
+                                <figure class="image is-32x32">
+                                    <img src="<%= imagesPath %>/kurilka_icon.png" />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <span class="subtitle is-6">Курылка Гутэнберга</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Культура і псіхалогія</a>
+                        </span>
+                        <p class="subtitle">
+                            Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="content-list">
+            <div class="divider">
+            </div>
+            <div class="content-title title">
+                Іншае
+            </div>
+            <div class="divider">
+            </div>
+        </div>
+
+        <div class="first-line tile is-ancestor">
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-16by9">
+                            <img src="<%= imagesPath %>/photo2.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
+                        </span>
+                        <p class="subtitle">
+                            Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/vajc.jpg"/>
+                            <div class="name">
+                                <span>Змітр Корнеў</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo3.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
+                        </span>
+                        <p class="subtitle">
+                            Вальжына Морт пра адносіны з сусветам
+                        </p>
+                        <div class="subtitle author">
+                            <img src="<%= imagesPath %>/mort.jpg"/>
+                            <div class="name">
+                                <span>Вальжына Морт</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo5.jpg" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
+                        </span>
+                        <p class="subtitle">
+                            "Настоящую нежность не спутаешь ни с чем..."
+                        </p>
+                        <div class="author">
+                            <img src="<%= imagesPath %>/volski.jpg"/>
+                            <div class="name">
+                                <span>Лявон Вольскі</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="tile is-parent">
+                <article class="card tile is-child">
+                    <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="<%= imagesPath %>/photo4.jpg" />
+                        </figure>
+                        <div class="media special-heading is-pulled-right">
+                            <div class="media-left">
+                                <figure class="image is-32x32">
+                                    <img src="<%= imagesPath %>/kurilka_icon.png" />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <span class="subtitle is-6">Курылка Гутэнберга</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="title is-spaced">
+                            <a href="../article-page/article-page.html">Культура і псіхалогія</a>
+                        </span>
+                        <p class="subtitle">
+                            Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
 
 
     </div>

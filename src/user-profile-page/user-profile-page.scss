@@ -6,16 +6,46 @@
   }
 
   .hero {
-    margin-bottom: 0.5rem;
-    background-color: rgba(28, 207, 186, 0.69);
+    background-color: $primary;
+    margin-bottom: 0.2rem;
   }
 
   .personal-info {
     display: flex;
+    margin-bottom: 2rem;
 
     .card-image {
-      width: 30%;
       flex-shrink: 0;
+      width: 30%;
+    }
+
+    .profile-image {
+      border-radius: 100%;
+    }
+
+    .content {
+      font-family: 'Open Sans',sans-serif;
+    }
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    .content-title {
+      color: $primary;
+      font-size: 1.6rem;
+      font-weight: 100;
+      margin: 0.7rem 0;
+      text-align: center;
+    }
+
+    .divider {
+      align-self: center;
+      background: radial-gradient($primary, #fff);
+      height: 1px;
+      width: 30%;
     }
   }
 }

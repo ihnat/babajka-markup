@@ -1,3 +1,5 @@
+@import 'variables';
+
 .image .is-3by1 {
   padding-top: 30%;
 
@@ -14,31 +16,66 @@
 
 //background image
 body {
-  background: url('/images/swirl_pattern_edited.jpg');
+  //background: url('/images/swirl_pattern_edited.jpg');
 }
 
 .page-content {
   margin: 3rem 4rem;
 
   article {
-    border-radius: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+
+    .title {
+      font-family: $tile-primary-text;
+      font-size: 1.6rem;
+      margin-bottom: 0;
+      padding: 10px;
+    }
 
     .title a {
       font-weight: bold;
     }
 
-    .author {
-      letter-spacing: 0.3rem;
+    .subtitle {
+      font-family: $tile-secondary-text;
+      font-size: 10pt;
+      margin: 10px;
     }
 
     .card-content {
       display: flex;
       flex: 1;
       flex-direction: column;
-      justify-content: space-around;
+      padding: 0.2rem;
+    }
+
+    .author {
+      font-family: $tile-primary-text;
+      margin-left: 5px;
+      margin-top: 10px;
+      width: 100%;
+
+      img {
+        border: 1px solid $primary;
+        border-radius: 5px;
+        filter: grayscale(50%);
+        float: left;
+        margin-left: 5px;
+        margin-right: 8px;
+        padding: 1px;
+        width: 35px;
+      }
+
+      .name {
+        font-size: 1.05rem;
+        font-weight: 600;
+        padding: 4px;
+        text-overflow: ellipsis;
+      }
     }
 
     &:hover {
@@ -52,8 +89,10 @@ body {
 }
 
 .special-heading {
-  background-color: #fffb37;
+  background-color: #fff;
+  border: 1px solid $primary;
   border-radius: 5px;
+  box-shadow: 0 0 0 1px #fff;
   margin: 0 1rem;
   position: absolute;
   top: 1rem;
@@ -62,6 +101,8 @@ body {
     font-weight: bold;
     height: 100%;
     line-height: 200%;
+    padding-left: 3px;
+    padding-right: 3px;
     text-align: center;
     text-shadow: 0.5px 0 #a9a9a9;
   }
