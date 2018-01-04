@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.1.7",
+  "version": "0.0.0-development",
   "description": "Markups",
   "scripts": {
     "start": "export PORT=3001 && npm run watch",
@@ -11,14 +11,15 @@
     "prerelease": "npm version patch",
     "postrelease": "git push && git push --tags",
     "release": "npm publish",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "**/*.scss": "stylelint --syntax=scss"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/babajka/babajka-markup.git"
+    "url": "https://github.com/babajka/babajka-markup.git"
   },
   "author": "babajka team <github.com/babajka>",
   "license": "ISC",
@@ -46,6 +47,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "stylelint": "^8.0.0",
-    "stylelint-config-sass-guidelines": "^3.1.0"
+    "stylelint-config-sass-guidelines": "^3.1.0",
+    "semantic-release": "^11.0.2"
   }
 }
