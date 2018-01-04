@@ -1,23 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext,latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext,latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
 .image .is-3by1 {
   padding-top: 30%;
@@ -54,7 +40,7 @@
   font-family: "Cormorant", serif;
   font-size: 1.6rem;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 .page-content article .title a {
@@ -112,6 +98,10 @@
   box-shadow: 2px 2px 5px #b5b5b5;
 }
 
+.button.is-rounded {
+  border-radius: 5rem;
+}
+
 .special-heading {
   background-color: #fff;
   border: 1px solid #1a9582;
@@ -127,8 +117,7 @@
   font-weight: bold;
   height: 100%;
   line-height: 200%;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 0 3px;
   text-align: center;
   text-shadow: 0.5px 0 #a9a9a9;
 }
@@ -151,24 +140,18 @@
 
 .article-page .page-content {
   background-color: white;
-  width: 75rem;
-}
-
-.article-page .heading {
-  font-family: PT sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 2rem 0;
-  padding-top: 2rem;
-  text-align: center;
-}
-
-.article-page .card-image {
-  width: 73rem;
 }
 
 .article-page .card-content {
   padding: 0 4rem 1rem;
+}
+
+.article-page .card-content .heading {
+  font-family: PT sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 3.5rem 0 5.5rem;
+  text-align: center;
 }
 
 .article-page .card-content .author {
@@ -182,7 +165,7 @@
 }
 
 .article-page .card-content .text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .article-page .articles-links {
@@ -203,113 +186,54 @@
 .article-page .articles-links ul li {
   padding: 0.5rem;
 }
-.all-contents {
-  margin: 0 7rem;
+.app-footer {
+  border-top: 1px solid #1a9582;
+  padding: 3rem 1.5rem;
 }
 
-.article {
-  background-color: white;
+.app-footer .links .button {
+  margin: 0.5rem;
 }
 
-.article-top {
-  padding: 0 3rem;
+.app-footer .about,
+.app-footer .address {
+  margin: 0.5rem 0;
+  text-align: left;
 }
 
-.article-top__title {
-  padding-top: 2rem;
+.app-footer .about {
+  font-size: 1.2rem;
 }
 
-.article-top__sub {
-  padding-bottom: 1rem;
+.app-footer .logo {
+  display: block;
+  text-align: left;
 }
 
-.article-top__sub .tag.is-white {
-  color: #1a9582;
+.app-footer .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.article-top__author {
-  margin: 0 1rem;
+.app-footer .mission {
+  font-style: italic;
+  padding: 0 1rem;
 }
 
-.article-top__topic {
-  border: 1px solid #1a9582;
-  margin: 0 1rem;
+.app-footer .copyright {
+  margin-top: 3rem;
+  text-align: left;
 }
 
-.article-top .level.has-text-centered {
-  margin-bottom: 1rem;
-}
-
-.article-top__details {
-  padding: 0 10rem;
-}
-
-.article-top__tags {
-  padding-bottom: 1.5rem;
-}
-
-.article-top__tags .tag {
-  background-color: #55acee;
-  color: white;
-  font-size: 0.85rem;
-}
-
-.article-top__tag {
-  margin: 0 0.5rem;
-}
-
-.article-image {
-  padding-bottom: 1.5rem;
-}
-
-.article-text {
-  font-family: "Merriweather", "Georgia", serif;
-  padding: 0 3rem 1.5rem;
-}
-
-.article-bottom {
-  padding-bottom: 1.5rem;
-}
-
-.article-bottom__item {
-  margin: 0 1rem;
-}
-
-.article-bottom a {
-  color: #55acee;
-}
-
-.article-line {
-  margin: 0;
-}
-
-.article-more {
-  padding: 1.5rem 3rem;
-}
-
-.article-more__text {
-  padding-bottom: 1rem;
-}
-
-.article-side {
-  position: fixed;
-  right: 250px;
-  top: 150px;
-}
-
-.article-side .button {
-  background-color: transparent;
-  border: 0;
-}
-
-.article-side .article-side__button {
-  padding: 1.2rem;
-}
-
-.article-side__icon {
-  color: #1a9582;
+.app-footer .email-input {
+  max-width: 16rem;
 }
 .container.login {
+  margin-bottom: 3rem;
   margin-top: 1rem;
   width: 27.5rem;
 }
