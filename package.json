@@ -21,6 +21,9 @@
     "type": "git",
     "url": "https://github.com/babajka/babajka-markup.git"
   },
+  "release": {
+    "branch": "autopublish"
+  },
   "author": "babajka team <github.com/babajka>",
   "license": "ISC",
   "bugs": {
