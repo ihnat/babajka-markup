@@ -41,10 +41,12 @@
             <p class="subtitle"><%= subtitleVar %></p>
             <% if (authorVar) { %>
             <div class="subtitle author">
-                <img src="<%= imagesPath %>/<%= authorPhotoVar %>" />
-                <div class="name">
-                    <span><%= authorVar %></span>
-                </div>
+                <a href="../user-profile-page/user-profile-page.html">
+                    <img src="<%= imagesPath %>/<%= authorPhotoVar %>" />
+                    <div class="name">
+                        <span><%= authorVar %></span>
+                    </div>
+                </a>
             </div>
             <% } %>
         </div>
