@@ -14,11 +14,6 @@
   }
 }
 
-//background image
-body {
-  //background: url('/images/swirl_pattern_edited.jpg');
-}
-
 .page-content {
   margin: 3rem 4rem;
 
@@ -33,7 +28,7 @@ body {
       font-family: $tile-primary-text;
       font-size: 1.6rem;
       margin-bottom: 0;
-      padding: 10px;
+      padding: 0.6rem;
     }
 
     .title a {
@@ -101,8 +96,7 @@ body {
     font-weight: bold;
     height: 100%;
     line-height: 200%;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding: 0 3px;
     text-align: center;
     text-shadow: 0.5px 0 #a9a9a9;
   }

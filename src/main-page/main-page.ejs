@@ -12,105 +12,41 @@
 
         <div class="first-line tile is-ancestor">
 
-            <div class="tile is-parent">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-16by9">
-                            <img src="<%= imagesPath %>/photo2.jpg" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">Крама "як з крамы"</a>
-                        </span>
-                        <p class="subtitle">
-                            Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
-                        </p>
-                        <div class="subtitle author">
-                          <img src="<%= imagesPath %>/vajc.jpg"/>
-                          <div class="name">
-                              <span>Змітр Корнеў</span>
-                          </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Змітр Корнеў',
+            authorPhotoVar: 'vajc.jpg',
+            photoClassVar: 'is-16by9',
+            photoVar: 'photo2.jpg',
+            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+            titleVar: 'Крама "як з крамы"',
+            }); %>
 
-            <div class="tile is-parent">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-3by2">
-                            <img src="<%= imagesPath %>/photo3.jpg" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">"Гэта ня тое як склеіць разьбіты кубак..."</a>
-                        </span>
-                        <p class="subtitle">
-                            Вальжына Морт пра адносіны з сусветам
-                        </p>
-                        <div class="subtitle author">
-                          <img src="<%= imagesPath %>/mort.jpg"/>
-                          <div class="name">
-                              <span>Вальжына Морт</span>
-                          </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo3.jpg',
+            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+            }); %>
 
-            <div class="tile is-parent">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-3by2">
-                            <img src="<%= imagesPath %>/photo5.jpg" />
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
-                        </span>
-                        <p class="subtitle">
-                            "Настоящую нежность не спутаешь ни с чем..."
-                        </p>
-                        <div class="author">
-                          <img src="<%= imagesPath %>/volski.jpg"/>
-                          <div class="name">
-                              <span>Лявон Вольскі</span>
-                          </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Лявон Вольскі',
+            authorPhotoVar: 'volski.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo5.jpg',
+            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+            titleVar: 'Некоратка аб Ахматавай',
+            }); %>
 
-            <div class="tile is-parent">
-                <article class="card tile is-child">
-                    <div class="card-image">
-                        <figure class="image is-3by2">
-                            <img src="<%= imagesPath %>/photo4.jpg" />
-                        </figure>
-                        <div class="media special-heading is-pulled-right">
-                            <div class="media-left">
-                                <figure class="image is-32x32">
-                                    <img src="<%= imagesPath %>/kurilka_icon.png" />
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <span class="subtitle is-6">Курылка Гутэнберга</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <span class="title is-spaced">
-                            <a href="../article-page/article-page.html">Культура і псіхалогія</a>
-                        </span>
-                        <p class="subtitle">
-                            Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
-                        </p>
-                    </div>
-                </article>
-            </div>
+            <%- include('../tiles/tile.ejs', {
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo4.jpg',
+            specialHeadingNameVar: 'Курылка Гутэнберга',
+            specialHeadingPhotoVar: 'kurilka_icon.png',
+            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+            titleVar: 'Культура і псіхалогія',
+            }); %>
 
         </div>
 
@@ -122,111 +58,45 @@
 
                 <div class="tile">
 
-                    <div class="tile is-parent">
-                        <article class="card tile is-child">
-                            <div class="card-image">
-                                <figure class="image is-3by2">
-                                    <img src="<%= imagesPath %>/photo3.jpg" />
-                                </figure>
-                                <div class="media special-heading is-pulled-right">
-                                    <div class="media-left">
-                                        <div class="handmade">(не)</div>
-                                    </div>
-                                    <div class="media-content">
-                                        <span class="subtitle is-6">расстраляная паэзія</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="title is-spaced">
-                                    <a href="../article-page/article-page.html">Ад біяграфія да творчасці: Алесь Дудар</a>
-                                </span>
-                                <p class="subtitle">
-                                    Лекцыі з Ганнай Севярынец
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+                    <%- include('../tiles/tile.ejs', {
+                    photoClassVar: 'is-3by2',
+                    photoVar: 'photo3.jpg',
+                    specialHeadingHandmadeVar: '(не)',
+                    specialHeadingNameVar: 'расстраляная паэзія',
+                    subtitleVar: 'Лекцыі з Ганнай Севярынец',
+                    titleVar: 'Ад біяграфія да творчасці: Алесь Дудар',
+                    }); %>
 
-                    <div class="tile is-parent">
-                        <article class="card tile is-child">
-                            <div class="card-image">
-                                <figure class="image is-16by9">
-                                    <img src="<%= imagesPath %>/photo2.jpg" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <span class="title is-spaced">
-                                    <a href="../article-page/article-page.html">Крама "як з крамы"</a>
-                                </span>
-                                <p class="subtitle">
-                                    Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...
-                                </p>
-                                <div class="subtitle author">
-                                  <img src="<%= imagesPath %>/vajc.jpg"/>
-                                  <div class="name">
-                                      <span>Змітр Корнеў</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    <%- include('../tiles/tile.ejs', {
+                    authorVar: 'Змітр Корнеў',
+                    authorPhotoVar: 'vajc.jpg',
+                    photoClassVar: 'is-16by9',
+                    photoVar: 'photo2.jpg',
+                    subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+                    titleVar: 'Крама "як з крамы"',
+                    }); %>
 
                 </div>
 
                 <div class="tile">
 
-                    <div class="tile is-parent">
-                        <article class="card tile is-child">
-                            <div class="card-image">
-                                <figure class="image is-3by1">
-                                    <img src="<%= imagesPath %>/photo6.jpg" />
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <span class="title is-spaced">
-                                    <a href="../article-page/article-page.html">Eўрапейскі мадэрнізм</a>
-                                </span>
-                                <p class="subtitle">
-                                    Наталля Ламека. Серыя лекцый
-                                </p>
-                                <div class="subtitle author">
-                                  <img src="<%= imagesPath %>/vajc.jpg"/>
-                                  <div class="name">
-                                      <span>Наталля Ламека</span>
-                                  </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    <%- include('../tiles/tile.ejs', {
+                    authorVar: 'Наталля Ламека',
+                    authorPhotoVar: 'vajc.jpg',
+                    photoClassVar: 'is-3by1',
+                    photoVar: 'photo6.jpg',
+                    subtitleVar: 'Наталля Ламека. Серыя лекцый',
+                    titleVar: 'Eўрапейскі мадэрнізм',
+                    }); %>
 
-                    <div class="tile is-parent">
-                        <article class="card tile is-child">
-                            <div class="card-image">
-                                <figure class="image is-3by2">
-                                    <img src="<%= imagesPath %>/photo3.jpg" />
-                                </figure>
-                                <div class="media special-heading is-pulled-right">
-                                    <div class="media-left">
-                                        <figure class="image is-32x32">
-                                            <img src="<%= imagesPath %>/15_icon.png" />
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <span class="subtitle is-6">Мінск</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <span class="title is-spaced">
-                                    <a href="../article-page/article-page.html">Культура і псіхалогія</a>
-                                </span>
-                                <p class="subtitle">
-                                    Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+                    <%- include('../tiles/tile.ejs', {
+                    photoClassVar: 'is-3by2',
+                    photoVar: 'photo3.jpg',
+                    specialHeadingNameVar: 'Мінск',
+                    specialHeadingPhotoVar: '15_icon.png',
+                    subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+                    titleVar: 'Культура і псіхалогія',
+                    }); %>
 
                 </div>
 
@@ -260,7 +130,7 @@
         <!--HERE ANY ADDITIONAL LINES OF TILES MAY BE ADDED-->
 
         <div class="load-more" align="center">
-          <a class="button">Загрузіць яшчэ!</a>
+            <a class="button">Загрузіць яшчэ!</a>
         </div>
     </div>
 </div>
