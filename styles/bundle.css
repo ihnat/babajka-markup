@@ -1,38 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext, latin';
-@import 'https://fonts.googleapis.com/css?family=Lora&subset=cyrillic-ext, latin';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
 .image .is-3by1 {
   padding-top: 30%;
 }
@@ -166,273 +139,74 @@
   margin-right: 0;
 }
 
-.column.article {
-  padding: 0;
+.page-not-found {
+  font-family: "Cormorant", serif;
+  padding: 7rem 1rem;
+  text-align: center;
 }
 
-.article {
-  background-color: white;
-  margin-left: 7rem;
-}
-
-.article-top {
-  padding: 0 3rem;
-}
-
-.article-top__title {
-  padding-top: 2rem;
-}
-
-.article-top__sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-}
-
-.article-top__sub .tag.is-white {
-  color: #1a9582;
-}
-
-.article-top__link {
-  display: table;
-}
-
-.article-top__icon {
-  color: #b8b8b8;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.article-top__icon:hover {
-  color: #000;
-}
-
-.article-top__author {
-  margin: 0 1rem;
-}
-
-.article-top__topic {
-  border: 1px solid #1a9582;
-  margin: 0 1rem;
-}
-
-.article-top .level.has-text-centered {
+.page-not-found .logo {
   margin-bottom: 1rem;
 }
 
-.article-top__details {
-  padding: 0 10rem;
+.page-not-found .title {
+  font-size: 3.5rem;
 }
 
-.article-top__tags {
-  padding-bottom: 1.5rem;
+.page-not-found .subtitle {
+  font-size: 1.5rem;
 }
 
-.article-top__tags .tag {
-  background-color: #06c5df;
-  color: white;
-  font-size: 0.85rem;
-}
-
-.article-top__tag {
-  margin: 0 0.5rem;
-}
-
-.article-imagewrapper {
-  padding-bottom: 1.5rem;
-}
-
-.article-text {
-  font-family: "Merriweather", "Georgia", serif;
-  padding: 0 3rem 1.5rem;
-}
-
-.article-bottom {
-  padding-bottom: 1.5rem;
-}
-
-.article-bottom__item {
-  margin: 0 1rem;
-}
-
-.article-bottom a {
-  color: #1a9582;
-}
-
-.article-line {
-  margin: 0;
-}
-
-.article-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1.5rem 1.25rem;
-}
-
-.article-more__text {
-  padding-bottom: 1.5rem;
-}
-
-.article-more .column {
-  padding: 0;
-}
-
-.article-card {
-  border: 1px solid #b8b8b8;
-  border-radius: 3px;
-  height: 24.5rem;
-  margin: 0.5rem;
-  width: 18rem;
-}
-
-.article-card .media {
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.article-card__image {
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.article-card__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0.75rem;
-  text-align: left;
-}
-
-.article-card__title {
-  font-size: 19px;
-}
-
-.article-card__photo {
-  border-radius: 3px;
-}
-
-.article-card__details {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #b8b8b8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-}
-
-.article-card__detail {
-  font-size: 11px;
-}
-
-.article-card__author-topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.article-card__topic {
-  border: 1px solid #1a9582;
-  margin-left: 0.5rem;
-}
-
-.article-card .tag.is-white {
-  color: #1a9582;
-}
-
-.article-card .button {
-  border: none;
-  /* stylelint-disable-line */
-  color: #b8b8b8;
-}
-
-.article-card .button:hover {
-  color: #b8b8b8;
-}
-
-.article-card .icon:hover {
+.page-not-found .button {
   font-size: 1.3rem;
 }
-
-.article-side {
-  max-width: 7rem;
+.article-page .page-content {
+  background-color: white;
 }
 
-.article-side__buttons {
-  margin-left: 1.5rem;
-  position: fixed;
-  top: 150px;
+.article-page .card-content {
+  padding: 0 4rem 1rem;
 }
 
-.article-side .button {
-  border: none;
-  /* stylelint-disable-line */
-  height: 2.6rem;
-  width: 2.6rem;
+.article-page .card-content .heading {
+  font-family: PT sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 3.5rem 0 5.5rem;
+  text-align: center;
 }
 
-.article-side__button {
-  margin: 0.2rem;
+.article-page .card-content .author {
+  font-family: PT sans-serif;
+  font-size: 2rem;
+  margin: 1.5rem 0;
 }
 
-.article-side__button--bookmark {
-  margin-bottom: 2.3rem;
+.article-page .card-content .tags {
+  font-size: 1.2rem;
 }
 
-.article-side .icon:hover {
+.article-page .card-content .text {
+  font-size: 1.5rem;
+}
+
+.article-page .articles-links {
   font-size: 1.4rem;
+  padding: 4rem;
 }
 
-.article-side__icon--bookmark {
-  color: #b8b8b8;
+.article-page .articles-links .more-articles-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.article-side__icon--facebook {
-  color: #3b5998;
+.article-page .articles-links ul {
+  list-style-type: disc;
+  margin-left: 4rem;
 }
 
-.article-side__icon--vk {
-  color: #45668e;
-}
-
-.article-side__icon--twitter {
-  color: #1da1f2;
+.article-page .articles-links ul li {
+  padding: 0.5rem;
 }
 .app-footer {
   border-top: 1px solid #1a9582;
@@ -638,7 +412,7 @@
 }
 
 .navbar-container .navbar-item {
-  color: #000;
+  color: black;
   font-size: 1.2rem;
   font-weight: 500;
   padding-left: 0;
@@ -654,7 +428,7 @@
 }
 
 .navbar-container .span-text {
-  border-left: 2px solid #000;
+  border-left: 2px solid black;
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
@@ -664,7 +438,7 @@
 }
 
 .navbar-container .navbar-end .right-span {
-  border-right: 2px solid #000;
+  border-right: 2px solid black;
 }
 
 .navbar-container .langs {
@@ -705,12 +479,12 @@
 }
 
 .navbar-container .lang .center {
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .navbar-container .span-icon {
-  border-left: 2px solid #000;
+  border-left: 2px solid black;
 }
 
 .navbar-container .logo-image {
@@ -719,7 +493,7 @@
 }
 
 .navbar-container .logo-text {
-  color: #000;
+  color: black;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 5px;
