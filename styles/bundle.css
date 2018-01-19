@@ -112,50 +112,26 @@
   padding: 0.5rem;
 }
 .app-footer {
-  border-top: 1px solid #1a9582;
-  padding: 3rem 1.5rem;
+  background-color: #1a9582;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+}
+
+.app-footer .general-info a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .app-footer .links .button {
-  margin: 0.5rem;
+  margin: 0.4rem;
 }
 
 .app-footer .about,
 .app-footer .address {
   margin: 0.5rem 0;
   text-align: left;
-}
-
-.app-footer .about {
-  font-size: 1.2rem;
-}
-
-.app-footer .logo {
-  display: block;
-  text-align: left;
-}
-
-.app-footer .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.app-footer .mission {
-  font-style: italic;
-  padding: 0 1rem;
-}
-
-.app-footer .copyright {
-  margin-top: 3rem;
-  text-align: left;
-}
-
-.app-footer .email-input {
-  max-width: 16rem;
 }
 .container.login {
   margin-bottom: 3rem;
