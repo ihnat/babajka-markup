@@ -1,12 +1,21 @@
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic");
 .image .is-3by1 {
   padding-top: 30%;
 }
@@ -294,104 +303,90 @@
 .social-buttons .round-btn {
   border-radius: 20px;
 }
-.navbar-container {
-  font-family: "Comfortaa", cursive;
+.navbar {
+  font-family: "Open Sans", sans-serif;
   padding: 1rem 3rem 0;
 }
 
-.navbar-container .navbar,
-.navbar-container .navbar-brand {
-  background-color: rgba(255, 255, 255, 0);
-  height: 6rem;
-}
-
-.navbar-container .navbar-item {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 500;
+.navbar .navbar-brand .navbar-item {
   padding-left: 0;
   padding-right: 0;
 }
 
-.navbar-container .navbar-item:hover {
+.navbar .navbar-brand .navbar-item:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.navbar-container .navbar-item img {
+.navbar .navbar-brand .navbar-item .logo-image {
+  height: 3rem;
+  margin-left: 20px;
+  margin-right: 1rem;
   max-height: 6rem;
 }
 
-.navbar-container .span-text {
-  border-left: 2px solid black;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+.navbar .navbar-start .navbar-item {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.navbar-container .navbar-end .left-span {
-  border: 0;
+.navbar .navbar-start .navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.navbar-container .navbar-end .right-span {
-  border-right: 2px solid black;
+.navbar .navbar-start .navbar-item .rubric {
+  border-bottom: 0.2rem solid #1a9582;
+  margin: 0 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
-.navbar-container .langs {
-  bottom: 0;
+.navbar .navbar-start .navbar-item .rubric:hover {
+  background-color: #1a9582;
+  color: #fff;
+}
+
+.navbar .navbar-end .navbar-item {
+  border-right: 0.2rem solid #1a9582;
+  font-size: 1.05rem;
+  margin-right: 1rem;
+  padding-right: 0;
+}
+
+.navbar .navbar-end .navbar-item .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 2rem;
-  margin-right: 4rem;
-  padding-top: 2rem;
-  position: absolute;
-  right: 0;
-}
-
-.navbar-container .langs .lang {
-  background-color: #dfe0da;
-  margin-left: 5px;
-  padding: 5px;
-}
-
-.navbar-container .langs .underline {
-  text-decoration: underline;
-}
-
-.navbar-container .icon {
-  padding: 0 1rem;
-}
-
-.navbar-container .lang {
-  padding: 0 1rem;
-  /* @tonia: I think, it's better to rename some classes, this one and 'span-text, 'right-span'... */
-}
-
-.navbar-container .lang .lang-item {
-  font-size: 0.9rem;
-  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0 0.5rem;
+  text-align: right;
 }
 
-.navbar-container .lang .center {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+.navbar .navbar-end .navbar-item .dropdown {
+  margin-top: 0.3rem;
 }
 
-.navbar-container .span-icon {
-  border-left: 2px solid black;
+.navbar .navbar-end .navbar-item .dropdown-menu {
+  max-width: 6rem;
+  min-width: 2rem;
 }
 
-.navbar-container .logo-image {
-  height: 70px;
-  margin-left: 20px;
+.navbar .navbar-end .navbar-item .current-lang {
+  color: #808080;
+  font-size: 0.85rem;
 }
 
-.navbar-container .logo-text {
-  color: black;
-  font-size: 2.5rem;
+.navbar .navbar-end .navbar-item .logout {
   font-weight: bold;
-  letter-spacing: 5px;
-  padding-left: 1rem;
+}
+
+.navbar .navbar-end .navbar-item .lang {
+  font-size: 0.85rem;
+  text-align: center;
 }
 article {
   border-bottom-left-radius: 3px;
