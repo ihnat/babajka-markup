@@ -3,6 +3,7 @@
 
 // Fonts.
 @import 'https://fonts.googleapis.com/css?family=Comfortaa|Cormorant|Open+Sans';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic');
 
 // Primary pallete
 // https://coolors.co/ae42ff-d1caca-44494d-ff5e42-9a9d9f
@@ -16,7 +17,7 @@ $primary-black: rgb(0, 0, 0);
 // Add a serif family
 $family-serif: 'Merriweather', 'Georgia', serif;
 $family-arial: Arial, Helvetica, sans-serif;
-$family-navbar: 'Comfortaa', cursive;
+$family-navbar: 'Open Sans', sans-serif;
 $tile-primary-text: 'Cormorant', serif;
 $tile-secondary-text: 'Open Sans', sans-serif;
 
