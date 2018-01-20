@@ -1,17 +1,23 @@
+<script>
+function collapse() {
+  document.getElementById('navmenu').classList.toggle('is-active');
+  document.getElementById('navburger').classList.toggle('is-active');
+}
+</script>
+
 <div class="navbar">
     <div class="navbar-brand">
         <a class="navbar-item" href="../main-page/main-page.html">
             <img class="logo-image" src="../images/logo-turq-transparent.png" />
         </a>
 
-        <div class="button navbar-burger">
+        <div id="navburger" class="button navbar-burger" onclick="collapse()">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
-
-    <div class="navbar-menu">
+    <div id="navmenu" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="../main-page/main-page.html">
                 <span class="rubric">АРТЫКУЛЫ</span>
