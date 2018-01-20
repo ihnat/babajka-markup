@@ -2,7 +2,14 @@
 
 .navbar {
   font-family: $family-navbar;
-  padding: 1rem 3rem 0;
+
+  @include desktop {
+    padding: 1rem 3rem 0;
+  }
+
+  @include touch {
+    padding: 1rem 1rem 0;
+  }
 
   .navbar-brand {
     .navbar-item {
@@ -35,34 +42,48 @@
       }
 
       .rubric {
-        border-bottom: 0.2rem solid $primary;
-        margin: 0 0.5rem;
-        padding: 1rem 0.5rem;
+        @include desktop {
+          border-bottom: 0.2rem solid $primary;
+          margin: 0 0.5rem;
+          padding: 1rem 0.5rem;
 
-        &:hover {
-          background-color: $primary;
-          color: #fff;
+          &:hover {
+            background-color: $primary;
+            color: #fff;
+          }
         }
 
-        // @include mobile {
-        //   border-bottom: 0.2rem solid #f00;
-        // }
+        @include touch {
+          margin: 1rem;
+        }
       }
     }
   }
 
   .navbar-end {
     .navbar-item {
-      border-right: 0.2rem solid $primary;
       font-size: 1.05rem;
       margin-right: 1rem;
       padding-right: 0;
+
+      @include desktop {
+        border-right: 0.2rem solid $primary;
+      }
+
+      @include touch {
+        border-left: 0.2rem solid $primary;
+        margin-left: 1rem;
+        padding-left: 0;
+      }
 
       .user {
         display: flex;
         flex-direction: column;
         padding: 0 0.5rem;
-        text-align: right;
+
+        @include desktop {
+          text-align: right;
+        }
       }
 
       .dropdown {
