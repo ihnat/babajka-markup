@@ -46,27 +46,6 @@
   border-radius: 5rem;
 }
 
-.page-not-found {
-  font-family: "Cormorant", serif;
-  padding: 7rem 1rem;
-  text-align: center;
-}
-
-.page-not-found .logo {
-  margin-bottom: 1rem;
-}
-
-.page-not-found .title {
-  font-size: 3.5rem;
-}
-
-.page-not-found .subtitle {
-  font-size: 1.5rem;
-}
-
-.page-not-found .button {
-  font-size: 1.3rem;
-}
 .article-page .page-content {
   background-color: white;
 }
@@ -166,6 +145,179 @@
   background-color: #517fa4;
   color: #fff;
 }
+.page-not-found {
+  font-family: "Cormorant", serif;
+  padding: 7rem 1rem;
+  text-align: center;
+}
+
+.page-not-found .logo {
+  margin-bottom: 1rem;
+}
+
+.page-not-found .title {
+  font-size: 3.5rem;
+}
+
+.page-not-found .subtitle {
+  font-size: 1.5rem;
+}
+
+.page-not-found .button {
+  font-size: 1.3rem;
+}
+.main-page .diary-article .diary {
+  font-style: italic;
+  margin-right: 1rem;
+}
+
+.main-page .diary-article .title {
+  margin-bottom: 0.5rem;
+}
+
+.main-page .diary-article .arrow {
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+}
+
+.main-page .diary-article .arrow:hover {
+  opacity: 0.7;
+}
+
+.main-page .diary-article .arrow-left {
+  left: 0.8rem;
+}
+
+.main-page .diary-article .arrow-right {
+  right: 0.8rem;
+}
+
+.main-page .diary-article .diary,
+.main-page .diary-article .title,
+.main-page .diary-article .subtitle {
+  margin-left: 1.4rem;
+}
+
+.main-page .diary-article .date span {
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
+.main-page .load-more {
+  margin-top: 40px;
+}
+article {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+article .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0.2rem;
+}
+
+article .card-content .title {
+  font-family: "Cormorant", serif;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+}
+
+article .card-content .title a {
+  font-weight: bold;
+}
+
+article .card-content .subtitle {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  margin: 10px;
+}
+
+article .card-content .author {
+  font-family: "Cormorant", serif;
+  margin: 10px 0 10px 5px;
+  width: 100%;
+}
+
+article .card-content .author img {
+  border: 1px solid #1a9582;
+  border-radius: 5px;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  float: left;
+  margin-left: 5px;
+  margin-right: 8px;
+  padding: 1px;
+  width: 35px;
+}
+
+article .card-content .author .name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 4px;
+  text-overflow: ellipsis;
+}
+
+article:hover {
+  -webkit-box-shadow: 2px 2px 5px #b5b5b5;
+  box-shadow: 2px 2px 5px #b5b5b5;
+}
+
+.special-heading {
+  background-color: #fff;
+  border: 1px solid #1a9582;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
+  margin: 0 1rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.special-heading .handmade {
+  font-weight: bold;
+  height: 100%;
+  line-height: 200%;
+  padding: 0 3px;
+  text-align: center;
+  text-shadow: 0.5px 0 #a9a9a9;
+}
+
+.special-heading .media-content {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: none;
+  font-size: inherit;
+  padding-right: 0.5rem;
+}
+
+.special-heading:hover .media-content {
+  display: block;
+}
+
+.special-heading .media-left {
+  margin-right: 0;
+}
 .container.login {
   margin-bottom: 3rem;
   margin-top: 1rem;
@@ -235,47 +387,6 @@
 .field .login__button:hover {
   background-color: #4ba2e4;
   color: white;
-}
-.main-page .diary-article .diary {
-  font-style: italic;
-  margin-right: 1rem;
-}
-
-.main-page .diary-article .title {
-  margin-bottom: 0.5rem;
-}
-
-.main-page .diary-article .arrow {
-  opacity: 0.3;
-  position: absolute;
-  top: 50%;
-}
-
-.main-page .diary-article .arrow:hover {
-  opacity: 0.7;
-}
-
-.main-page .diary-article .arrow-left {
-  left: 0.8rem;
-}
-
-.main-page .diary-article .arrow-right {
-  right: 0.8rem;
-}
-
-.main-page .diary-article .diary,
-.main-page .diary-article .title,
-.main-page .diary-article .subtitle {
-  margin-left: 1.4rem;
-}
-
-.main-page .diary-article .date span {
-  float: right;
-  margin-bottom: 0.5rem;
-}
-
-.main-page .load-more {
-  margin-top: 40px;
 }
 .navbar {
   font-family: "Open Sans", sans-serif;
@@ -398,115 +509,4 @@
 .navbar .navbar-end .navbar-item .lang {
   font-size: 0.85rem;
   text-align: center;
-}
-article {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-article .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 0.2rem;
-}
-
-article .card-content .title {
-  font-family: "Cormorant", serif;
-  font-size: 1.6rem;
-  padding: 0.6rem;
-}
-
-article .card-content .title a {
-  font-weight: bold;
-}
-
-article .card-content .subtitle {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  font-family: "Open Sans", sans-serif;
-  font-size: 10pt;
-  margin: 10px;
-}
-
-article .card-content .author {
-  font-family: "Cormorant", serif;
-  margin: 10px 0 10px 5px;
-  width: 100%;
-}
-
-article .card-content .author img {
-  border: 1px solid #1a9582;
-  border-radius: 5px;
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
-  float: left;
-  margin-left: 5px;
-  margin-right: 8px;
-  padding: 1px;
-  width: 35px;
-}
-
-article .card-content .author .name {
-  font-size: 1.05rem;
-  font-weight: 600;
-  padding: 4px;
-  text-overflow: ellipsis;
-}
-
-article:hover {
-  -webkit-box-shadow: 2px 2px 5px #b5b5b5;
-  box-shadow: 2px 2px 5px #b5b5b5;
-}
-
-.special-heading {
-  background-color: #fff;
-  border: 1px solid #1a9582;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
-  margin: 0 1rem;
-  position: absolute;
-  top: 1rem;
-}
-
-.special-heading .handmade {
-  font-weight: bold;
-  height: 100%;
-  line-height: 200%;
-  padding: 0 3px;
-  text-align: center;
-  text-shadow: 0.5px 0 #a9a9a9;
-}
-
-.special-heading .media-content {
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: none;
-  font-size: inherit;
-  padding-right: 0.5rem;
-}
-
-.special-heading:hover .media-content {
-  display: block;
-}
-
-.special-heading .media-left {
-  margin-right: 0;
 }
