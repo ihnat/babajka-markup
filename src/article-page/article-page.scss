@@ -40,6 +40,11 @@
       margin-bottom: 1rem;
     }
 
+    // A temporary overriding.
+    .card-content {
+      padding: 0;
+    }
+
     ul {
       list-style-type: disc;
       margin-left: 4rem;
@@ -50,4 +55,3 @@
     }
   }
 }
-
