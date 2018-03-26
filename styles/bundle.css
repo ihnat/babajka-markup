@@ -75,16 +75,28 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .about-container {
+    margin: 2rem 1rem;
+  }
+}
+
 .about-container hr {
   background: #fff;
   border: 0;
   border-bottom: 5px dotted #1a9582;
-  margin: 2.5rem 40%;
+  margin: 2.5rem 30%;
 }
 
 .about-container .title {
   color: #1a9582;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container .title {
+    font-size: 2rem;
+  }
 }
 
 .about-container .goal {
