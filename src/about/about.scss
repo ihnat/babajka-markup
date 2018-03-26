@@ -108,6 +108,7 @@
       .position {
         border: 1px solid $primary;
         border-radius: 5px;
+        cursor: pointer;
         margin: 0.5rem;
         padding: 0.5rem;
 
@@ -116,6 +117,22 @@
           color: #fff;
         }
       }
+    }
+
+    .position-description {
+      background-color: $primary-gray;
+      padding: 1rem;
+      text-align: left;
+
+      .name {
+        color: $primary-darkgray;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .hidden {
+      display: none;
     }
   }
 }

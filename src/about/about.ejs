@@ -26,23 +26,39 @@
         </div>
         Нам патрэбныя:
         <div class="positions is-centered">
-            <div class="position">
+            <div class="position" onclick="collapsePositionDescription()">
                 Аўтары артыкулаў
             </div>
-            <div class="position">
+            <div class="position" onclick="collapsePositionDescription()">
                 Мантажор відэа
             </div>
-            <div class="position">
+            <div class="position" onclick="collapsePositionDescription()">
                 Аператар
             </div>
-            <div class="position">
+            <div class="position" onclick="collapsePositionDescription()">
                 JS-распрацоўшчык
             </div>
-            <div class="position">
+            <div class="position" onclick="collapsePositionDescription()">
                 Web-дызайнер
             </div>
         </div>
-        Пішыце нам у сацыяльныя сеткі!
+
+        <div id="position-description" class="position-description hidden">
+            <div class="name">
+                JS-распрацоўшчык
+            </div>
+            Наш сайт цалкам напісаны на JS-е. Мы пішам так, як нам падабаецца,
+            не баімся новых тэхналогіяў і заўсёды спрабуем новае. Калі Вам цікава
+            спрычыніцца да тэхнічнага боку праекта і Вы ўмееце ў JS - пішыце нам!
+            <br />
+            <u>wir.development@gmail.com</u>
+        </div>
+
+        <script>
+        function collapsePositionDescription() {
+            document.getElementById('position-description').classList.toggle('hidden');
+        }
+        </script>
     </div>
     <hr />
     <div class="team">
@@ -51,7 +67,7 @@
         </div>
         <div class="subteam">
             <div class="subteam-name">
-                Аснова
+                Каардынатары
             </div>
             <div class="columns subteam-members is-centered">
                 <div class="column teammate is-2">
@@ -85,7 +101,7 @@
                         Уладзь Богдан
                     </div>
                     <div class="role">
-                        Administration, backend, design
+                        Administration, Backend, Design
                     </div>
                 </div>
                 <div class="column teammate is-2">
@@ -94,7 +110,7 @@
                         Тоня Вярцінская
                     </div>
                     <div class="role">
-                        Frontend, design
+                        Frontend, Design
                     </div>
                 </div>
                 <div class="column teammate is-2">
