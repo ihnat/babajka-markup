@@ -200,6 +200,7 @@
 .about-container .helpus .positions .position {
   border: 1px solid #1a9582;
   border-radius: 5px;
+  cursor: pointer;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -207,6 +208,22 @@
 .about-container .helpus .positions .position:hover {
   background-color: #1a9582;
   color: #fff;
+}
+
+.about-container .helpus .position-description {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: left;
+}
+
+.about-container .helpus .position-description .name {
+  color: #808080;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-container .helpus .hidden {
+  display: none;
 }
 .article-page .page-content {
   background-color: white;
