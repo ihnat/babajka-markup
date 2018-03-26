@@ -5,16 +5,24 @@
   margin: 4rem;
   text-align: center;
 
+  @include mobile {
+    margin: 2rem 1rem;
+  }
+
   hr {
     background: #fff;
     border: 0;
     border-bottom: 5px dotted $primary;
-    margin: 2.5rem 40%;
+    margin: 2.5rem 30%;
   }
 
   .title {
     color: $primary;
     font-size: 3rem;
+
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 
   .goal {
