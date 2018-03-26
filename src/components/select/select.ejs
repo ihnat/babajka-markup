@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<% var title = 'Select' %>
+<% var pathPrefix = '../' %>
+<% include ../../head/head.ejs %>
+<body>
+  <div class="m-10">
+    <div class="babajka-dropdown dropdown is-active">
+      <div class="dropdown-trigger">
+        <div class="control has-icons-right">
+          <input class="babajka-dropdown-input input" placeholder="Choose">
+          <span class="icon is-small is-right">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+      <div class="babajka-dropdown-menu dropdown-menu" id="dropdown-menu" role="menu">
+        <ul class="babajka-dropdown-content dropdown-content">
+          <li class="dropdown-item">
+            Banana
+          </li>
+          <li class="dropdown-item is-active">
+            Apple
+          </li>
+          <li class="dropdown-item ">
+            Orange
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<html>
