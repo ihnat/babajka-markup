@@ -1,7 +1,14 @@
 @import '../../index';
 
-.m-10 {
-  margin: 10px;
+.select-temp {
+  &-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-item {
+    margin: 10px;
+  }
 }
 
 .babajka-dropdown {
@@ -9,6 +16,17 @@
     .input {
       border-radius: 3px 3px 0 0;
     }
+  }
+
+  .icon {
+    cursor: pointer; // not working :(
+  }
+
+  &-clear {
+    color: $red;
+    cursor: pointer; // not working :(
+    margin: 1px;
+    text-align: center;
   }
 
   &-input.input:focus {
