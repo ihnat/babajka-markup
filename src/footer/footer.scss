@@ -3,6 +3,7 @@
 .app-footer {
   background-color: $primary;
   color: #fff;
+  flex-shrink: 0;
   font-family: $family-navbar;
   font-weight: 600;
   padding: 1.5rem 2rem;

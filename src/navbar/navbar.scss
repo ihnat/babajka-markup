@@ -1,6 +1,7 @@
 @import '../variables';
 
 .navbar {
+  flex-shrink: 0;
   font-family: $family-navbar;
 
   @include desktop {
