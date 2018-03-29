@@ -92,6 +92,11 @@
         }
       }
 
+      .auth-section,
+      .lang-section {
+        width: 100%;
+      }
+
       .dropdown {
         margin-top: 0.3rem;
       }
@@ -106,7 +111,7 @@
         font-size: 0.85rem;
       }
 
-      .logout {
+      .auth-button {
         font-weight: bold;
       }
 

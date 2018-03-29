@@ -1,70 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <%- include('../head/head.ejs', { title: 'Wir.by - галоўная' }) %>
+
 <body>
-<% include ../navbar/navbar.ejs %>
 
-<div class="main-page page-container">
-    <div class="page-content">
+<div class="babajka-root">
+    <div class="babajka-content">
+        <% include ../navbar/navbar.ejs %>
 
-        <!-- FIRST LINE -->
+        <div class="main-page page-container">
+            <div class="page-content">
 
-        <div class="first-line tile is-ancestor">
+                <!-- FIRST LINE -->
 
-            <%- include('../tiles/tile.ejs', {
-            authorVar: 'Змітр Корнеў',
-            authorPhotoVar: 'vajc.jpg',
-            photoClassVar: 'is-16by9',
-            photoVar: 'photo2.jpg',
-            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
-            titleVar: 'Крама "як з крамы"',
-            }); %>
-
-            <%- include('../tiles/tile.ejs', {
-            authorVar: 'Вальжына Морт',
-            authorPhotoVar: 'mort.jpg',
-            photoClassVar: 'is-3by2',
-            photoVar: 'photo3.jpg',
-            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
-            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
-            }); %>
-
-            <%- include('../tiles/tile.ejs', {
-            authorVar: 'Лявон Вольскі',
-            authorPhotoVar: 'volski.jpg',
-            photoClassVar: 'is-3by2',
-            photoVar: 'photo5.jpg',
-            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
-            titleVar: 'Некоратка аб Ахматавай',
-            }); %>
-
-            <%- include('../tiles/tile.ejs', {
-            photoClassVar: 'is-3by2',
-            photoVar: 'photo4.jpg',
-            specialHeadingNameVar: 'Курылка Гутэнберга',
-            specialHeadingPhotoVar: 'kurilka_icon.png',
-            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
-            titleVar: 'Культура і псіхалогія',
-            }); %>
-
-        </div>
-
-        <!--FIRST LINE END-->
-        <!--SECOND LINE-->
-
-        <div class="second-line tile is-ancestor">
-            <div class="tile is-vertical is-8">
-
-                <div class="tile">
-
-                    <%- include('../tiles/tile.ejs', {
-                    photoClassVar: 'is-3by2',
-                    photoVar: 'photo3.jpg',
-                    specialHeadingHandmadeVar: '(не)',
-                    specialHeadingNameVar: 'расстраляная паэзія',
-                    subtitleVar: 'Лекцыі з Ганнай Севярынец',
-                    titleVar: 'Ад біяграфія да творчасці: Алесь Дудар',
-                    }); %>
+                <div class="first-line tile is-ancestor">
 
                     <%- include('../tiles/tile.ejs', {
                     authorVar: 'Змітр Корнеў',
@@ -75,66 +25,123 @@
                     titleVar: 'Крама "як з крамы"',
                     }); %>
 
-                </div>
-
-                <div class="tile">
+                    <%- include('../tiles/tile.ejs', {
+                    authorVar: 'Вальжына Морт',
+                    authorPhotoVar: 'mort.jpg',
+                    photoClassVar: 'is-3by2',
+                    photoVar: 'photo3.jpg',
+                    subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+                    titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+                    }); %>
 
                     <%- include('../tiles/tile.ejs', {
-                    authorVar: 'Наталля Ламека',
-                    authorPhotoVar: 'vajc.jpg',
-                    photoClassVar: 'is-3by1',
-                    photoVar: 'photo6.jpg',
-                    subtitleVar: 'Наталля Ламека. Серыя лекцый',
-                    titleVar: 'Eўрапейскі мадэрнізм',
+                    authorVar: 'Лявон Вольскі',
+                    authorPhotoVar: 'volski.jpg',
+                    photoClassVar: 'is-3by2',
+                    photoVar: 'photo5.jpg',
+                    subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+                    titleVar: 'Некоратка аб Ахматавай',
                     }); %>
 
                     <%- include('../tiles/tile.ejs', {
                     photoClassVar: 'is-3by2',
-                    photoVar: 'photo3.jpg',
-                    specialHeadingNameVar: 'Мінск',
-                    specialHeadingPhotoVar: '15_icon.png',
+                    photoVar: 'photo4.jpg',
+                    specialHeadingNameVar: 'Курылка Гутэнберга',
+                    specialHeadingPhotoVar: 'kurilka_icon.png',
                     subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
                     titleVar: 'Культура і псіхалогія',
                     }); %>
 
                 </div>
 
-            </div>
+                <!--FIRST LINE END-->
+                <!--SECOND LINE-->
 
-            <div class="tile is-vertical">
-                <div class="diary-article tile is-parent">
-                    <article class="card tile is-child notification">
-                        <h1 class="title">Дзённік дня</h1>
-                        <div class="date">
-                            <span>27.10.2017</span>
+                <div class="second-line tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+
+                        <div class="tile">
+
+                            <%- include('../tiles/tile.ejs', {
+                            photoClassVar: 'is-3by2',
+                            photoVar: 'photo3.jpg',
+                            specialHeadingHandmadeVar: '(не)',
+                            specialHeadingNameVar: 'расстраляная паэзія',
+                            subtitleVar: 'Лекцыі з Ганнай Севярынец',
+                            titleVar: 'Ад біяграфія да творчасці: Алесь Дудар',
+                            }); %>
+
+                            <%- include('../tiles/tile.ejs', {
+                            authorVar: 'Змітр Корнеў',
+                            authorPhotoVar: 'vajc.jpg',
+                            photoClassVar: 'is-16by9',
+                            photoVar: 'photo2.jpg',
+                            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+                            titleVar: 'Крама "як з крамы"',
+                            }); %>
+
                         </div>
-                        <span class="icon is-small arrow arrow-left">
-                            <i class="fa fa-chevron-left"></i>
-                        </span>
-                        <span class="icon is-small arrow arrow-right">
-                            <i class="fa fa-chevron-right"></i>
-                        </span>
-                        <div class="content diary">
-                            <%= diaryText %>
+
+                        <div class="tile">
+
+                            <%- include('../tiles/tile.ejs', {
+                            authorVar: 'Наталля Ламека',
+                            authorPhotoVar: 'vajc.jpg',
+                            photoClassVar: 'is-3by1',
+                            photoVar: 'photo6.jpg',
+                            subtitleVar: 'Наталля Ламека. Серыя лекцый',
+                            titleVar: 'Eўрапейскі мадэрнізм',
+                            }); %>
+
+                            <%- include('../tiles/tile.ejs', {
+                            photoClassVar: 'is-3by2',
+                            photoVar: 'photo3.jpg',
+                            specialHeadingNameVar: 'Мінск',
+                            specialHeadingPhotoVar: '15_icon.png',
+                            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+                            titleVar: 'Культура і псіхалогія',
+                            }); %>
+
                         </div>
-                        <p class="subtitle">Іосіф Бродскі</p>
-                    </article>
+
+                    </div>
+
+                    <div class="tile is-vertical">
+                        <div class="diary-article tile is-parent">
+                            <article class="card tile is-child notification">
+                                <h1 class="title">Дзённік дня</h1>
+                                <div class="date">
+                                    <span>27.10.2017</span>
+                                </div>
+                                <span class="icon is-small arrow arrow-left">
+                                    <i class="fa fa-chevron-left"></i>
+                                </span>
+                                <span class="icon is-small arrow arrow-right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                                <div class="content diary">
+                                    <%= diaryText %>
+                                </div>
+                                <p class="subtitle">Іосіф Бродскі</p>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--SECOND LINE END-->
+
+                <!--HERE ANY ADDITIONAL LINES OF TILES MAY BE ADDED-->
+
+                <div class="load-more" align="center">
+                    <a class="button">Загрузіць яшчэ!</a>
                 </div>
             </div>
-
         </div>
 
-        <!--SECOND LINE END-->
-
-        <!--HERE ANY ADDITIONAL LINES OF TILES MAY BE ADDED-->
-
-        <div class="load-more" align="center">
-            <a class="button">Загрузіць яшчэ!</a>
-        </div>
+        <% include ../footer/footer.ejs %>
     </div>
 </div>
-
-<% include ../footer/footer.ejs %>
 
 </body>
 
