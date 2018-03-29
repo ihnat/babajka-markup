@@ -1,0 +1,15 @@
+<!-- <% var idx; %> -->
+
+<div class="column teammate is-4">
+
+    <!-- <% var idxx = parseInt(idx, 10); %> -->
+    <!-- <% var image = team[idx]; %> -->
+    <% console.log('LOG', team[idx]) %>
+    <img src="<%= imagesPath %>/team/<%= team[idx].image %>" />
+    <div class="name">
+        <%= team[idx].name %>
+    </div>
+    <div class="role">
+        <%= team[idx].role %>
+    </div>
+</div>

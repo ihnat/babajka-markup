@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include( ../head/head.ejs, { title: 'Edit article' }) %>
+<body>
+
+<% include ../navbar/navbar.ejs %>
+
+<div class="article-page-edit page-content">
+
+    <div class="title">
+        Рэдактар артыкулаў
+    </div>
+
+    <div class="common-data">
+        <div class="common-data-title">
+            Рэдагаваць асноўныя звесткі
+        </div>
+
+        <div class="inputs">
+
+            <div class="article-type dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>тэкст</span>
+                        <span class="icon is-small">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="article-author dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Аўтар 1</span>
+                        <span class="icon is-small">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="article-brand dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Аўтар 1</span>
+                        <span class="icon is-small">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="article-collection dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>Аўтар 1</span>
+                        <span class="icon is-small">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="localized-data">
+        <div class="localized-data-title">
+            Лакалізаваць артыкул
+        </div>
+
+        <div class="button add-locale-button">Дадаць лакалізацыю</div>
+
+        <div class="tabs is-centered">
+            <ul>
+                <li class="is-active"><a>BE - беларуская</a></li>
+                <li><a>RU - русский</a></li>
+                <li><a>EN - English</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<% include ../footer/footer.ejs %>
+
+</body>
+</html>
