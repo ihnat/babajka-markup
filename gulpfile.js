@@ -14,12 +14,8 @@ const ejs = require('gulp-ejs');
 const htmlhint = require('gulp-htmlhint');
 
 const fs = require('fs');
-const templateVariables = JSON.parse(
-  fs.readFileSync('./src/templateVariables.json', 'utf8')
-);
-const team = JSON.parse(
-  fs.readFileSync('./src/about/team.json', 'utf8')
-);
+const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
+const team = JSON.parse(fs.readFileSync('./src/about/team.json', 'utf8'));
 
 const port = process.env.PORT || 3001;
 
@@ -30,7 +26,7 @@ const config = {
   fontsPath: 'fonts',
   imagesPath: 'images',
   srcPath: 'src',
-  stubsStaticPath: 'stubs/static-prod'
+  stubsStaticPath: 'stubs/static-prod',
 };
 
 templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
@@ -41,7 +37,7 @@ templateVariables.team = team;
 gulp.task('sass:bundle', () =>
   gulp
     .src([`${config.srcPath}/**/*.scss`, `!${config.srcPath}/index.scss`], {
-      base: config.srcPath
+      base: config.srcPath,
     })
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
@@ -66,7 +62,7 @@ gulp.task('sass:assets', () =>
 gulp.task('sass:lint', () =>
   gulp.src(`${config.srcPath}/**/*.scss`).pipe(
     stylelint({
-      reporters: [{ formatter: 'string', console: true }]
+      reporters: [{ formatter: 'string', console: true }],
     })
   )
 );
@@ -106,39 +102,24 @@ gulp.task('images:copy', () =>
     .pipe(gulp.dest(`${config.buildPath}/${config.imagesPath}`))
 );
 
-gulp.task('ejs:watch', () =>
-  watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint'))
-);
+gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
 
 gulp.task('serve', () =>
   connect.server({
     port,
     livereload: true,
-    root: config.buildPath
+    root: config.buildPath,
   })
 );
 
 gulp.task('livereload', () =>
   watch([
     `${config.buildPath}/**/*.html`,
-    `${config.buildPath}/${config.stylesPath}/**/*.css`
+    `${config.buildPath}/${config.stylesPath}/**/*.css`,
   ]).pipe(connect.reload())
 );
 
 // export tasks
-gulp.task('build', [
-  'ejs:compile',
-  'sass:bundle',
-  'sass:assets',
-  'fa:fonts',
-  'images:copy'
-]);
-gulp.task('watch', [
-  'build',
-  'serve',
-  'livereload',
-  'lint',
-  'sass:watch',
-  'ejs:watch'
-]);
+gulp.task('build', ['ejs:compile', 'sass:bundle', 'sass:assets', 'fa:fonts', 'images:copy']);
+gulp.task('watch', ['build', 'serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch']);
 gulp.task('lint', ['sass:lint', 'html:lint']);
