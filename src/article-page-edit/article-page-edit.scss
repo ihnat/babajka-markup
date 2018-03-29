@@ -8,7 +8,7 @@
   .common-data {
     margin-bottom: 1rem;
 
-    .common-data-title {
+    &-title {
       color: $primary-darkgray;
       font-size: 1.4rem;
     }
@@ -29,9 +29,8 @@
         padding-left: 0.2rem;
       }
 
-      .article-video-id,
-      .article-image-url {
-        width: 30rem;
+      .long-input {
+        width: 40%;
       }
     }
 
@@ -41,7 +40,7 @@
       overflow: auto;
       padding: 1rem;
 
-      .new-entity-title {
+      &-title {
         color: $primary-darkgray;
         font-size: 1.2rem;
         margin-bottom: 1rem;
@@ -94,7 +93,7 @@
   }
 
   .localized-data {
-    .localized-data-title {
+    &-title {
       color: $primary-darkgray;
       font-size: 1.4rem;
     }
