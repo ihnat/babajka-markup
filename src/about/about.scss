@@ -12,13 +12,13 @@
   hr {
     background: #fff;
     border: 0;
-    border-bottom: 5px dotted $primary;
-    margin: 2.5rem 30%;
+    border-bottom: 4px dotted $primary;
+    margin: 2.5rem 25%;
   }
 
   .title {
     color: $primary;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @include mobile {
       font-size: 2rem;
@@ -31,43 +31,14 @@
     @include touch {
       margin: 2rem;
     }
-
-    .talaka {
-      margin-top: 2rem;
-
-      .talaka-text {
-        display: inline-block;
-        vertical-align: middle;
-      }
-    }
   }
 
   .team {
+    margin: 0 4rem;
+
     .title {
       color: $primary;
-      font-size: 2rem;
-    }
-
-    .subteam {
-      background-color: $primary-gray;
-      margin-bottom: 1rem;
-    }
-
-    .subteam-name {
-      color: $primary-darkgray;
-      font-size: 1.5rem;
-      padding-left: 1rem;
-      padding-top: 1rem;
-      position: absolute;
-      text-align: left;
-
-      @include touch {
-        position: inherit;
-      }
-    }
-
-    .subteam-members {
-      margin: 0 7rem;
+      font-size: 1.7rem;
     }
 
     .teammate {
@@ -77,7 +48,8 @@
 
       img {
         border-radius: 50%;
-        width: 100px;
+        height: 7rem;
+        width: 7rem;
       }
 
       .name {
@@ -88,12 +60,16 @@
         font-size: 0.8rem;
       }
     }
+
+    .thanks {
+      margin-top: 1.5rem;
+    }
   }
 
   .helpus {
     .title {
       color: $primary;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
 
     .positions {
@@ -133,6 +109,19 @@
 
     .hidden {
       display: none;
+    }
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+
+  .talaka {
+    margin-top: 2rem;
+
+    .talaka-text {
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }

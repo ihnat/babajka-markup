@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Марына Анісімава"
+  },
+  {
+    "name": "Мікіта Баравік"
+  },
+  {
+    "name": "Аляксей Барысевіч"
+  },
+  {
+    "name": "Уладзь Богдан",
+    "image": "bohdan.jpg",
+    "role": "Administration, Backend, Design"
+  },
+  {
+    "name": "Тоня Вярцінская",
+    "image": "tonia.jpg",
+    "role": "Frontend, Design"
+  },
+  {
+    "name": "Ірына Галухіна"
+  },
+  {
+    "name": "Дар'яна Дабранская",
+    "role": "Аператар, сацсеткі"
+  },
+  {
+    "name": "Вікторыя Дрозд",
+    "image": "vika.jpg",
+    "role": "Design"
+  },
+  {
+    "name": "Елізавета Лысенка"
+  },
+  {
+    "name": "Іван Пажытных",
+    "image": "drapegnik.jpg",
+    "role": "Tech Leader / Full-stack JS Developer"
+  },
+  {
+    "name": "Антось Спясівых",
+    "role": "Аператар"
+  },
+  {
+    "name": "Елізавета Таран"
+  },
+  {
+    "name": "Наста Шылак"
+  },
+  {
+    "name": "Марына Яромка"
+  },
+  {
+    "name": "Марыя Бадзей",
+    "image": "badziej.jpg",
+    "role": "Каарданытар праекта"
+  }
+]
