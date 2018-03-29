@@ -75,6 +75,11 @@
             </div>
 
             <div class="field">
+                <p class="help">Час публікацыі артыкула</p>
+                <input class="input" type="datetime-local" />
+            </div>
+
+            <div class="field">
                 <input class="article-image-url input" type="text" placeholder="Напрыклад: https://photos.google.com/my-best-photo.jpg" />
                 <p class="help">URL фатаздымка - вокладкі артыкула. Фатаздымак павінен быць у добрай якасці,<br /> не парушаць аўтарскіх правоў і быць размешчаным у кантралюемым сховішчы</p>
             </div>
@@ -144,7 +149,7 @@
                 <input class="long-input input" type="text" placeholder="Назва калекцыі" />
                 <div class="field">
                     <div class="control">
-                        <textarea class="author-bio textarea is-small" cols="75" rows="2" type="text" placeholder="Апісанне калекцыі"></textarea>
+                        <textarea class="textarea is-small" cols="75" rows="2" type="text" placeholder="Апісанне калекцыі"></textarea>
                     </div>
                 </div>
                 <div class="add-locale-button">
@@ -165,7 +170,16 @@
             Лакалізаваць артыкул
         </div>
 
-        <div class="button add-locale-button">Дадаць лакалізацыю</div>
+        <div class="add-locale-button dropdown">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>Дадаць лакалізацыю</span>
+                    <span class="icon is-small">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
 
         <div class="tabs is-centered">
             <ul>
@@ -173,6 +187,37 @@
                 <li><a>RU - русский</a></li>
                 <li><a>EN - English</a></li>
             </ul>
+        </div>
+
+        <div class="inputs">
+            <div class="basics">
+                <input class="long-input input spaced" type="text" placeholder="Назва артыкула" />
+                <div class="long-input field spaced">
+                    <input class="input" type="text" placeholder="Напрыклад: bielaruskaje-kino" />
+                    <p class="help">Slug артыкула: такі, як ён будзе выглядаць у адрасным радку</p>
+                </div>
+                <div class="field spaced">
+                    <div class="control">
+                        <textarea class="textarea is-small" cols="50" rows="2" type="text" placeholder="Кароткае апісанне артыкула (напрыклад, для preview на галоўнай старонцы)."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="field editor">
+                <div class="control">
+                    <textarea class="textarea" rows="10" type="text" placeholder="Тут будзе рэдактар паўнавартасны."></textarea>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <div class="remove-button button">
+                    <span class="icon is-small">
+                        <i class="fa fa-remove"></i>
+                    </span>
+                    <span>Выдаліць лакалізацыю</span>
+                </div>
+                <div class="save-button button">
+                    Захаваць для публікацыі
+                </div>
+            </div>
         </div>
     </div>
 

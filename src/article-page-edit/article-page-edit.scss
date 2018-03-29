@@ -100,12 +100,56 @@
     }
 
     .add-locale-button {
-      border-color: $primary;
       margin: 1rem 0;
 
-      &:hover {
+      button {
+        border-color: $primary;
+      }
+
+      button:hover {
         background-color: $primary;
         color: $white;
+      }
+    }
+
+    .inputs {
+      .basics {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .spaced {
+        margin: 0.5rem;
+      }
+
+      .long-input {
+        width: 35%;
+      }
+
+      .editor {
+        margin-top: 1rem;
+      }
+
+      .action-buttons {
+        margin-top: 1rem;
+        vertical-align: center;
+      }
+
+      .remove-button {
+        float: left;
+        padding-left: 1rem;
+        padding-top: 0.2rem;
+
+        &:hover {
+          background-color: $danger;
+          color: $white;
+        }
+      }
+
+      .save-button {
+        background-color: $primary;
+        color: $white;
+        float: right;
       }
     }
   }
