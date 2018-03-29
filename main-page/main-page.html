@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +11,12 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 </head>
 
+
 <body>
-<script>
+
+<div class="babajka-root">
+    <div class="babajka-content">
+        <script>
 function collapse() {
   document.getElementById('navmenu').classList.toggle('is-active');
   document.getElementById('navburger').classList.toggle('is-active');
@@ -53,10 +58,10 @@ function collapse() {
             <div class="navbar-item">
                 <div class="user">
                     <span>Марыя Бадзей</span>
-                    <div>
-                        <a class="logout" href="../login-page/login-page.html">Выйсці</a>
+                    <div class="auth-section">
+                        <a class="auth-button" href="../login-page/login-page.html">Выйсці</a>
                     </div>
-                    <div>
+                    <div class="lang-section">
                         <div class="dropdown is-right is-hoverable">
                             <div class="dropdown-trigger">
                                 <span class="current-lang">беларуская</span>
@@ -80,14 +85,14 @@ function collapse() {
 </div>
 
 
-<div class="main-page page-container">
-    <div class="page-content">
+        <div class="main-page page-container">
+            <div class="page-content">
 
-        <!-- FIRST LINE -->
+                <!-- FIRST LINE -->
 
-        <div class="first-line tile is-ancestor">
+                <div class="first-line tile is-ancestor">
 
-            <!-- List of variables used below. This suppresses lint warnings. -->
+                    <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -126,7 +131,7 @@ function collapse() {
 </div>
 
 
-            <!-- List of variables used below. This suppresses lint warnings. -->
+                    <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -165,7 +170,7 @@ function collapse() {
 </div>
 
 
-            <!-- List of variables used below. This suppresses lint warnings. -->
+                    <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -204,7 +209,7 @@ function collapse() {
 </div>
 
 
-            <!-- List of variables used below. This suppresses lint warnings. -->
+                    <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -249,17 +254,17 @@ function collapse() {
 </div>
 
 
-        </div>
+                </div>
 
-        <!--FIRST LINE END-->
-        <!--SECOND LINE-->
+                <!--FIRST LINE END-->
+                <!--SECOND LINE-->
 
-        <div class="second-line tile is-ancestor">
-            <div class="tile is-vertical is-8">
+                <div class="second-line tile is-ancestor">
+                    <div class="tile is-vertical is-8">
 
-                <div class="tile">
+                        <div class="tile">
 
-                    <!-- List of variables used below. This suppresses lint warnings. -->
+                            <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -304,7 +309,7 @@ function collapse() {
 </div>
 
 
-                    <!-- List of variables used below. This suppresses lint warnings. -->
+                            <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -343,11 +348,11 @@ function collapse() {
 </div>
 
 
-                </div>
+                        </div>
 
-                <div class="tile">
+                        <div class="tile">
 
-                    <!-- List of variables used below. This suppresses lint warnings. -->
+                            <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -386,7 +391,7 @@ function collapse() {
 </div>
 
 
-                    <!-- List of variables used below. This suppresses lint warnings. -->
+                            <!-- List of variables used below. This suppresses lint warnings. -->
 
 
 
@@ -431,44 +436,44 @@ function collapse() {
 </div>
 
 
+                        </div>
+
+                    </div>
+
+                    <div class="tile is-vertical">
+                        <div class="diary-article tile is-parent">
+                            <article class="card tile is-child notification">
+                                <h1 class="title">Дзённік дня</h1>
+                                <div class="date">
+                                    <span>27.10.2017</span>
+                                </div>
+                                <span class="icon is-small arrow arrow-left">
+                                    <i class="fa fa-chevron-left"></i>
+                                </span>
+                                <span class="icon is-small arrow arrow-right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                                <div class="content diary">
+                                    В полутора комнатах (если вообще по-английски эта мера пространства имеет смысл), где мы жили втроем, был паркетный пол, и моя мать решительно возражала против того, чтобы члены ее семьи, я в частности, разгуливали в носках. Она требовала от нас, чтобы мы всегда ходили в ботинках или тапочках. Выговаривая мне по этому поводу, вспоминала старое русское суеверие. &#39;Это дурная примета, -- утверждала она, -- к смерти в доме. Может быть, конечно, она просто считала эту привычку некультурной, обычным неумением себя вести. Мужские ноги пахнут, а эпоха дезодорантов еще не наступила...
+                                </div>
+                                <p class="subtitle">Іосіф Бродскі</p>
+                            </article>
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
+                <!--SECOND LINE END-->
 
-            <div class="tile is-vertical">
-                <div class="diary-article tile is-parent">
-                    <article class="card tile is-child notification">
-                        <h1 class="title">Дзённік дня</h1>
-                        <div class="date">
-                            <span>27.10.2017</span>
-                        </div>
-                        <span class="icon is-small arrow arrow-left">
-                            <i class="fa fa-chevron-left"></i>
-                        </span>
-                        <span class="icon is-small arrow arrow-right">
-                            <i class="fa fa-chevron-right"></i>
-                        </span>
-                        <div class="content diary">
-                            В полутора комнатах (если вообще по-английски эта мера пространства имеет смысл), где мы жили втроем, был паркетный пол, и моя мать решительно возражала против того, чтобы члены ее семьи, я в частности, разгуливали в носках. Она требовала от нас, чтобы мы всегда ходили в ботинках или тапочках. Выговаривая мне по этому поводу, вспоминала старое русское суеверие. &#39;Это дурная примета, -- утверждала она, -- к смерти в доме. Может быть, конечно, она просто считала эту привычку некультурной, обычным неумением себя вести. Мужские ноги пахнут, а эпоха дезодорантов еще не наступила...
-                        </div>
-                        <p class="subtitle">Іосіф Бродскі</p>
-                    </article>
+                <!--HERE ANY ADDITIONAL LINES OF TILES MAY BE ADDED-->
+
+                <div class="load-more" align="center">
+                    <a class="button">Загрузіць яшчэ!</a>
                 </div>
             </div>
-
         </div>
 
-        <!--SECOND LINE END-->
-
-        <!--HERE ANY ADDITIONAL LINES OF TILES MAY BE ADDED-->
-
-        <div class="load-more" align="center">
-            <a class="button">Загрузіць яшчэ!</a>
-        </div>
-    </div>
-</div>
-
-<footer class="app-footer">
+        <footer class="app-footer">
     <div class="columns">
         <div class="column general-info">
             Wir.by - Адукацыйная платформа <i class="fa fa-copyright"></i> 2018
@@ -515,6 +520,8 @@ function collapse() {
     </div>
 </footer>
 
+    </div>
+</div>
 
 </body>
 
