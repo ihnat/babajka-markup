@@ -1,13 +1,13 @@
 @import 'variables';
 
-html,
-body {
-  height: 100%;
+.babajka-root {
+  height: 100vh;
 }
 
-body {
+.babajka-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .image .is-3by1 {
