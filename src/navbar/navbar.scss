@@ -1,6 +1,7 @@
 @import '../variables';
 
 .navbar {
+  flex-shrink: 0;
   font-family: $family-navbar;
 
   @include desktop {
@@ -55,6 +56,11 @@
 
         @include touch {
           margin: 1rem;
+        }
+
+        &.is-active {
+          border-bottom: 0.2rem solid $primary;
+          border-top: 0.2rem solid $primary;
         }
       }
     }

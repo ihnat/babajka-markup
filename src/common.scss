@@ -1,5 +1,15 @@
 @import 'variables';
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .image .is-3by1 {
   padding-top: 30%;
 
@@ -15,6 +25,8 @@
 }
 
 .page-content {
+  flex: 1 0 auto;
+
   @include desktop {
     margin: 3rem 4rem;
   }
