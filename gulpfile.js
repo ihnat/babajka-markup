@@ -15,6 +15,7 @@ const htmlhint = require('gulp-htmlhint');
 
 const fs = require('fs');
 const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
+const team = JSON.parse(fs.readFileSync('./src/about/team.json', 'utf8'));
 
 const port = process.env.PORT || 3001;
 
@@ -31,6 +32,7 @@ const config = {
 templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
 templateVariables.assetsPath = `../${config.stylesPath}/assets.min.css`;
 templateVariables.imagesPath = `../${config.imagesPath}`;
+templateVariables.team = team;
 
 gulp.task('sass:bundle', () =>
   gulp

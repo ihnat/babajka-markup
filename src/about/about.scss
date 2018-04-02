@@ -1,0 +1,127 @@
+@import '../variables';
+
+.about-container {
+  font-family: $family-navbar;
+  margin: 4rem;
+  text-align: center;
+
+  @include mobile {
+    margin: 2rem 1rem;
+  }
+
+  hr {
+    background: #fff;
+    border: 0;
+    border-bottom: 4px dotted $primary-darkgray;
+    margin: 2.5rem 25%;
+  }
+
+  .title {
+    color: $primary;
+    font-size: 2.5rem;
+
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  .goal {
+    margin: 2rem 10rem;
+
+    @include touch {
+      margin: 2rem;
+    }
+  }
+
+  .team {
+    margin: 0 4rem;
+
+    .title {
+      color: $primary;
+      font-size: 1.7rem;
+    }
+
+    .teammate {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        border-radius: 50%;
+        height: 7rem;
+        width: 7rem;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      .role {
+        font-size: 0.8rem;
+      }
+    }
+
+    .thanks {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .helpus {
+    .title {
+      color: $primary;
+      font-size: 1.7rem;
+    }
+
+    .positions {
+      display: flex;
+      font-weight: 600;
+      justify-content: center;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .position {
+        border: 1px solid $primary;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+        &:hover {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+
+    .position-description {
+      background-color: $primary-gray;
+      padding: 1rem;
+      text-align: left;
+
+      .name {
+        color: $primary-darkgray;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+
+  .talaka {
+    margin-top: 2rem;
+
+    .talaka-text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

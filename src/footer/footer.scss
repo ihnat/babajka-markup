@@ -5,11 +5,14 @@
   color: #fff;
   flex-shrink: 0;
   font-family: $family-navbar;
+  font-size: 0.95rem;
   font-weight: 600;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   text-align: center;
 
   .general-info {
+    vertical-align: center;
+
     a {
       color: #fff;
       text-decoration: underline;
