@@ -111,7 +111,7 @@
 .about-container hr {
   background: #fff;
   border: 0;
-  border-bottom: 4px dotted #1a9582;
+  border-bottom: 4px dotted #808080;
   margin: 2.5rem 25%;
 }
 
@@ -240,58 +240,6 @@
 .about-container .talaka .talaka-text {
   display: inline-block;
   vertical-align: middle;
-}
-.article-page .page-content {
-  background-color: white;
-}
-
-.article-page .card-content {
-  padding: 0 4rem 1rem;
-}
-
-.article-page .card-content .heading {
-  font-family: PT sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 3.5rem 0 5.5rem;
-  text-align: center;
-}
-
-.article-page .card-content .author {
-  font-family: PT sans-serif;
-  font-size: 2rem;
-  margin: 1.5rem 0;
-}
-
-.article-page .card-content .tags {
-  font-size: 1.2rem;
-}
-
-.article-page .card-content .text {
-  font-size: 1.5rem;
-}
-
-.article-page .articles-links {
-  font-size: 1.4rem;
-  padding: 4rem;
-}
-
-.article-page .articles-links .more-articles-text {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.article-page .articles-links .card-content {
-  padding: 0;
-}
-
-.article-page .articles-links ul {
-  list-style-type: disc;
-  margin-left: 4rem;
-}
-
-.article-page .articles-links ul li {
-  padding: 0.5rem;
 }
 @charset "UTF-8";
 
@@ -14357,15 +14305,72 @@ label.panel-block:hover {
   color: white;
   float: right;
 }
+.article-page .page-content {
+  background-color: white;
+}
+
+.article-page .card-content {
+  padding: 0 4rem 1rem;
+}
+
+.article-page .card-content .heading {
+  font-family: PT sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 3.5rem 0 5.5rem;
+  text-align: center;
+}
+
+.article-page .card-content .author {
+  font-family: PT sans-serif;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+.article-page .card-content .tags {
+  font-size: 1.2rem;
+}
+
+.article-page .card-content .text {
+  font-size: 1.5rem;
+}
+
+.article-page .articles-links {
+  font-size: 1.4rem;
+  padding: 4rem;
+}
+
+.article-page .articles-links .more-articles-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-page .articles-links .card-content {
+  padding: 0;
+}
+
+.article-page .articles-links ul {
+  list-style-type: disc;
+  margin-left: 4rem;
+}
+
+.article-page .articles-links ul li {
+  padding: 0.5rem;
+}
 .app-footer {
   background-color: #1a9582;
   color: #fff;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
   font-weight: 600;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   text-align: center;
+}
+
+.app-footer .general-info {
+  vertical-align: center;
 }
 
 .app-footer .general-info a {
@@ -14545,7 +14550,7 @@ label.panel-block:hover {
 }
 
 .navbar .navbar-brand .navbar-item .logo-image {
-  height: 3rem;
+  height: 3.5rem;
   margin-left: 20px;
   margin-right: 1rem;
   max-height: 6rem;
@@ -14553,8 +14558,8 @@ label.panel-block:hover {
 
 .navbar .navbar-start .navbar-item {
   color: #000;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   padding-left: 0;
   padding-right: 0;
 }
@@ -14563,15 +14568,22 @@ label.panel-block:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
+.navbar .navbar-start .navbar-item .rubric {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar .navbar-start .navbar-item .rubric {
     border-bottom: 0.2rem solid #1a9582;
+    border-top: 0.2rem solid transparent;
     margin: 0 0.5rem;
     padding: 1rem 0.5rem;
   }
 
   .navbar .navbar-start .navbar-item .rubric:hover {
     background-color: #1a9582;
+    border-top: 0.2rem solid #1a9582;
     color: #fff;
   }
 }
@@ -14625,7 +14637,8 @@ label.panel-block:hover {
 }
 
 .navbar .navbar-end .navbar-item .auth-section,
-.navbar .navbar-end .navbar-item .lang-section {
+.navbar .navbar-end .navbar-item .lang-section,
+.navbar .navbar-end .navbar-item .name-section {
   width: 100%;
 }
 
