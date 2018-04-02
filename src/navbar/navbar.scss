@@ -22,7 +22,7 @@
       }
 
       .logo-image {
-        height: 3rem;
+        height: 3.5rem;
         margin-left: 20px;
         margin-right: 1rem;
         max-height: 6rem;
@@ -33,8 +33,8 @@
   .navbar-start {
     .navbar-item {
       color: $primary-black;
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-size: 1rem;
+      font-weight: 600;
       padding-left: 0;
       padding-right: 0;
 
@@ -43,13 +43,17 @@
       }
 
       .rubric {
+        box-sizing: border-box;
+
         @include desktop {
           border-bottom: 0.2rem solid $primary;
+          border-top: 0.2rem solid transparent;
           margin: 0 0.5rem;
           padding: 1rem 0.5rem;
 
           &:hover {
             background-color: $primary;
+            border-top: 0.2rem solid $primary;
             color: #fff;
           }
         }
