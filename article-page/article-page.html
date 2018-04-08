@@ -12,9 +12,12 @@
 </head>
 
 
-<body>
 
-<div class="babajka-root">
+
+
+
+<body>
+  <div class="babajka-root">
     <div class="babajka-content">
 
         <script>
@@ -86,232 +89,375 @@ function collapse() {
 </div>
 
 
-        <div class="article-page page-container">
+        <div class="article-container container">
+            <div class="columns">
+                <div class="article-side column is-hidden-touch"></div>
 
-            <div class="page-content">
-                <div class="card-image">
-                    <figure class="image is-3by1">
-                        <img src="../images/photo8.jpg" />
+                <div class="article column">
+                    <div class="article__top">
+                        <div class="article__collection-block">
+                            <a class="article__another" href="#" title="Чытаць папярэдні артыкул калекцыі">
+                                <span class="article__arrow-icon icon">
+                                    <i class="fa fa-long-arrow-left fa-lg"></i>
+                                </span>
+                            </a>
+                            <div class="has-text-centered">
+                                <a class="article__collection is-uppercase" title="Глядзець усе артыкулы калекцыі">
+                                    Калекцыя Калекцыя Калекцыя
+                                </a>
+                            </div>
+                            <a class="article__another" href="#" title="Чытаць наступны артыкул калекцыі">
+                                <span class="article__arrow-icon icon">
+                                    <i class="fa fa-long-arrow-right fa-lg"></i>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="article__title-block">
+                          <h3 class="article__title title">
+                            Гэта ня тое як склеіць разьбіты кубак...
+                          </h3>
+                          <a class="icon-button button is-hidden-desktop" href="../article-page-edit/article-page-edit.html" title="Адрэдагаваць артыкул">
+                            <span class="article__usual-icon icon-button__usual-icon icon">
+                              <i class="fa fa-pencil fa-lg"></i>
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="article__info">
+                            <div class="dropdown is-hoverable">
+                                <div class="dropdown-trigger">
+                                    <a class="article__info-item article__info-item--clickable" aria-haspopup="true" aria-controls="author-dropdown">
+                                        <span class="article__info-icon icon">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </span>
+                                        Яўген Дадуць
+                                    </a>
+                                </div>
+                                <div class="article__author-menu dropdown-menu" id="author-dropdown" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <div class="article__author-top media">
+                                            <div class="media-left">
+                                              <figure class="image is-48x48">
+                                                  <img class="article__author-image" src="../images/vajc.jpg" alt="Тут павінна быць фота аўтара артыкула">
+                                              </figure>
+                                          </div>
+                                                <div class="media-content">
+                                                  <p class="article__author-name is-size-6">
+                                                      Яўген Дадуць
+                                                  </p>
+                                                  <p>Якая-небудзь інфа пра аўтара</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="article__info-item article__info-item--clickable" title="Чытаць пра партнёра падрабязней">
+                                <span class="article__info-icon icon">
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                </span>
+                                Курылка Гутэнберга
+                            </a>
+                            <span class="article__info-item">
+                                <span class="article__info-icon icon">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </span>
+                                7 красавіка 2018
+                            </span>
+                            <!-- <span class="article__info-item tag is-warning is-uppercase">
+                                Публікацыя не запланавана
+                            </span>
+                            <span class="article__info-item article__info-planned tag is-uppercase">
+                                Будзе апублікаваны 15 красавіка 2018
+                            </span> -->
+                        </div>
+                        <div class="article__info-langs">
+                            <span>
+                                Чытаць на:
+                                <a class="article__info-lang tag">русский</a>
+                                <a class="article__info-lang tag">english</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <figure class="article__imagewrapper image">
+                        <img src="../images/photo8.jpg" alt="Тут павінны быць малюнак да артыкулу" />
                     </figure>
-                </div>
 
-                <div class="card-content">
-                    <div class="heading">
-                        "Гэта ня тое як склеіць разьбіты кубак..."
+                    <div class="is-size-5 article__text">
+                        <p>– Вы доўгі час жывяце не ў Беларусі. Як асэнсоўваеце краіну ў новых творах?</p>
+                        <p>
+                            – Для мяне Беларусь пашыраецца не ўшыр, а ўглыб. У маёй новай кнізе вершы пабудаваныя вакол вобраза дрэва, якое расце з крыві,
+                            касцей, чалавечыны і нашай зямлі. Дрэва расце ўгару, размаўляе з намі
+                            лісцем шэптам, які нарадзіўся раней за вусны. Мне цікавы шэпт нашых мёртвых,
+                            нашых прывідаў. Гэта Беларусь невербалізаваных жыццяў, якія не хочуць
+                            знікнуць і маўчаць, каб мы іх пачулі.
+                        </p>
+                        <p>– Што здарылася з вашымі кнігамі ў перыяд з 2005 па 2017?</p>
+                        <p>
+                            – Паміж 2005 і 2017 у мяне выйшлі кніжкі ў ЗША, Нямеччыне і Швецыі. У «Эпідэміі ружаў» ёсць вершы з гэтых кніжак, і трэць
+                            з іх – новыя. У першую чаргу паэт – гэта вушы і вочы. Я ўважліва сачу
+                            за прывідамі, слухаю сваіх мёртвых. Яны жывуць сярод нас. Іх прысутнасць
+                            можна пабачыць на нашых тварах.
+                        </p>
+                        <p>– Мёртвыя – гэта продкі або гэта нейкая метафара?</p>
+                        <p>
+                            – Я не бачу розніцы паміж рэальнасцю і метафарай. Літаратура змешвае памяць і ўяўленне так, што немагчыма адрозніць адно
+                            ад аднаго. У нашай прыродзе так і ёсць: памяць не можа існаваць без уяўлення,
+                            а ўяўленне не можа існаваць без памяці. Гэтыя два паняцці існуюць разам.
+                            Разам яны шукаюць нейкую форму: літаратурную, музычную, кінематаграфічную.
+                            Тут няма розніцы. Наогул паэзію і літаратуру я бачу як навуку. Біялогія
+                            чалавека, анатомія чалавека і літаратурная метафара існуюць для мяне
+                            ў адной прасторы. Метафара – гэта не гуманітарная абстракцыя, а элемент
+                            навуковага падыходу да свету. Гэта жаданне знайсці матэматычную або фізічную
+                            формулу, з дапамогай якой мы скажам: «Я – гэта ты», «Ты – гэта кніга»,
+                            «Кніга – гэта паліца кніг», «Паліца – гэта дрэва, з якой яна зроблена,
+                            а дрэва – гэта я». Мы ўсе звязаныя адной формулай: розныя рэчы ствараюць
+                            асобную прастору, дзе яны могуць быць адным, застаючыся пры гэтым сабою.
+                        </p>
                     </div>
 
-                    <div class="author">
-                        <strong>Аўтар:</strong>
-                        <a href="">Яўген Дадуць</a>
+                    <div class="article__bottom">
+                      <div class="is-hidden-mobile">
+                          <span class="article__bottom-item">Калекцыя:
+                              <span class="article__bottom-text">
+                                  Калекцыя Калекцыя Калекцыя
+                              </span>
+                          </span>
+                          <span class="article__bottom-item">Аўтар:
+                              <span class="article__bottom-text">
+                                  Яўген Дадуць
+                              </span>
+                          </span>
+                          <span class="article__bottom-item">Партнёр:
+                              <span class="article__bottom-text">
+                                  Курылка Гутэнберга
+                              </span>
+                          </span>
+                      </div>
+                      <div class="is-hidden-desktop">
+                        <a class="icon-button button" title="Падзяліцца ў Facebook">
+                          <span class="article__facebook-icon icon-button__facebook-icon icon">
+                            <i class="fa fa-facebook fa-lg"></i>
+                          </span>
+                        </a>
+                        <a class="icon-button button" title="Падзяліцца ў Укантакце">
+                          <span class="article__vk-icon icon-button__vk-icon icon">
+                            <i class="fa fa-vk fa-lg"></i>
+                          </span>
+                        </a>
+                        <a class="icon-button button" title="Падзяліцца ў Twitter">
+                          <span class="article__twitter-icon icon-button__twitter-icon icon">
+                            <i class="fa fa-twitter fa-lg"></i>
+                          </span>
+                        </a>
+                      </div>
                     </div>
-
-                    <div class="tags">
-                        <a href="">#паэзія</a>
-                        <a href=""> #морт</a>
-                    </div>
-                    <hr />
-
-                    <div class="text">
-                        – Вы доўгі час жывяце не ў Беларусі. Як асэнсоўваеце краіну ў новых творах?
-                        – Для мяне Беларусь пашыраецца не ўшыр, а ўглыб. У маёй новай кнізе вершы пабудаваныя вакол вобраза
-                        дрэва,
-                        якое расце з крыві, касцей, чалавечыны і нашай зямлі. Дрэва расце ўгару, размаўляе з намі лісцем шэптам,
-                        які
-                        нарадзіўся раней за вусны. Мне цікавы шэпт нашых мёртвых, нашых прывідаў. Гэта Беларусь невербалізаваных
-                        жыццяў, якія не хочуць знікнуць і маўчаць, каб мы іх пачулі.
-                        – Што здарылася з вашымі кнігамі ў перыяд з 2005 па 2017?
-                        – Паміж 2005 і 2017 у мяне выйшлі кніжкі ў ЗША, Нямеччыне і Швецыі. У «Эпідэміі ружаў» ёсць вершы з
-                        гэтых
-                        кніжак, і трэць з іх – новыя. У першую чаргу паэт – гэта вушы і вочы. Я ўважліва сачу за прывідамі,
-                        слухаю
-                        сваіх мёртвых. Яны жывуць сярод нас. Іх прысутнасць можна пабачыць на нашых тварах.
-                        – Мёртвыя – гэта продкі або гэта нейкая метафара?
-                        – Я не бачу розніцы паміж рэальнасцю і метафарай. Літаратура змешвае памяць і ўяўленне так, што
-                        немагчыма
-                        адрозніць адно ад аднаго. У нашай прыродзе так і ёсць: памяць не можа існаваць без уяўлення, а ўяўленне
-                        не
-                        можа існаваць без памяці. Гэтыя два паняцці існуюць разам.
-                        Разам яны шукаюць нейкую форму: літаратурную, музычную, кінематаграфічную. Тут няма розніцы. Наогул
-                        паэзію і
-                        літаратуру я бачу як навуку. Біялогія чалавека, анатомія чалавека і літаратурная метафара існуюць для
-                        мяне ў
-                        адной прасторы.
-                        Метафара – гэта не гуманітарная абстракцыя, а элемент навуковага падыходу да свету. Гэта жаданне знайсці
-                        матэматычную або фізічную формулу, з дапамогай якой мы скажам: «Я – гэта ты», «Ты – гэта кніга», «Кніга
-                        –
-                        гэта паліца кніг», «Паліца – гэта дрэва, з якой яна зроблена, а дрэва – гэта я». Мы ўсе звязаныя адной
-                        формулай: розныя рэчы ствараюць асобную прастору, дзе яны могуць быць адным, застаючыся пры гэтым сабою.
-                        <hr />
-                    </div>
-                </div>
-
-                <div class="articles-links">
-                    <div class="more-articles-text">Чытайце таксама:</div>
-
-                    <div class="tile is-ancestor">
-
-                        <!-- List of variables used below. This suppresses lint warnings. -->
+                    <hr class="article__line" />
+                    <div class="article__more has-text-centered">
+                        <span class="article__more-text is-uppercase ">Чытаць таксама:</span>
+                        <div class="columns">
+                            
 
 
 
 
-
-
-
-
-
-
-<div class="tile is-parent">
-    <article class="card tile is-child is-flex">
-        <div class="card-image">
-            <figure class="image is-16by9">
-                <img src="../images/photo2.jpg" />
-            </figure>
-            
-        </div>
-        <div class="card-content">
-            <span class="title">
-                <a href="../article-page/article-page.html">Крама &#34;як з крамы&#34;</a>
-            </span>
-            <p class="subtitle">
-                Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - &#34;Крама&#34;. Яго...
-            </p>
-            
-            <div class="author">
-                <img src="../images/vajc.jpg" />
-                <div class="name">
-                    <span>Змітр Корнеў</span>
+<div class="article-card column " role="button">
+    <figure class="image is-3by2">
+        <img
+            class="article-card__image"
+            src="../images/photo2.jpg"
+            alt="Тут павінны быць малюнак да артыкулу"
+        />
+    </figure>
+    <div class="article-card__description">
+        <span class="has-text-weight-bold article-card__title">
+            Крама «як з крамы»
+        </span>
+        <div>
+            <div class="article-card__details">
+                <div class="article-card__group">
+                    <span class="heading article-card__detail">Прачыталі: 150</span>
+                    <span class="heading article-card__detail">10 хвілін чытання</span>
                 </div>
             </div>
-            
-        </div>
-    </article>
-</div>
-
-
-                        <!-- List of variables used below. This suppresses lint warnings. -->
-
-
-
-
-
-
-
-
-
-
-<div class="tile is-parent">
-    <article class="card tile is-child is-flex">
-        <div class="card-image">
-            <figure class="image is-3by2">
-                <img src="../images/photo3.jpg" />
-            </figure>
-            
-        </div>
-        <div class="card-content">
-            <span class="title">
-                <a href="../article-page/article-page.html">&#34;Гэта ня тое як склеіць разьбіты кубак...&#34;</a>
-            </span>
-            <p class="subtitle">
-                Вальжына Морт пра адносіны з сусветам
-            </p>
-            
-            <div class="author">
-                <img src="../images/mort.jpg" />
-                <div class="name">
-                    <span>Вальжына Морт</span>
-                </div>
-            </div>
-            
-        </div>
-    </article>
-</div>
-
-
-                        <!-- List of variables used below. This suppresses lint warnings. -->
-
-
-
-
-
-
-
-
-
-
-<div class="tile is-parent">
-    <article class="card tile is-child is-flex">
-        <div class="card-image">
-            <figure class="image is-3by2">
-                <img src="../images/photo5.jpg" />
-            </figure>
-            
-        </div>
-        <div class="card-content">
-            <span class="title">
-                <a href="../article-page/article-page.html">Некоратка аб Ахматавай</a>
-            </span>
-            <p class="subtitle">
-                &#34;Настоящую нежность не спутаешь ни с чем...&#34;
-            </p>
-            
-            <div class="author">
-                <img src="../images/volski.jpg" />
-                <div class="name">
-                    <span>Лявон Вольскі</span>
-                </div>
-            </div>
-            
-        </div>
-    </article>
-</div>
-
-
-                        <!-- List of variables used below. This suppresses lint warnings. -->
-
-
-
-
-
-
-
-
-
-
-<div class="tile is-parent">
-    <article class="card tile is-child is-flex">
-        <div class="card-image">
-            <figure class="image is-3by2">
-                <img src="../images/photo4.jpg" />
-            </figure>
-            
-            <div class="media special-heading is-pulled-right">
-                <div class="media-left">
-                    
-                    <figure class="image is-32x32">
-                        <img src="../images/kurilka_icon.png" />
-                    </figure>
-                    
-                </div>
+            <div class="media">
+                <figure class="media-left">
+                    <p class="image is-48x48">
+                        <img
+                                class="article-card__photo"
+                                src="../images/vajc.jpg"
+                                alt="Тут павінна быць фота аўтара артыкула"
+                        />
+                    </p>
+                </figure>
                 <div class="media-content">
-                    <span class="subtitle is-6">Курылка Гутэнберга</span>
+                    <div class="content article-card__author-topic">
+                        <a class="article-card__author" href="#">Змітр Корнеў</a>
+                        <a
+                                class="tag is-white is-uppercase article-card__topic"
+                                href="#"
+                        >
+                            Калекцыя
+                        </a>
+                    </div>
                 </div>
             </div>
-            
         </div>
-        <div class="card-content">
-            <span class="title">
-                <a href="../article-page/article-page.html">Культура і псіхалогія</a>
-            </span>
-            <p class="subtitle">
-                Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..
-            </p>
-            
-        </div>
-    </article>
+    </div>
 </div>
 
+                            
 
+
+
+
+<div class="article-card column " role="button">
+    <figure class="image is-3by2">
+        <img
+            class="article-card__image"
+            src="../images/photo3.jpg"
+            alt="Тут павінны быць малюнак да артыкулу"
+        />
+    </figure>
+    <div class="article-card__description">
+        <span class="has-text-weight-bold article-card__title">
+            «Гэта ня тое як склеіць разьбіты кубак...»
+        </span>
+        <div>
+            <div class="article-card__details">
+                <div class="article-card__group">
+                    <span class="heading article-card__detail">Прачыталі: 150</span>
+                    <span class="heading article-card__detail">10 хвілін чытання</span>
+                </div>
+            </div>
+            <div class="media">
+                <figure class="media-left">
+                    <p class="image is-48x48">
+                        <img
+                                class="article-card__photo"
+                                src="../images/mort.jpg"
+                                alt="Тут павінна быць фота аўтара артыкула"
+                        />
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content article-card__author-topic">
+                        <a class="article-card__author" href="#">Вальжына Морт</a>
+                        <a
+                                class="tag is-white is-uppercase article-card__topic"
+                                href="#"
+                        >
+                            Калекцыя
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+
+
+
+
+<div class="article-card column " role="button">
+    <figure class="image is-3by2">
+        <img
+            class="article-card__image"
+            src="../images/photo5.jpg"
+            alt="Тут павінны быць малюнак да артыкулу"
+        />
+    </figure>
+    <div class="article-card__description">
+        <span class="has-text-weight-bold article-card__title">
+            Некоратка аб Ахматавай
+        </span>
+        <div>
+            <div class="article-card__details">
+                <div class="article-card__group">
+                    <span class="heading article-card__detail">Прачыталі: 150</span>
+                    <span class="heading article-card__detail">10 хвілін чытання</span>
+                </div>
+            </div>
+            <div class="media">
+                <figure class="media-left">
+                    <p class="image is-48x48">
+                        <img
+                                class="article-card__photo"
+                                src="../images/volski.jpg"
+                                alt="Тут павінна быць фота аўтара артыкула"
+                        />
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content article-card__author-topic">
+                        <a class="article-card__author" href="#">Лявон Вольскі</a>
+                        <a
+                                class="tag is-white is-uppercase article-card__topic"
+                                href="#"
+                        >
+                            Калекцыя
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-side column is-hidden-touch">
+                    <div class="article-side__actions">
+                        <ul class="article-side__top">
+                            <li>
+                                <a class="article-side__button article-side__button--edit icon-button button" href="../article-page-edit/article-page-edit.html" title="Адрэдагаваць артыкул">
+                                    <span class="icon-button__usual-icon icon">
+                                        <i class="fa fa-pencil fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon-button article-side__button button" title="Падзяліцца ў Facebook">
+                                    <span class="icon-button__facebook-icon icon">
+                                        <i class="fa fa-facebook fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="article-side__button icon-button button" title="Падзяліцца ў Укантакце">
+                                    <span class="icon-button__vk-icon icon">
+                                        <i class="fa fa-vk fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="article-side__button icon-button button" title="Падзяліцца ў Twitter">
+                                    <span class="icon-button__twitter-icon icon">
+                                        <i class="fa fa-twitter fa-lg"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="article-side__bottom">
+                            <a class="article-side__button icon-button button" href="#top" title="Перайсці ў пачатак артыкула">
+                                <span class="icon-button__usual-icon icon">
+                                    <i class="fa fa-chevron-up fa-lg"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,7 +511,7 @@ function collapse() {
 </footer>
 
     </div>
-</div>
-
+  </div>
 </body>
+
 </html>
