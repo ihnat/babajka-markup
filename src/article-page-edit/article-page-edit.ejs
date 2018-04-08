@@ -195,16 +195,29 @@
                 </div>
 
                 <div class="inputs">
-                    <div class="basics">
-                        <input class="long-input input spaced" type="text" placeholder="Назва артыкула" />
-                        <div class="long-input field spaced">
-                            <input class="input" type="text" placeholder="Напрыклад: bielaruskaje-kino" />
-                            <p class="help">Slug артыкула: вызначае адрас артыкула ў інтэрнэце</p>
-                        </div>
-                        <div class="field spaced">
+                    <div class="edit-info">
+                        <div class="edit-info__item field">
+                            <label class="label">Назва артыкула</label>
                             <div class="control">
-                                <textarea class="textarea is-small" cols="50" rows="2" type="text" placeholder="Кароткае апісанне артыкула (напрыклад, для preview на галоўнай старонцы)."></textarea>
+                                <input class="input is-danger" type="text">
                             </div>
+                            <p class="help is-danger">Памылка валідацыі</p>
+                        </div>
+                        <div class="edit-info__item field">
+                            <label class="label">Slug артыкула</label>
+                            <div class="control">
+                                <input class="input is-danger" type="text" placeholder="bielaruskaje-kino">
+                            </div>
+                            <p class="help">Назва артыкула, якая будзе адлюстроўвацца ў URL</p>
+                            <p class="help is-danger">Памылка валідацыі</p>
+                        </div>
+                        <div class="edit-info__item field">
+                            <label class="label">Кароткае апісанне артыкула</label>
+                            <div class="control">
+                                <textarea class="textarea is-danger"></textarea>
+                            </div>
+                            <p class="help">Якое будзе адлюстроўвацца ў прэв'ю артыкула</p>
+                            <p class="help is-danger">Памылка валідацыі</p>
                         </div>
                     </div>
                     <div class="field editor">
