@@ -9,6 +9,8 @@
 // Primary pallete
 // https://coolors.co/ae42ff-d1caca-44494d-ff5e42-9a9d9f
 $primary: #1a9582;
+$primary-bright: #06c5df;
+$primary-gray-alt: #b8b8b8;
 $primary-heliotrope: #82e0dd;
 $primary-mako: #44494d;
 $primary-swiss-coffee: #dfe0da;
@@ -17,8 +19,8 @@ $primary-darkgray: #808080;
 $primary-black: #000;
 
 // Add a serif family
-$family-serif: 'Merriweather', 'Georgia', serif;
-$family-arial: Arial, Helvetica, sans-serif;
+$family-serif: 'Lora', serif;
+$family-arial: 'Roboto Condensed', sans-serif;
 $family-navbar: 'Open Sans', sans-serif;
 $tile-primary-text: 'Cormorant', serif;
 $tile-secondary-text: 'Open Sans', sans-serif;
@@ -43,9 +45,11 @@ $special-color: #032967;
 
 // Social networks official colors
 $facebook-color: #3b5998;
+$vk-color: #45668e;
+$twitter-color: #1da1f2;
 $google-plus-color: #d34836;
 $instagram-color: #517fa4;
 $telegram-color: #08c;
-$twitter-color: #0084b4;
-$vk-color: #45668e;
 $youtube-color: #b00;
+
+$mobile: 768px;
