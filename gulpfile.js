@@ -44,7 +44,7 @@ gulp.task('sass:bundle', () =>
     .pipe(autoprefixer())
     .pipe(replace('url("/images/', 'url("../images/'))
     .pipe(concatCss('bundle.css', { rebaseUrls: false }))
-    .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
     .pipe(concatCss('bundle.min.css', { rebaseUrls: false }))
     .pipe(cleanCSS())
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
@@ -115,7 +115,7 @@ gulp.task('serve', () =>
 gulp.task('livereload', () =>
   watch([
     `${config.buildPath}/**/*.html`,
-    `${config.buildPath}/${config.stylesPath}/**/*.css`,
+    `${config.buildPath}/${config.staticPath}/${config.stylesPath}/**/*.css`,
   ]).pipe(connect.reload())
 );
 
