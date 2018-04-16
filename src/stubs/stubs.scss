@@ -1,0 +1,74 @@
+@import '../variables';
+
+.error-page {
+  font-family: 'Open Sans', sans-serif;
+  padding: 7rem 1rem;
+  text-align: center;
+
+  a:link,
+  a:visited {
+    color: inherit;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .title-alt {
+    color: $primary-darkgray;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .links {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .links-alignment {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .social {
+    font-size: 2rem;
+
+    i {
+      margin: 0 0.7rem;
+    }
+
+    .facebook:hover {
+      color: $facebook-color;
+    }
+
+    .vk:hover {
+      color: $vk-color;
+    }
+
+    .twitter:hover {
+      color: $twitter-color;
+    }
+
+    .telegram:hover {
+      color: $telegram-color;
+    }
+
+    .youtube:hover {
+      color: $youtube-color;
+    }
+
+    .instagram:hover {
+      color: $instagram-color;
+    }
+  }
+}
