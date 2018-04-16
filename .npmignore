@@ -1,6 +1,7 @@
 .idea/
 .github/
 src/
+static/
 dist/*
 !dist/static
 .eslintrc
