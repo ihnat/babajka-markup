@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<% var pathPrefix='../' %>
 
 <%- include('../../head/head.ejs', { title: 'Select' }) %>
 
@@ -44,13 +43,13 @@
                 <div class="babajka-dropdown-menu dropdown-menu" id="dropdown-menu-authors" role="menu">
                     <ul class="babajka-dropdown-content dropdown-content">
                         <li class="dropdown-item">
-                            <%- include('./author.ejs', { name: 'Lavon Volski', photo: 'volski.jpg' }) %>
+                            <%- include('./author.ejs', { name: 'Lavon Volski', photo: 'mock/volski.jpg' }) %>
                         </li>
                         <li class="dropdown-item">
-                            <%- include('./author.ejs', { name: 'Вальжына Морт', photo: 'mort.jpg' }) %>
+                            <%- include('./author.ejs', { name: 'Вальжына Морт', photo: 'mock/mort.jpg' }) %>
                         </li>
                         <li class="dropdown-item is-active">
-                            <%- include('./author.ejs', { name: 'Вайцюшкевіч', photo: 'vajc.jpg' }) %>
+                            <%- include('./author.ejs', { name: 'Вайцюшкевіч', photo: 'mock/vajc.jpg' }) %>
                         </li>
                     </ul>
                 </div>
@@ -61,7 +60,7 @@
                 <div class="dropdown-trigger">
                     <div class="control has-icons-right">
                         <div class="input">
-                            <%- include('./author.ejs', { name: 'Вайцюшкевіч', photo: 'vajc.jpg' }) %>
+                            <%- include('./author.ejs', { name: 'Вайцюшкевіч', photo: 'mock/vajc.jpg' }) %>
                         </div>
                         <span class="icon is-small is-right">
                 <span class="babajka-dropdown-clear">×</span>

@@ -7,7 +7,7 @@
     "build": "gulp build",
     "watch": "gulp watch",
     "lint": "gulp lint",
-    "deploy": "npm run build && gh-pages -d dist -a",
+    "deploy": "(export BABAJKA_PREFIX='babajka-markup' && npm run build) && gh-pages -d dist -a",
     "prerelease": "npm version patch",
     "postrelease": "git push && git push --tags",
     "release": "npm publish",

@@ -18,6 +18,7 @@ const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.js
 const team = JSON.parse(fs.readFileSync('./src/about/team.json', 'utf8'));
 
 const port = process.env.PORT || 3001;
+const pathPrefix = (process.env.BABAJKA_PREFIX && `/${process.env.BABAJKA_PREFIX}`) || '';
 
 const config = {
   libsPath: 'node_modules',
@@ -29,9 +30,9 @@ const config = {
   staticPath: 'static',
 };
 
-templateVariables.bundlePath = `/${config.staticPath}/${config.stylesPath}/bundle.min.css`;
-templateVariables.assetsPath = `/${config.staticPath}/${config.stylesPath}/assets.min.css`;
-templateVariables.imagesPath = `/${config.staticPath}/${config.imagesPath}`;
+templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${config.stylesPath}/bundle.min.css`;
+templateVariables.assetsPath = `${pathPrefix}/${config.staticPath}/${config.stylesPath}/assets.min.css`;
+templateVariables.imagesPath = `${pathPrefix}/${config.staticPath}/${config.imagesPath}`;
 templateVariables.team = team;
 
 gulp.task('sass:bundle', () =>
