@@ -26,12 +26,12 @@ const config = {
   fontsPath: 'fonts',
   imagesPath: 'images',
   srcPath: 'src',
-  stubsStaticPath: 'stubs/static-prod',
+  staticPath: 'static',
 };
 
-templateVariables.bundlePath = `../${config.stylesPath}/bundle.min.css`;
-templateVariables.assetsPath = `../${config.stylesPath}/assets.min.css`;
-templateVariables.imagesPath = `../${config.imagesPath}`;
+templateVariables.bundlePath = `/${config.staticPath}/${config.stylesPath}/bundle.min.css`;
+templateVariables.assetsPath = `/${config.staticPath}/${config.stylesPath}/assets.min.css`;
+templateVariables.imagesPath = `/${config.staticPath}/${config.imagesPath}`;
 templateVariables.team = team;
 
 gulp.task('sass:bundle', () =>
@@ -46,7 +46,7 @@ gulp.task('sass:bundle', () =>
     .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
     .pipe(concatCss('bundle.min.css', { rebaseUrls: false }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
 );
 
 gulp.task('sass:assets', () =>
@@ -55,8 +55,7 @@ gulp.task('sass:assets', () =>
     .pipe(sass().on('error', sass.logError))
     .pipe(concatCss('assets.min.css'))
     .pipe(cleanCSS())
-    .pipe(gulp.dest(`${config.buildPath}/${config.stylesPath}`))
-    .pipe(gulp.dest(`${config.stubsStaticPath}/${config.stylesPath}`))
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
 );
 
 gulp.task('sass:lint', () =>
@@ -79,7 +78,7 @@ gulp.task('sass:watch', () =>
 gulp.task('fa:fonts', () =>
   gulp
     .src(`${config.libsPath}/font-awesome/fonts/fontawesome-webfont.*`)
-    .pipe(gulp.dest(`${config.buildPath}/${config.fontsPath}`))
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.fontsPath}`))
 );
 
 gulp.task('ejs:compile', () =>
@@ -98,8 +97,8 @@ gulp.task('html:lint', ['ejs:compile'], () =>
 
 gulp.task('images:copy', () =>
   gulp
-    .src(`${config.srcPath}/images/**/*`)
-    .pipe(gulp.dest(`${config.buildPath}/${config.imagesPath}`))
+    .src(`${config.staticPath}/images/**/*`)
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.imagesPath}`))
 );
 
 gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
