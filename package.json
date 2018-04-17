@@ -22,7 +22,7 @@
     "url": "https://github.com/babajka/babajka-markup.git"
   },
   "author": "babajka team <github.com/babajka>",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/babajka/babajka-markup/issues"
   },

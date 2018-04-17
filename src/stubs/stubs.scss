@@ -12,6 +12,7 @@
 
   .logo {
     margin-bottom: 1rem;
+    width: 10rem;
   }
 
   .title {
@@ -45,6 +46,10 @@
 
     i {
       margin: 0 0.7rem;
+
+      @include touch {
+        margin: 0 0.4rem;
+      }
     }
 
     .facebook:hover {

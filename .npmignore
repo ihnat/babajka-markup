@@ -4,6 +4,7 @@ src/
 static/
 dist/*
 !dist/static
+!dist/stubs
 .eslintrc
 .stylelintrc
 gulpfile.js
