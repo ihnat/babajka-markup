@@ -1,7 +1,7 @@
 [
   {
     "name": "Марына Анісімава",
-    "image": "anisimava.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/anisimava.jpg"
   },
   {
     "name": "Мікіта Баравік"
@@ -11,55 +11,60 @@
   },
   {
     "name": "Уладзь Богдан",
-    "image": "bohdan.jpg",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/bohdan.jpg",
     "role": "Administration, Backend, Design"
   },
   {
     "name": "Тоня Вярцінская",
-    "image": "tonia.jpg",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/viarcinskaja.jpg",
     "role": "Frontend, Design"
   },
   {
     "name": "Ірына Галухіна",
-    "image": "halukhina.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/halukhina.jpg"
   },
   {
     "name": "Дар'яна Дабранская",
     "role": "Аператар, сацсеткі",
-    "image": "dabranskaja.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/dabranskaja.jpg"
   },
   {
     "name": "Вікторыя Дрозд",
-    "image": "vika.jpg",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/drozd.jpg",
     "role": "Design"
   },
   {
-    "name": "Елізавета Лысенка"
+    "name": "Елізавета Лысенка",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/lysenka.jpg"
+  },
+  {
+    "name": "Вікторыя Міхнюк",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/mihniuk.jpg"
   },
   {
     "name": "Іван Пажытных",
-    "image": "drapegnik.jpg",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/drapegnik.jpg",
     "role": "Tech Leader / Full-stack JS Developer"
   },
   {
     "name": "Антось Спясівых",
-    "role": "Аператар",
-    "image": "sivykh.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/sivykh.jpg",
+    "role": "Аператар"
   },
   {
     "name": "Елізавета Таран"
   },
   {
     "name": "Наста Шылак",
-    "image": "shylak.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/shylak.jpg"
   },
   {
     "name": "Марына Яромка",
-    "image": "yaromka.jpg"
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/yaromka.jpg"
   },
   {
     "name": "Марыя Бадзей",
-    "image": "badziej.jpg",
+    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/badziej.jpg",
     "role": "Каарданытар праекта"
   }
 ]
