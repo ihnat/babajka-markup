@@ -10,6 +10,9 @@
 
   &__actions {
     margin-left: 2rem;
+    @media only screen and (max-width: $intermediate) {
+      display: none;
+    }
   }
 
   &__top {
@@ -72,21 +75,28 @@
   }
 
   &__collection-block {
-    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  &__another-names {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    margin-top: -2rem;
+  }
+
+  &__next-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   &__another {
     display: table;
   }
 
-  &__collection {
-    color: $primary-gray-alt;
-  }
-
-  &__arrow-icon {
+  &__arrow-wrap {
     color: $primary-gray-alt;
     display: table-cell;
     vertical-align: middle;
@@ -94,6 +104,15 @@
     &:hover {
       color: $primary-black;
     }
+  }
+
+  &__arrow.fa {
+    font-size: 1.5rem;
+  }
+
+  &__collection {
+    color: $primary-gray-alt;
+    text-decoration: underline;
   }
 
   &__title-block {
@@ -109,10 +128,10 @@
     @media only screen and (max-width: $tablet) {
       font-size: 2rem;
     }
-
+    
     @media only screen and (max-width: $mobile) {
       font-size: 1.5rem;
-    }    
+    }
   }
 
   &__usual-icon.icon:hover {
@@ -146,7 +165,7 @@
 
   &__info-item {
     color: $primary-gray-alt;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 
     &--clickable:hover {
       color: $primary-black;
@@ -162,7 +181,11 @@
   }
 
   &__info-icon {
-    color: $primary; 
+    color: $primary;
+  }
+
+  &__info-link {
+    text-decoration: underline;
   }
 
   &__info-planned.tag {
@@ -170,12 +193,27 @@
     color: #fff;
   }
 
+  &__author-block {
+    border-bottom: 1px solid lighten($color: $primary-gray-alt, $amount: 17%);
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+
+  &__author-info {
+    margin: 0.75rem 0;
+  }
+
+  &__author-image-wrap {
+    float: left;
+    margin-right: 0.5rem;
+  }
+
   &__info-langs {
     margin-top: 1rem;
   }
 
   &__info-lang {
-    margin: 0 0.5rem;
+    margin-left: 0.5rem;
   }
 
   &__info-lang.tag {
@@ -227,6 +265,13 @@
 
   &__bottom-text {
     color: $primary-black;
+  }
+
+  &__actions {
+    display: none;
+    @media only screen and (max-width: $intermediate) {
+      display: block;
+    }
   }
 
   &__line {
