@@ -1,4 +1,4 @@
-@import '../index';
+@import '../variables';
 
 .article-container.container {
   margin-bottom: 1rem;
@@ -128,7 +128,7 @@
     @media only screen and (max-width: $tablet) {
       font-size: 2rem;
     }
-    
+
     @media only screen and (max-width: $mobile) {
       font-size: 1.5rem;
     }
