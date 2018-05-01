@@ -80,6 +80,14 @@
     justify-content: space-between;
   }
 
+  &__invisible-another-name {
+    visibility: hidden;
+  }
+  
+  &__visible-another-name {
+    visibility: visible;
+  }
+
   &__another-names {
     font-style: italic;
     margin-bottom: 0.5rem;
@@ -124,6 +132,7 @@
 
   &__title.title {
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 
     @media only screen and (max-width: $tablet) {
       font-size: 2rem;

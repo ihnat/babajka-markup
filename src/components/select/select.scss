@@ -1,5 +1,11 @@
 @import '../../variables';
 
+$size-xs: 7rem;
+$size-s: 10rem;
+$size-m: 15rem;
+$size-l: 20rem;
+
+
 .select-temp {
   &-container {
     display: flex;
@@ -12,6 +18,12 @@
 }
 
 .babajka-dropdown {
+  width: $size-m;
+
+  &__trigger {
+    width: 100%;
+  }
+
   &.is-active {
     .input {
       border-radius: 3px 3px 0 0;
@@ -34,9 +46,9 @@
   }
 
   &-menu.dropdown-menu {
-    // padding-left: 1px;
+    min-width: 0;
     padding-top: 0;
-    width: 213px;
+    width: 100%;
   }
 
   &-content.dropdown-content {
@@ -58,4 +70,20 @@
 
     cursor: pointer;
   }
+}
+
+.size-xs {
+  width: $size-xs;
+}
+
+.size-s {
+  width: $size-s;
+}
+
+.size-m {
+  width: $size-m;
+}
+
+.size-l {
+  width: $size-l;
 }
