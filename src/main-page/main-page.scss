@@ -2,9 +2,19 @@
 
 .main-page {
   .diary-article {
+    display: flex;
+    padding: 1rem 1.3rem;
+
     .diary {
       font-style: italic;
       margin-right: 1rem;
+      max-height: 35ch;
+      overflow-y: hidden;
+    }
+
+    .ellipsis {
+      letter-spacing: 5px;
+      text-align: center;
     }
 
     .title {
@@ -29,15 +39,25 @@
       right: 0.8rem;
     }
 
-    .diary,
+    .content,
     .title,
     .subtitle {
-      margin-left: 1.4rem;
+      margin: 0 1.4rem;
     }
 
     .date {
       display: inline-block;
+      padding-bottom: 0.5rem;
       width: 100%;
+    }
+
+    .no-content {
+      margin: auto;
+      
+      img {
+        filter: grayscale(70%) opacity(20%);
+        padding: 0 2rem;
+      }
     }
 
     .control {
