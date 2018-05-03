@@ -850,9 +850,23 @@
   background-color: #4ba2e4;
   color: white;
 }
+.main-page .diary-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.3rem;
+}
+
 .main-page .diary-article .diary {
   font-style: italic;
   margin-right: 1rem;
+  max-height: 35ch;
+  overflow-y: hidden;
+}
+
+.main-page .diary-article .ellipsis {
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .main-page .diary-article .title {
@@ -877,15 +891,26 @@
   right: 0.8rem;
 }
 
-.main-page .diary-article .diary,
+.main-page .diary-article .content,
 .main-page .diary-article .title,
 .main-page .diary-article .subtitle {
-  margin-left: 1.4rem;
+  margin: 0 1.4rem;
 }
 
 .main-page .diary-article .date {
   display: inline-block;
+  padding-bottom: 0.5rem;
   width: 100%;
+}
+
+.main-page .diary-article .no-content {
+  margin: auto;
+}
+
+.main-page .diary-article .no-content img {
+  -webkit-filter: grayscale(70%) opacity(20%);
+  filter: grayscale(70%) opacity(20%);
+  padding: 0 2rem;
 }
 
 .main-page .diary-article .control {
