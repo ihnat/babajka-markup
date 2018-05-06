@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<% var title = 'User Profile Page' %>
+<% include ../head/head.ejs %>
+<body>
+
+<% include ../navbar/navbar.ejs %>
+
+<div class="user-profile-page page-container">
+
+    <div class="page-content">
+        <div class="personal-info">
+            <div class="card-image is-rounded">
+                <figure class="image is-4by3">
+                    <img class="profile-image" src="<%= imagesPath %>/photo3.jpg"/>
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Вальжына Морт</p>
+                        <p class="subtitle is-6">@valmort</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <%= authorBio %>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-list">
+            <div class="divider">
+            </div>
+            <div class="content-title title">
+                Артыкулы
+            </div>
+            <div class="divider">
+            </div>
+        </div>
+
+
+        <div class="first-line tile is-ancestor">
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-16by9',
+            photoVar: 'photo2.jpg',
+            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+            titleVar: 'Крама "як з крамы"',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo3.jpg',
+            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo5.jpg',
+            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+            titleVar: 'Некоратка аб Ахматавай',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo4.jpg',
+            specialHeadingNameVar: 'Курылка Гутэнберга',
+            specialHeadingPhotoVar: 'kurilka_icon.png',
+            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+            titleVar: 'Культура і псіхалогія',
+            }); %>
+
+        </div>
+        <div class="first-line tile is-ancestor">
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-16by9',
+            photoVar: 'photo2.jpg',
+            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+            titleVar: 'Крама "як з крамы"',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo3.jpg',
+            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo5.jpg',
+            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+            titleVar: 'Некоратка аб Ахматавай',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo4.jpg',
+            specialHeadingNameVar: 'Курылка Гутэнберга',
+            specialHeadingPhotoVar: 'kurilka_icon.png',
+            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+            titleVar: 'Культура і псіхалогія',
+            }); %>
+
+        </div>
+
+
+        <div class="content-list">
+            <div class="divider">
+            </div>
+            <div class="content-title title">
+                Лекцыі
+            </div>
+            <div class="divider">
+            </div>
+        </div>
+
+        <div class="first-line tile is-ancestor">
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-16by9',
+            photoVar: 'photo2.jpg',
+            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+            titleVar: 'Крама "як з крамы"',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo3.jpg',
+            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo5.jpg',
+            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+            titleVar: 'Некоратка аб Ахматавай',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo4.jpg',
+            specialHeadingNameVar: 'Курылка Гутэнберга',
+            specialHeadingPhotoVar: 'kurilka_icon.png',
+            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+            titleVar: 'Культура і псіхалогія',
+            }); %>
+
+        </div>
+
+        <div class="content-list">
+            <div class="divider">
+            </div>
+            <div class="content-title title">
+                Іншае
+            </div>
+            <div class="divider">
+            </div>
+        </div>
+
+        <div class="first-line tile is-ancestor">
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-16by9',
+            photoVar: 'photo2.jpg',
+            subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+            titleVar: 'Крама "як з крамы"',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo3.jpg',
+            subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
+            titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            authorVar: 'Вальжына Морт',
+            authorPhotoVar: 'mort.jpg',
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo5.jpg',
+            subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
+            titleVar: 'Некоратка аб Ахматавай',
+            }); %>
+
+            <%- include('../tiles/tile.ejs', {
+            photoClassVar: 'is-3by2',
+            photoVar: 'photo4.jpg',
+            specialHeadingNameVar: 'Курылка Гутэнберга',
+            specialHeadingPhotoVar: 'kurilka_icon.png',
+            subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
+            titleVar: 'Культура і псіхалогія',
+            }); %>
+
+        </div>
+
+
+    </div>
+</div>
+
+<% include ../footer/footer.ejs %>
+
+</body>
+</html>
