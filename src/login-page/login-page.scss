@@ -4,13 +4,20 @@
   margin-bottom: 3rem;
   margin-top: 1rem;
   width: 27.5rem;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .login {
   background-color: $white;
   border-radius: 0.3rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   padding: 2rem 3rem;
+
+  @include tablet {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
 
   .control {
     font-size: 1.1rem;
