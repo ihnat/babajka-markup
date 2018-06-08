@@ -30,9 +30,9 @@ article {
       margin: 10px;
     }
 
-    .author {
+    .tile-footer {
       font-family: $tile-primary-text;
-      margin: 10px 0 10px 5px;
+      margin: 10px 5px;
       width: 100%;
 
       img {
@@ -46,11 +46,15 @@ article {
         width: 35px;
       }
 
-      .name {
+      .author-name {
         font-size: 1.05rem;
         font-weight: 600;
         padding: 4px;
         text-overflow: ellipsis;
+      }
+
+      .article-date {
+        margin: 0 10px 0 0;
       }
     }
   }
@@ -58,6 +62,13 @@ article {
   &:hover {
     box-shadow: 2px 2px 5px #b5b5b5;
   }
+}
+
+.actions {
+  color: $white;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .special-heading {

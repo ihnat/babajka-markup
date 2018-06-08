@@ -34,6 +34,7 @@
                     </div>
                 </div>
             <% } %>
+            <div class="actions"><i class="article-edit-icon fa fa-pencil fa-lg"></i></div>
         </div>
         <div class="card-content">
             <span class="title">
@@ -42,14 +43,17 @@
             <p class="subtitle">
                 <%= subtitleVar %>
             </p>
-            <% if (authorVar) { %>
-                <div class="author">
-                    <img src="<%= imagesPath %>/<%= authorPhotoVar %>" />
-                    <div class="name">
-                        <span><%= authorVar %></span>
-                    </div>
+            <div class="level tile-footer is-mobile">
+                <div class="level-left">
+                    <% if (authorVar) { %>
+                        <img src="<%= imagesPath %>/<%= authorPhotoVar %>" />
+                        <div class="author-name">
+                            <span><%= authorVar %></span>
+                        </div>
+                    <% } %>
                 </div>
-            <% } %>
+                <div class="level-right article-date">7 красавіка 2018</div>
+            </div>
         </div>
     </article>
 </div>
