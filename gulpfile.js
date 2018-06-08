@@ -105,7 +105,7 @@ gulp.task('images:copy', () =>
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.imagesPath}`))
 );
 
-gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.series('html:lint')));
+gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, gulp.series('html:lint')));
 
 gulp.task('serve', () =>
   connect.server({
@@ -127,7 +127,7 @@ gulp.task(
   'build',
   gulp.parallel('ejs:compile', 'sass:bundle', 'sass:assets', 'fa:fonts', 'images:copy')
 );
-gulp.task('lint', gulp.series('sass:lint', 'html:lint'));
+gulp.task('lint', gulp.parallel('sass:lint', 'html:lint'));
 gulp.task(
   'watch',
   gulp.series('build', gulp.parallel('serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch'))
