@@ -8,10 +8,12 @@
 <% var specialHeadingPhotoVar; %>
 <% var subtitleVar; %>
 <% var titleVar; %>
-<% var cardClasses; %>
+<% var isUnpublished; %>
 
 <div class="tile is-parent">
-    <article class="card tile is-child is-flex <%= cardClasses %>">
+    <article
+      class="card tile is-child is-flex <% if (isUnpublished) { %> with-opacity <% } %>"
+      <% if (isUnpublished) { %> title="Гэты артыкул яшчэ не апублікаваны" <% } %> >
         <div class="card-image">
             <figure class="image <%= photoClassVar %>">
                 <img src="<%= imagesPath %>/<%= photoVar %>" />
@@ -34,9 +36,9 @@
                     </div>
                 </div>
             <% } %>
-            <div class="actions"><i class="article-edit-icon fa fa-pencil fa-lg"></i></div>
+            <div class="actions"><i class="fa fa-pencil fa-lg"></i></div>
         </div>
-        <div class="card-content">
+        <div class="card-content is-video-article ">
             <span class="title">
                 <a href="../article-page/article-page.html"><%= titleVar %></a>
             </span>
@@ -52,7 +54,9 @@
                         </div>
                     <% } %>
                 </div>
-                <div class="level-right article-date">7 красавіка 2018</div>
+                <% if (isUnpublished) { %>
+                    <div class="level-right article-date">7.07.2018</div>
+                <% } %>
             </div>
         </div>
     </article>
