@@ -81,5 +81,10 @@
       background-color: #4ba2e4;
       color: $white;
     }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $picton-blue;
+    }
   }
 }
