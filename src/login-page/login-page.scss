@@ -19,6 +19,12 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   }
 
+  .signup-not-available {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
   .control {
     font-size: 1.1rem;
   }
@@ -74,6 +80,11 @@
     &:hover {
       background-color: #4ba2e4;
       color: $white;
+    }
+
+    &:disabled,
+    &[disabled] {
+      background-color: $picton-blue;
     }
   }
 }

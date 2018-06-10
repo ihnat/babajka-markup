@@ -30,9 +30,9 @@ article {
       margin: 10px;
     }
 
-    .author {
+    .tile-footer {
       font-family: $tile-primary-text;
-      margin: 10px 0 10px 5px;
+      margin: 10px 5px;
       width: 100%;
 
       img {
@@ -46,17 +46,36 @@ article {
         width: 35px;
       }
 
-      .name {
+      .author-name {
         font-size: 1.05rem;
         font-weight: 600;
         padding: 4px;
         text-overflow: ellipsis;
+      }
+
+      .article-date {
+        font-family: $tile-secondary-text;
+        font-size: 0.85rem;
+        margin: 0 1.5rem 0 0;
       }
     }
   }
 
   &:hover {
     box-shadow: 2px 2px 5px #b5b5b5;
+  }
+}
+
+.actions {
+  color: $black;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0.5rem;
+  -webkit-text-stroke: 1px $white;
+  top: 0.5rem;
+
+  &:hover {
+    font-size: 0.9rem;
   }
 }
 

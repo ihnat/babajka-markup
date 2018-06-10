@@ -1,17 +1,16 @@
 const gulp = require('gulp');
 const watch = require('gulp-watch');
 const connect = require('gulp-connect');
-const gutil = require('gulp-util');
-
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
 const stylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
 const replace = require('gulp-replace');
-
 const ejs = require('gulp-ejs');
 const htmlhint = require('gulp-htmlhint');
+const log = require('fancy-log');
+const plumber = require('gulp-plumber');
 
 const fs = require('fs');
 const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
@@ -30,8 +29,12 @@ const config = {
   staticPath: 'static',
 };
 
-templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${config.stylesPath}/bundle.min.css`;
-templateVariables.assetsPath = `${pathPrefix}/${config.staticPath}/${config.stylesPath}/assets.min.css`;
+templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${
+  config.stylesPath
+}/bundle.min.css`;
+templateVariables.assetsPath = `${pathPrefix}/${config.staticPath}/${
+  config.stylesPath
+}/assets.min.css`;
 templateVariables.imagesPath = `${pathPrefix}/${config.staticPath}/${config.imagesPath}`;
 templateVariables.team = team;
 
@@ -60,20 +63,18 @@ gulp.task('sass:assets', () =>
 );
 
 gulp.task('sass:lint', () =>
-  gulp.src(`${config.srcPath}/**/*.scss`).pipe(
-    stylelint({
-      reporters: [{ formatter: 'string', console: true }],
-    })
-  )
+  gulp
+    .src(`${config.srcPath}/**/*.scss`)
+    .pipe(plumber())
+    .pipe(
+      stylelint({
+        reporters: [{ formatter: 'string', console: true }],
+      })
+    )
 );
 
 gulp.task('sass:watch', () =>
-  watch(`${config.srcPath}/**/*.scss`, () => {
-    gulp.start('sass:bundle');
-    gulp.start('sass:bundle');
-    gulp.start('sass:assets');
-    gulp.start('sass:lint');
-  })
+  watch(`${config.srcPath}/**/*.scss`, gulp.series('sass:bundle', 'sass:assets', 'sass:lint'))
 );
 
 gulp.task('fa:fonts', () =>
@@ -85,16 +86,18 @@ gulp.task('fa:fonts', () =>
 gulp.task('ejs:compile', () =>
   gulp
     .src(`${config.srcPath}/**/*.ejs`)
-    .pipe(ejs(templateVariables, {}, { ext: '.html' }).on('error', gutil.log))
+    .pipe(ejs(templateVariables, {}, { ext: '.html' }).on('error', log))
     .pipe(gulp.dest(config.buildPath))
 );
 
-gulp.task('html:lint', ['ejs:compile'], () =>
+const lintHtml = () =>
   gulp
     .src(`${config.buildPath}/**/*.html`)
+    // .pipe(plumber())
     .pipe(htmlhint('.htmlhintrc'))
-    .pipe(htmlhint.reporter())
-);
+    .pipe(htmlhint.reporter());
+
+gulp.task('html:lint', gulp.series('ejs:compile', lintHtml));
 
 gulp.task('images:copy', () =>
   gulp
@@ -102,7 +105,7 @@ gulp.task('images:copy', () =>
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.imagesPath}`))
 );
 
-gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, () => gulp.start('html:lint')));
+gulp.task('ejs:watch', () => watch(`${config.srcPath}/**/*.ejs`, gulp.series('html:lint')));
 
 gulp.task('serve', () =>
   connect.server({
@@ -120,6 +123,12 @@ gulp.task('livereload', () =>
 );
 
 // export tasks
-gulp.task('build', ['ejs:compile', 'sass:bundle', 'sass:assets', 'fa:fonts', 'images:copy']);
-gulp.task('watch', ['build', 'serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch']);
-gulp.task('lint', ['sass:lint', 'html:lint']);
+gulp.task(
+  'build',
+  gulp.parallel('ejs:compile', 'sass:bundle', 'sass:assets', 'fa:fonts', 'images:copy')
+);
+gulp.task('lint', gulp.parallel('sass:lint', 'html:lint'));
+gulp.task(
+  'watch',
+  gulp.series('build', gulp.parallel('serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch'))
+);

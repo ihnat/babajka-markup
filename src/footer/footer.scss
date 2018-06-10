@@ -10,6 +10,10 @@
   padding: 1.2rem 2rem;
   text-align: center;
 
+  @include mobile {
+    padding: 1.2rem 0.6rem;
+  }
+
   .general-info {
     vertical-align: center;
 
@@ -21,7 +25,13 @@
 
   .social {
     .button {
+      height: 2.7rem;
       margin: 0.4rem;
+      width: 2.7rem;
+
+      @include mobile {
+        margin: 0.5rem 0.2rem;
+      }
     }
 
     .facebook:hover {
