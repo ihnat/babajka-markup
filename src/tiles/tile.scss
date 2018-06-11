@@ -79,6 +79,22 @@ article {
   }
 }
 
+.video-article {
+  color: $white;
+  font-size: 2.8rem;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 0 2rem $primary;
+  -webkit-text-stroke: 2px $primary-gray;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    color: $white;
+    font-size: 3rem;
+  }
+}
+
 .special-heading {
   background-color: #fff;
   border: 1px solid $primary;
