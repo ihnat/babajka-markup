@@ -67,15 +67,32 @@ article {
 }
 
 .actions {
-  color: $black;
+  color: $white;
   font-size: 0.8rem;
   position: absolute;
   right: 0.5rem;
-  -webkit-text-stroke: 1px $white;
+  text-shadow: 0 0 1rem $primary;
+  -webkit-text-stroke: 1px $primary-darkgray;
   top: 0.5rem;
 
   &:hover {
     font-size: 0.9rem;
+  }
+}
+
+.video-article {
+  color: $white;
+  font-size: 2.8rem;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 0 1rem $primary;
+  -webkit-text-stroke: 2px $primary-gray;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    color: $white;
+    font-size: 3rem;
   }
 }
 

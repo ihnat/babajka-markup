@@ -20,16 +20,17 @@
                     <%- include('../tiles/tile.ejs', {
                         authorVar: 'Змітр Корнеў',
                         authorPhotoVar: 'mock/vajc.jpg',
+                        isUnpublished: true,
                         photoClassVar: 'is-16by9',
                         photoVar: 'mock/photo2.jpg',
                         subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
                         titleVar: 'Крама "як з крамы"',
-                        isUnpublished: true,
                     }); %>
 
                     <%- include('../tiles/tile.ejs', {
                         authorVar: 'Вальжына Морт',
                         authorPhotoVar: 'mock/mort.jpg',
+                        isVideoArticle: true,
                         photoClassVar: 'is-3by2',
                         photoVar: 'mock/photo3.jpg',
                         subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
@@ -39,6 +40,7 @@
                     <%- include('../tiles/tile.ejs', {
                         authorVar: 'Лявон Вольскі',
                         authorPhotoVar: 'mock/volski.jpg',
+                        isVideoArticle: true,
                         photoClassVar: 'is-3by2',
                         photoVar: 'mock/photo5.jpg',
                         subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
@@ -46,13 +48,13 @@
                     }); %>
 
                     <%- include('../tiles/tile.ejs', {
+                        isUnpublished: true,
                         photoClassVar: 'is-3by2',
                         photoVar: 'mock/photo4.jpg',
                         specialHeadingNameVar: 'Курылка Гутэнберга',
                         specialHeadingPhotoVar: 'references/kurilka_icon.png',
                         subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
                         titleVar: 'Культура і псіхалогія',
-                        isUnpublished: true,
                     }); %>
 
                 </div>
@@ -76,6 +78,7 @@
                         <%- include('../tiles/tile.ejs', {
                             authorVar: 'Змітр Корнеў',
                             authorPhotoVar: 'mock/vajc.jpg',
+                            isVideoArticle: true,
                             photoClassVar: 'is-3by2',
                             photoVar: 'mock/photo2.jpg',
                             subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
@@ -172,7 +175,16 @@
                         titleVar: 'Крама "як з крамы"',
                     }); %>
 
-                    <div class="tile"></div>
+                    <%- include('../tiles/tile.ejs', {
+                        authorVar: 'Змітр Корнеў',
+                        authorPhotoVar: 'mock/vajc.jpg',
+                        isVideoArticle: true,
+                        photoClassVar: 'is-16by9',
+                        photoVar: 'mock/white.png',
+                        subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
+                        titleVar: 'Крама "як з крамы"',
+                    }); %>
+
                     <div class="tile"></div>
                     <div class="tile"></div>
 

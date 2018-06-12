@@ -9,6 +9,7 @@
 <% var subtitleVar; %>
 <% var titleVar; %>
 <% var isUnpublished; %>
+<% var isVideoArticle; %>
 
 <div class="tile is-parent">
     <article
@@ -37,6 +38,9 @@
                 </div>
             <% } %>
             <div class="actions"><i class="fa fa-pencil fa-lg"></i></div>
+            <% if (isVideoArticle) { %>
+                <a href="../article-page/article-page.html" class="video-article"><i class="fa fa-play"></i></a>
+            <% } %>
         </div>
         <div class="card-content is-video-article ">
             <span class="title">
@@ -55,7 +59,7 @@
                     <% } %>
                 </div>
                 <% if (isUnpublished) { %>
-                    <div class="level-right article-date">7.07.2018</div>
+                    <div class="level-right article-date">праз 3 дні</div>
                 <% } %>
             </div>
         </div>
