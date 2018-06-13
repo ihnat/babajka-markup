@@ -9,8 +9,10 @@ const cleanCSS = require('gulp-clean-css');
 const replace = require('gulp-replace');
 const ejs = require('gulp-ejs');
 const htmlhint = require('gulp-htmlhint');
-const log = require('fancy-log');
 const plumber = require('gulp-plumber');
+
+const log = require('fancy-log');
+const cors = require('cors');
 
 const fs = require('fs');
 const templateVariables = JSON.parse(fs.readFileSync('./src/templateVariables.json', 'utf8'));
@@ -93,7 +95,6 @@ gulp.task('ejs:compile', () =>
 const lintHtml = () =>
   gulp
     .src(`${config.buildPath}/**/*.html`)
-    // .pipe(plumber())
     .pipe(htmlhint('.htmlhintrc'))
     .pipe(htmlhint.reporter());
 
@@ -112,6 +113,7 @@ gulp.task('serve', () =>
     port,
     livereload: true,
     root: config.buildPath,
+    middleware: () => [cors()],
   })
 );
 
