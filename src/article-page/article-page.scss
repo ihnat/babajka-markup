@@ -80,6 +80,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   &__invisible-another-name {
@@ -129,7 +130,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1rem;
   }
 
   &__title.title {
@@ -207,11 +207,12 @@
   &__author-block {
     border-bottom: 1px solid lighten($color: $primary-gray-alt, $amount: 17%);
     margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
     width: 100%;
   }
 
   &__author-info {
-    margin: 0.75rem 0;
+    margin-top: 0.75rem;
   }
 
   &__author-image-wrap {
@@ -253,6 +254,21 @@
 
   &__imagewrapper {
     padding: 1rem 0;
+  }
+
+  &__playerwrapper {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+  }
+
+  &__player {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 
   &__text {
