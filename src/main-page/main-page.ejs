@@ -38,6 +38,8 @@
                     }); %>
 
                     <%- include('../tiles/tile.ejs', {
+                        isUnpublished: true,
+                        isDraft: true,
                         authorVar: 'Лявон Вольскі',
                         authorPhotoVar: 'mock/volski.jpg',
                         isVideoArticle: true,
@@ -48,7 +50,6 @@
                     }); %>
 
                     <%- include('../tiles/tile.ejs', {
-                        isUnpublished: true,
                         photoClassVar: 'is-3by2',
                         photoVar: 'mock/photo4.jpg',
                         specialHeadingNameVar: 'Курылка Гутэнберга',

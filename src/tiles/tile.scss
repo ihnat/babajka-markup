@@ -53,10 +53,17 @@ article {
         text-overflow: ellipsis;
       }
 
-      .article-date {
+      .publication-scheduled {
         font-family: $tile-secondary-text;
         font-size: 0.85rem;
         margin: 0 1.5rem 0 0;
+      }
+
+      .publication-not-scheduled {
+        font-family: $tile-secondary-text;
+        font-size: 0.75rem;
+        margin: 0 0.25rem 0 0;
+        max-width: 6rem;
       }
     }
   }
