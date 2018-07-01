@@ -1,0 +1,110 @@
+@import '../../variables';
+
+.main-page {
+  .diary-wrapper {
+    .arrow {
+      cursor: pointer;
+      height: 100%;
+      opacity: 0.4;
+      padding: 0 0.8rem;
+      position: absolute;
+      top: 0;
+      width: auto;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .arrow-left {
+      left: 0;
+
+      &:hover {
+        box-shadow: inset -15px 0 25px 0 $primary;
+      }
+    }
+
+    .arrow-right {
+      right: 0;
+
+      &:hover {
+        box-shadow: inset 15px 0 25px 0 $primary;
+      }
+    }
+  }
+
+  .diary-article {
+    display: flex;
+    height: 100%;
+    margin: 0 2rem;
+    padding: 1rem 0.5rem;
+
+    &:hover {
+      background-color: $primary-opaqued;
+      box-shadow: none;
+      color: $primary-opaqued;
+
+      .title {
+        color: $primary-opaqued;
+      }
+
+      .hover-read-more {
+        visibility: visible;
+      }
+    }
+
+    .hover-read-more {
+      color: $primary-black;
+      font-size: 3.5rem;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+    }
+
+    .text {
+      font-size: 1rem;
+      font-style: italic;
+      line-height: 1.2rem;
+      margin-right: 0.5rem;
+      margin-top: 1rem;
+      // max-height should be equal to N*line-height, otherwise lines might be
+      // cut vertically in some random point.
+      max-height: 12rem;
+      overflow-y: hidden;
+      padding: 0.1rem;
+    }
+
+    .ellipsis {
+      letter-spacing: 5px;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .date {
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      width: 100%;
+    }
+
+    .author {
+      margin-bottom: 0.5rem;
+      word-break: normal;
+    }
+
+    .no-content {
+      margin: auto;
+
+      img {
+        filter: grayscale(70%) opacity(20%);
+        padding: 0 2rem;
+      }
+    }
+  }
+}
