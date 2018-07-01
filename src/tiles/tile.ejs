@@ -10,6 +10,7 @@
 <% var titleVar; %>
 <% var isUnpublished; %>
 <% var isVideoArticle; %>
+<% var isDraft; %>
 
 <div class="tile is-parent">
     <article
@@ -59,7 +60,11 @@
                     <% } %>
                 </div>
                 <% if (isUnpublished) { %>
-                    <div class="level-right article-date">праз 3 дні</div>
+                    <% if (isDraft) { %>
+                        <div class="level-right publication-not-scheduled">Публікацыя не запланавана</div>
+                    <% } else { %>
+                        <div class="level-right publication-scheduled">праз 3 дні</div>
+                    <% } %>
                 <% } %>
             </div>
         </div>
