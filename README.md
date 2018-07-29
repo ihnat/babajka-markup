@@ -29,7 +29,8 @@ We have autopublishing to npm registry and package autoversioning set up. In ord
 - `major(<scope>): <subject>` - increases **major** version: 1.0.0 -> 2.0.0
 
 Autopushing is performed by Travis and only triggered when pushing (single commit or PR) into `master` branch.
-When pushing a PR it is enough to have **one** commit named with the conventions above.
+
+All commit messages checked with [commitlint](https://github.com/marionebl/commitlint). Feel free to add new `scope`'s and `type`'s to [`.commitlintrc.js`](https://github.com/babajka/babajka-markup/blob/master/.commitlintrc.js)
 
 ### scripts
 
