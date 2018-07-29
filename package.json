@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.2.5",
+  "version": "0.8.15",
   "description": "Markups",
   "scripts": {
     "start": "cross-env PORT=3001 npm run watch",
@@ -12,7 +12,8 @@
     "postrelease": "git push && git push --tags",
     "release": "npm publish",
     "precommit": "lint-staged",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
     "**/*.scss": "stylelint --syntax=scss"
@@ -32,6 +33,8 @@
     "font-awesome": "^4.7.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/git": "^7.0.1",
     "cors": "^2.8.4",
     "cross-env": "^5.1.4",
     "fancy-log": "^1.3.2",
@@ -50,8 +53,9 @@
     "gulp-watch": "^5.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
-    "semantic-release": "^11.0.2",
+    "semantic-release": "^15.8.1",
     "stylelint": "^9.2.1",
-    "stylelint-config-sass-guidelines": "^5.0.0"
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "travis-deploy-once": "^5.0.1"
   }
 }

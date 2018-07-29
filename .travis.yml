@@ -1,17 +1,18 @@
 language: node_js
 cache:
   directories:
-    - ~/.npm
+    - "~/.npm"
 notifications:
   email: false
 node_js:
   - '10'
 after_success:
-  - npm install -g travis-deploy-once@4
-  - travis-deploy-once "npm run semantic-release"
+  - npm run travis-deploy-once "npm run semantic-release"
 script:
   - npm run build
   - npm run lint
 branches:
   except:
-    - /^v\d+\.\d+\.\d+$/
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
+before_install:
+  - openssl aes-256-cbc -K $encrypted_e6871e089a79_key -iv $encrypted_e6871e089a79_iv -in wirbot_key.enc -out wirbot_key -d
