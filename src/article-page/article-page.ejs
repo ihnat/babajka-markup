@@ -58,8 +58,29 @@
                     </div>
 
                     <div class="article__info">
-                        <div class="article__author-block is-hidden-desktop">
-                            <a class="article__info-item article__info-item--clickable">
+                        <div class="article__info-left">
+                            <div class="article__author-block is-hidden-desktop">
+                                <a class="article__info-item article__info-item--clickable">
+                                    <span class="article__info-icon icon">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="article__info-link">
+                                        <%= authorName %>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <div class="article__author-info">
+                                    <figure class="article__author-image-wrap image is-48x48">
+                                        <img class="article__author-image" src="<%= imagesPath %>/mock/vajc.jpg" alt="Тут павінна быць фота аўтара артыкула" />
+                                    </figure>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                            <a class="article__info-item article__info-item--clickable is-hidden-desktop">
                                 <span class="article__info-icon icon">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </span>
@@ -67,84 +88,66 @@
                                     <%= authorName %>
                                 </span>
                                 <span class="icon">
-                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </span>
                             </a>
-                            <div class="article__author-info">
-                                <figure class="article__author-image-wrap image is-48x48">
-                                    <img class="article__author-image" src="<%= imagesPath %>/mock/vajc.jpg" alt="Тут павінна быць фота аўтара артыкула" />
-                                </figure>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                        </div>
-                        <a class="article__info-item article__info-item--clickable is-hidden-desktop">
-                            <span class="article__info-icon icon">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                            <span class="article__info-link">
-                                <%= authorName %>
-                            </span>
-                            <span class="icon">
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                        <div class="dropdown is-hoverable is-hidden-touch">
-                            <div class="dropdown-trigger">
-                                <a class="article__info-item article__info-item--clickable" aria-haspopup="true" aria-controls="author-dropdown">
-                                    <span class="article__info-icon icon">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                    </span>
-                                    <%= authorName %>
-                                </a>
-                            </div>
-                            <div class="article__author-menu dropdown-menu" id="author-dropdown" role="menu">
-                                <div class="dropdown-content">
-                                    <div class="dropdown-item">
-                                        <div class="article__author-top media">
-                                            <div class="media-left">
-                                                <figure class="image is-48x48">
-                                                    <img class="article__author-image" src="<%= imagesPath %>/mock/vajc.jpg" alt="Тут павінна быць фота аўтара артыкула" />
-                                                </figure>
+                            <div class="dropdown is-hoverable is-hidden-touch">
+                                <div class="dropdown-trigger">
+                                    <a class="article__info-item article__info-item--clickable" aria-haspopup="true" aria-controls="author-dropdown">
+                                        <span class="article__info-icon icon">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </span>
+                                        <%= authorName %>
+                                    </a>
+                                </div>
+                                <div class="article__author-menu dropdown-menu" id="author-dropdown" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <div class="article__author-top media">
+                                                <div class="media-left">
+                                                    <figure class="image is-48x48">
+                                                        <img class="article__author-image" src="<%= imagesPath %>/mock/vajc.jpg" alt="Тут павінна быць фота аўтара артыкула" />
+                                                    </figure>
+                                                </div>
+                                                <div class="media-content">
+                                                    <p class="article__author-name is-size-6">
+                                                        <%= authorName %>
+                                                    </p>
+                                                    <p>Якая-небудзь інфа пра аўтара</p>
+                                                </div>
                                             </div>
-                                            <div class="media-content">
-                                                <p class="article__author-name is-size-6">
-                                                    <%= authorName %>
-                                                </p>
-                                                <p>Якая-небудзь інфа пра аўтара</p>
-                                            </div>
-                                        </div>
 
-                                        <div class="content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <div class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis nostrud exercitation
+                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <a class="article__info-item article__info-item--clickable" title="Чытаць пра партнёра падрабязней">
+                                <span class="article__info-icon icon">
+                                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                </span>
+                                <span class="article__info-link">
+                                    <%= partnerName %>
+                                </span>
+                            </a>
+                            <!-- <span class="article__info-item">
+                                <span class="article__info-icon icon">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </span>
+                                7 красавіка 2018
+                            </span> -->
+                            <!-- <span class="article__info-item has-text-primary">
+                                Публікацыя не запланавана
+                            </span> -->
+                            <span class="article__info-item article__info-planned has-text-primary">
+                                Будзе апублікаваны 15 красавіка 2018
+                            </span>
                         </div>
-                        <a class="article__info-item article__info-item--clickable" title="Чытаць пра партнёра падрабязней">
-                            <span class="article__info-icon icon">
-                                <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                            </span>
-                            <span class="article__info-link">
-                                <%= partnerName %>
-                            </span>
-                        </a>
-                        <span class="article__info-item">
-                            <span class="article__info-icon icon">
-                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            </span>
-                            7 красавіка 2018
-                        </span>
-                        <!-- <span class="article__info-item tag is-warning is-uppercase">
-                            Публікацыя не запланавана
-                        </span>
-                        <span class="article__info-item article__info-planned tag is-uppercase">
-                            Будзе апублікаваны 15 красавіка 2018
-                        </span> -->
+                        <button class="article__info-now button is-small is-primary">Апублікаваць зараз</button>
                     </div>
                     <div class="article__info-langs">
                         <span>

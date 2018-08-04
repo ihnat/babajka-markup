@@ -9,7 +9,7 @@ module.exports = {
         'core',
         'common',
         'about',
-        'acticle',
+        'article',
         'edit-article',
         'select',
         'modal',
