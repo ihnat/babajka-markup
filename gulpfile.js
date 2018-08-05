@@ -58,7 +58,15 @@ gulp.task('sass:bundle', () =>
 gulp.task('sass:assets', () =>
   gulp
     .src(`${config.srcPath}/index.scss`)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: [
+          'node_modules/bulma',
+          'node_modules/bulma-badge/dist/css/',
+          'node_modules/font-awesome/scss',
+        ],
+      }).on('error', sass.logError)
+    )
     .pipe(concatCss('assets.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
