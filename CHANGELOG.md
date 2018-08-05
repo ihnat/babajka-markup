@@ -1,3 +1,10 @@
+## [0.8.18](https://github.com/babajka/babajka-markup/compare/v0.8.17...v0.8.18) (2018-08-05)
+
+
+### Bug Fixes
+
+* **core:** remove stubs ([7a7b94c](https://github.com/babajka/babajka-markup/commit/7a7b94c))
+
 ## [0.8.17](https://github.com/babajka/babajka-markup/compare/v0.8.16...v0.8.17) (2018-08-05)
 
 
