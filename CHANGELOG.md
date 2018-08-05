@@ -1,3 +1,11 @@
+## [0.8.17](https://github.com/babajka/babajka-markup/compare/v0.8.16...v0.8.17) (2018-08-05)
+
+
+### Bug Fixes
+
+* **core:** add bulma-badge extension ([b7d286e](https://github.com/babajka/babajka-markup/commit/b7d286e))
+* **tools:** remove key, add packaging files list ([3d4ea36](https://github.com/babajka/babajka-markup/commit/3d4ea36))
+
 ## [0.8.16](https://github.com/babajka/babajka-markup/compare/v0.8.15...v0.8.16) (2018-08-05)
 
 ### Bug Fixes
