@@ -31,7 +31,6 @@
   "homepage": "https://github.com/babajka/babajka-markup#readme",
   "files": [
     "dist/",
-    "stubs/",
     "README.md",
     "LICENSE"
   ],
