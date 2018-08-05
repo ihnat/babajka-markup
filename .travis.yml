@@ -14,5 +14,3 @@ script:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
-before_install:
-  - openssl aes-256-cbc -K $encrypted_e6871e089a79_key -iv $encrypted_e6871e089a79_iv -in wirbot_key.enc -out wirbot_key -d

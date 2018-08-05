@@ -29,6 +29,12 @@
     "url": "https://github.com/babajka/babajka-markup/issues"
   },
   "homepage": "https://github.com/babajka/babajka-markup#readme",
+  "files": [
+    "dist/",
+    "stubs/",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "bulma": "^0.6.2",
     "bulma-badge": "^2.0.0",
