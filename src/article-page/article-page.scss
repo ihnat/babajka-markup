@@ -1,5 +1,9 @@
 @import '../variables';
 
+.article-content {
+  flex: 1 0 auto;
+}
+
 .article-container.container {
   margin-bottom: 1rem;
   margin-top: 1rem;
