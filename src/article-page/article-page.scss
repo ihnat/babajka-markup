@@ -1,5 +1,9 @@
 @import '../variables';
 
+.article-content {
+  flex: 1 0 auto;
+}
+
 .article-container.container {
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -170,8 +174,21 @@
   &__info {
     align-items: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $mobile) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__info-left {
+    @media only screen and (max-width: $mobile) {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__info-item {
@@ -187,7 +204,7 @@
     }
 
     @media only screen and (max-width: $mobile) {
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
   }
 
@@ -220,6 +237,12 @@
     margin-right: 0.5rem;
   }
 
+  &__info-now {
+    @media only screen and (max-width: $mobile) {
+      margin-top: 2px;
+    }
+  }
+
   &__info-langs {
     margin-top: 1rem;
   }
@@ -229,8 +252,9 @@
   }
 
   &__info-lang.tag {
-    background-color: $primary-bright;
-    color: #fff;
+    background-color: #fff;
+    border: 1px solid $primary-bright;
+    color: $primary-bright;
   }
 
   &__author-menu.dropdown-menu {
