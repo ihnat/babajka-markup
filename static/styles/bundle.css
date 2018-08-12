@@ -1434,11 +1434,7 @@ article:hover {
 
 .main-page .diary-article:hover {
   box-shadow: none;
-  color: #f2f2f2;
-}
-
-.main-page .diary-article:hover .title {
-  color: #f2f2f2;
+  color: #808080;
 }
 
 .main-page .diary-article:hover .hover-read-more {
