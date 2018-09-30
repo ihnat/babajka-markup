@@ -1,6 +1,6 @@
 {
   "name": "babajka-markup",
-  "version": "0.8.18",
+  "version": "0.8.19",
   "description": "Markups",
   "scripts": {
     "start": "cross-env PORT=3001 npm run watch",
