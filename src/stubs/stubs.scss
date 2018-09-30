@@ -1,6 +1,6 @@
 @import '../variables';
 
-.error-page {
+.stub-page {
   font-family: 'Open Sans', sans-serif;
   padding: 7rem 1rem;
   text-align: center;
@@ -78,6 +78,22 @@
 
     .instagram:hover {
       color: $instagram-color;
+    }
+  }
+}
+
+.in-development-stub {
+  .project-description {
+    margin: 4rem 15% 0;
+    text-align: left;
+
+    h1 {
+      font-size: 1.7rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
     }
   }
 }
