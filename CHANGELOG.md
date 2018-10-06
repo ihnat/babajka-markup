@@ -1,3 +1,10 @@
+## [0.8.20](https://github.com/babajka/babajka-markup/compare/v0.8.19...v0.8.20) (2018-10-06)
+
+
+### Bug Fixes
+
+* **stubs:** linking with Social Weekend ([61e2ea6](https://github.com/babajka/babajka-markup/commit/61e2ea6))
+
 ## [0.8.19](https://github.com/babajka/babajka-markup/compare/v0.8.18...v0.8.19) (2018-09-30)
 
 
