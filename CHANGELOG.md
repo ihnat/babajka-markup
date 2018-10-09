@@ -1,3 +1,10 @@
+## [0.8.21](https://github.com/babajka/babajka-markup/compare/v0.8.20...v0.8.21) (2018-10-09)
+
+
+### Bug Fixes
+
+* **stubs:** SW voting -> quarterfinal ([e3a7263](https://github.com/babajka/babajka-markup/commit/e3a7263))
+
 ## [0.8.20](https://github.com/babajka/babajka-markup/compare/v0.8.19...v0.8.20) (2018-10-06)
 
 
