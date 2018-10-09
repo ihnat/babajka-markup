@@ -1,5 +1,13 @@
+# [1.0.0](https://github.com/babajka/babajka-markup/compare/v0.8.21...v1.0.0) (2018-10-09)
+
 ## [0.8.21](https://github.com/babajka/babajka-markup/compare/v0.8.20...v0.8.21) (2018-10-09)
 
+### Major Update
+- babajka@v1.0 release 🎉🎉🎉
+
+----
+
+@UladBohdan @tyndria @andemerie @Drapegnik
 
 ### Bug Fixes
 
