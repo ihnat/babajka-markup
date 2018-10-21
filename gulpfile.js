@@ -124,11 +124,19 @@ const lintHtml = () =>
 
 gulp.task('html:lint', gulp.series('ejs:compile', lintHtml));
 
-gulp.task('images:copy', () =>
+gulp.task('static:copy', () =>
   gulp
-    .src(`${config.staticPath}/images/**/*`)
+    .src(`${config.staticPath}/**/**/*`)
     .pipe(
-      gulp.dest(`${config.buildPath}/${config.staticPath}/${config.imagesPath}`)
+      gulp.dest(`${config.buildPath}/${config.staticPath}`)
+    )
+);
+
+gulp.task('search-engines:copy', () =>
+  gulp
+    .src(`${config.staticPath}/search-engines/**/*`)
+    .pipe(
+      gulp.dest(`${config.buildPath}/${config.staticPath}/search-engines`)
     )
 );
 
@@ -160,7 +168,7 @@ gulp.task(
     'sass:bundle',
     'sass:assets',
     'fa:fonts',
-    'images:copy'
+    'static:copy'
   )
 );
 gulp.task('lint', gulp.parallel('sass:lint', 'html:lint'));
