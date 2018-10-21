@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/babajka/babajka-markup/compare/v1.0.1...v1.0.2) (2018-10-21)
+
+
+### Bug Fixes
+
+* **stubs:** minor fixes for the main page. email got updated ([c748f26](https://github.com/babajka/babajka-markup/commit/c748f26))
+* **tools:** robots.txt files are added ([e57d4ef](https://github.com/babajka/babajka-markup/commit/e57d4ef))
+
 ## [1.0.1](https://github.com/babajka/babajka-markup/compare/v1.0.0...v1.0.1) (2018-10-14)
 
 
