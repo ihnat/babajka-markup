@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/babajka/babajka-markup/compare/v1.0.2...v1.0.3) (2018-10-21)
+
+
+### Bug Fixes
+
+* **tools:** copying all the static (including search engines rules) ([7b6ab96](https://github.com/babajka/babajka-markup/commit/7b6ab96))
+
 ## [1.0.2](https://github.com/babajka/babajka-markup/compare/v1.0.1...v1.0.2) (2018-10-21)
 
 
