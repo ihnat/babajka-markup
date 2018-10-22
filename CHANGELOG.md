@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/babajka/babajka-markup/compare/v1.0.3...v1.0.4) (2018-10-22)
+
+
+### Bug Fixes
+
+* **main:** simplifying diary design ([626f591](https://github.com/babajka/babajka-markup/commit/626f591))
+* **main:** styles improved ([4b3672e](https://github.com/babajka/babajka-markup/commit/4b3672e))
+* **main:** this makes diaries fine again ([0468ae5](https://github.com/babajka/babajka-markup/commit/0468ae5))
+
 ## [1.0.3](https://github.com/babajka/babajka-markup/compare/v1.0.2...v1.0.3) (2018-10-21)
 
 
