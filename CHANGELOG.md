@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/babajka/babajka-markup/compare/v1.0.5...v1.0.6) (2018-10-23)
+
+
+### Bug Fixes
+
+* **stubs:** minor changes across the stubs ([d021dad](https://github.com/babajka/babajka-markup/commit/d021dad))
+
 ## [1.0.5](https://github.com/babajka/babajka-markup/compare/v1.0.4...v1.0.5) (2018-10-23)
 
 
