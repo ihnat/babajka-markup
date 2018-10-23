@@ -1,70 +1,91 @@
 [
   {
     "name": "Марына Анісімава",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/anisimava.jpg"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990358/production/team/anisimava.jpg",
+    "role": "Рэдактарка"
   },
   {
-    "name": "Мікіта Баравік"
-  },
-  {
-    "name": "Аляксей Барысевіч"
+    "name": "Аляксей Барысевіч",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/baryska.jpg",
+    "role": "Рэдактар"
   },
   {
     "name": "Уладзь Богдан",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/bohdan.jpg",
-    "role": "Administration, Backend, Design"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/bohdan.jpg",
+    "role": "DevOps / Backend / Design"
+  },
+  {
+    "name": "Максім Берднікаў",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1540316593/production/team/berdnikau.jpg"
+  },
+  {
+    "name": "Ірына Бурак",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1529093358/production/team/burak.jpg",
+    "role": "Мантаж"
   },
   {
     "name": "Тоня Вярцінская",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/viarcinskaja.jpg",
-    "role": "Frontend, Design"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/viarcinskaja.jpg",
+    "role": "Frontend / Design"
   },
   {
     "name": "Ірына Галухіна",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/halukhina.jpg"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990360/production/team/halukhina.jpg",
+    "role": "Рэдактарка, перакладчыца"
   },
   {
     "name": "Дар'яна Дабранская",
-    "role": "Аператар, сацсеткі",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/dabranskaja.jpg"
+    "role": "Аператарка, PR, SMM",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/dabranskaja.jpg"
   },
   {
     "name": "Вікторыя Дрозд",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/drozd.jpg",
-    "role": "Design"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/drozd.jpg",
+    "role": "Frontend / Design"
+  },
+  {
+    "name": "Лізавета Дубінчына",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1532506355/production/team/dubinchyna.jpg",
+    "role": "Ілюстратар"
   },
   {
     "name": "Елізавета Лысенка",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142645/wir-by/team/lysenka.jpg"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/lysenka.jpg",
+    "role": "PR, SMMк"
   },
   {
     "name": "Вікторыя Міхнюк",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/mihniuk.jpg"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990360/production/team/mihniuk.jpg",
+    "role": "Рэдактарка, перакладчыца"
   },
   {
     "name": "Іван Пажытных",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/drapegnik.jpg",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/drapegnik.jpg",
     "role": "Tech Leader / Full-stack JS Developer"
   },
   {
     "name": "Антось Спясівых",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/sivykh.jpg",
-    "role": "Аператар"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/spiasivykh.jpg",
+    "role": "Аператар, аўтар"
   },
   {
-    "name": "Елізавета Таран"
+    "name": "Лізавета Таран",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/taran.jpg",
+    "role": "Рэдактарка, перакладчыца"
   },
   {
-    "name": "Наста Шылак",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/shylak.jpg"
+    "name": "Лізавета Чэканава",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1540333287/production/team/chekanava.jpg",
+    "role": "Мантаж"
   },
   {
     "name": "Марына Яромка",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142646/wir-by/team/yaromka.jpg"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/yaromka.jpg",
+    "role": "Aўтарка, перакладчыца, рэдактарка"
   },
   {
     "name": "Марыя Бадзей",
-    "imageUrl": "http://res.cloudinary.com/dhgy4yket/image/upload/v1524142644/wir-by/team/badziej.jpg",
-    "role": "Каарданытар праекта"
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990358/production/team/badziej.jpg",
+    "role": "Каардынатар праекта"
   }
 ]

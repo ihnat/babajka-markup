@@ -31,7 +31,7 @@ TODO: to disable Google Analytics in development *completely*. -->
 
 <div class="stub-page in-development-stub">
 
-    <img class="logo" src="<%= imagesPath %>/logo/turq-transparent.png" />
+    <img class="logo" src="<%= imagesPath %>/logo/W-coloured-transparent.png" />
 
     <div class="title">
         Асветніцкая пляцоўка Wir.by
@@ -40,7 +40,7 @@ TODO: to disable Google Analytics in development *completely*. -->
     <br />
 
     <div class="highlight">
-        Вір — асветніцкая пляцоўка пра беларускую і сусветную культуру з артыкуламі, лекцыямі даследчыкаў, гульнямі і спецпраектамі.
+        Wir — асветніцкая пляцоўка пра беларускую і сусветную культуру з артыкуламі, лекцыямі даследчыкаў, гульнямі і спецпраектамі.
     </div>
 
     <br />
@@ -70,18 +70,19 @@ TODO: to disable Google Analytics in development *completely*. -->
 
         <h1>Што мы робім?</h1>
 
-        Асветніцкую анлайн-пляцоўку, дзе будуць размяшчацца лекцыі навукоўцаў і даследчыкаў, артыкулы, спецпраекты і інтэрактывы.
-        Тэматыка: літаратура, кіно, тэатр, музыка, гісторыя, лінгвістыка, архітэктура. Колькасны акцэнт робіцца на беларускай культуры, але мы таксама распавядаем пра культуру сусветную.
-
+        Асветніцкую анлайн-пляцоўку  для ўсіх, хто цікавіцца беларускай і сусветнай культурай, дзе будуць размяшчацца лекцыі навукоўцаў і даследчыкаў, артыкулы, гульні і спецпраекты.
+        <br />
         <br />
 
-        Мяркуем, што ў нашай прасторы пакуль няма падобных праектаў.
+        Тэматыка: літаратура, кіно, тэатр, музыка, гісторыя, лінгвістыка, архітэктура, міфалогія.
+        Колькасны акцэнт робіцца на беларускай культуры, але мы таксама распавядаем пра культуру сусветную.
+        Сайт можна будзе чытаць па-беларуску і па-руску. У будучыні магчымая англамоўная версія.
 
         <h1>А навошта?</h1>
 
         Каб чалавек, што чытае Wir, ведаў, хто такія беларусы і якія набыткі ў галіне культуры яны маюць.
 
-        <h1>Якія праблемы вырашаем</h1>
+        <h1>Якія праблемы мы вырашаем?</h1>
 
         <ul>
             <li>
@@ -98,6 +99,12 @@ TODO: to disable Google Analytics in development *completely*. -->
             </li>
         </ul>
 
+        <h1>Ці нешта падобнае ўжо ёсць?</h1>
+
+        У свеце - так:  <a href="https://arzamas.academy/">arzamas.academy</a>,
+        <a href="https://postnauka.ru/">postnauka.ru</a>, <a href="https://www.ted.com/">ted.com</a> <br />
+        Мяркуем, што ў Беларусі пакуль няма падобных праектаў.
+
         <h1>Што ўжо ёсць?</h1>
 
         <ul>
@@ -111,7 +118,7 @@ TODO: to disable Google Analytics in development *completely*. -->
                 Дамоўленасці з лектарамі на здымкі новых лекцый.
             </li>
             <li>
-                28 артыкулаў.
+                29 артыкулаў.
             </li>
             <li>
                 На дадзены момант пішуцца новыя артыкулы, у праект запрашаюцца новыя аўтары.
@@ -120,15 +127,99 @@ TODO: to disable Google Analytics in development *completely*. -->
                 Матэрыялы для спецпраектаў і інтэрактываў.
             </li>
             <li>
-                Пляцоўка для здымак лекцый — кнігарня "Кніжная Шафа" (http://shafa-minsk.by/).
+                Пляцоўка для здымкаў лекцый — кнігарня <a href="http://shafa-minsk.by/">"Кніжная Шафа"</a>.
             </li>
             <li>
-                Дамоўленасці з іншымі пляцоўкамі для далейшага супрацоўніцтва  ("Масаракш", "Мінскі фестываль моў", "Студэнцкае этнаграфічнае таварыства", некаторыя мінскія музеі)
+                Дамоўленасці з іншымі пляцоўкамі для далейшага супрацоўніцтва  ("Масаракш", "Мінскі фестываль моў", некаторыя мінскія музеі).
             </li>
             <li>
                 Сайт у працэсе распрацоўкі.
             </li>
+            <li>
+                Сацыяльныя сеткі праекта.
+            </li>
         </ul>
+
+        <h1>Каманда праекта</h1>
+
+        <div class="team">
+            <div class="columns is-centered is-desktop">
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 0 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 1 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 2 }) %>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 3 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 4 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 5 }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered is-desktop">
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 6 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 7 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 8 }) %>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 9 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 10 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 11 }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered is-desktop">
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 12 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 13 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 14 }) %>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="columns">
+                        <%- include('../about/teammate.ejs', { idx: 15 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 16 }) %>
+                        <%- include('../about/teammate.ejs', { idx: 17 }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="thanks">
+                А таксама выражаем падзяку <b>Ганне Бучко</b> (лагатып) і <b>Даніілу Пячэнка</b> (саўндтрэк да лекцый).
+            </div>
+        </div>
+
+        <h1>Нас падтрымліваюць</h1>
+
+        <div class="columns">
+            <div class="column">
+                <a href="http://shafa-minsk.by/" target="_blank">
+                    <img src="<%= imagesPath %>/references/shafa_logo.jpg" />
+                </a>
+            </div>
+            <div class="column">
+                <a href="http://www.artmuseum.by/by/" target="_blank">
+                    <img src="<%= imagesPath %>/references/mastacki_logo.jpg" />
+                </a>
+            </div>
+            <div class="column">
+                <a href="http://minsklingfest.by/" target="_blank">
+                    <img src="<%= imagesPath %>/references/festyval_mou_logo.jpg" />
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://vk.com/massaraksh_minsk" target="_blank">
+                    <img src="<%= imagesPath %>/references/masaraksh_logo.jpg" />
+                </a>
+            </div>
+        </div>
 
         <h1>Планы на бліжэйшы час</h1>
 
@@ -143,6 +234,76 @@ TODO: to disable Google Analytics in development *completely*. -->
                 Працаваць над ілюстрацыяй гатовых артыкулаў.
             </li>
             <li>
+                Наладзіць супрацоўніцтва з Нацыянальным мастацкім музеем.
+            </li>
+            <li>
+                Зрабіць застаўку для відэалекцый і скончыць мантаж ужо адзнятых відэалекцый.
+            </li>
+            <li>
+                Адзняць новыя відэалекцыі (2-3 цыклы).
+            </li>
+        </ul>
+
+        <h1>Прыкладны бюджэт</h1>
+
+        <table class="table is-striped is-hoverable">
+            <tbody>
+                <tr>
+                    <td>
+                        Дамен і хосцінг сайта
+                    </td>
+                    <td>
+                        450 руб.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Абсталяванне для запісу відэалекцый і падкастаў
+                    </td>
+                    <td>
+                        4000 руб.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Якасная застаўка і ўзорны мантаж некалькіх відэалекцый,<br />
+                        на якія б маглі арыентавацца пасля мантажоры Wir.
+                    </td>
+                    <td>
+                        1000 руб.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Сімвалічныя ўзнагароды лектарам
+                    </td>
+                    <td>
+                        500 руб.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Рэклама ў сацсетках
+                    </td>
+                    <td>
+                        200  руб.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Усяго:</b>
+                    </td>
+                    <td>
+                        6150 руб.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Далейшыя планы</h1>
+
+        <ul>
+            <li>
                 Рабіць і апрацоўваць новыя відэалекцыі і падкасты.
             </li>
             <li>
@@ -151,11 +312,13 @@ TODO: to disable Google Analytics in development *completely*. -->
             <li>
                 Запрашаць у праект новых лектараў і аўтараў.
             </li>
+            <li>
+                Рабіць гульні і спецпраекты.
+            </li>
+            <li>
+                Часам выходзіць у афлайн: ладзіць адкрытыя лекцыі і рознага кшталту мерапрыемствы.
+            </li>
         </ul>
-
-        <h1>Бюджэт</h1>
-
-        Мы шукаем грошы на абсталяванне для запісу відэалекцый і падкастаў, мантаж відэа, рэкламу, дамен і хостынг сайта.
 
     </div>
 
