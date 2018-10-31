@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/babajka/babajka-markup/compare/v1.0.8...v1.0.9) (2018-10-31)
+
+
+### Bug Fixes
+
+* **stubs:** fixing broken styles on 404 ([e540764](https://github.com/babajka/babajka-markup/commit/e540764))
+
 ## [1.0.8](https://github.com/babajka/babajka-markup/compare/v1.0.7...v1.0.8) (2018-10-30)
 
 
