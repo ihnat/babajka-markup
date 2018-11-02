@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/babajka/babajka-markup/compare/v1.0.10...v1.0.11) (2018-11-02)
+
+
+### Bug Fixes
+
+* **tools:** automatic deployment to dev server using travis ([244c6b2](https://github.com/babajka/babajka-markup/commit/244c6b2))
+
 ## [1.0.10](https://github.com/babajka/babajka-markup/compare/v1.0.9...v1.0.10) (2018-11-01)
 
 
