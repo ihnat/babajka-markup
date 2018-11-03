@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/babajka/babajka-markup/compare/v1.0.11...v1.0.12) (2018-11-03)
+
+
+### Bug Fixes
+
+* **common:** replacing logo in navbar ([1d3bd58](https://github.com/babajka/babajka-markup/commit/1d3bd58))
+
 ## [1.0.11](https://github.com/babajka/babajka-markup/compare/v1.0.10...v1.0.11) (2018-11-02)
 
 
