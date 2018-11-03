@@ -17,15 +17,24 @@
       padding-left: 0;
       padding-right: 0;
 
+      @include touch {
+        padding: 0;
+      }
+
       &:hover {
         background-color: rgba(255, 255, 255, 0);
       }
 
       .logo-image {
-        height: 3.5rem;
+        height: 4rem;
         margin-left: 20px;
         margin-right: 1rem;
         max-height: 6rem;
+
+        @include touch {
+          height: 3rem;
+          margin: 0;
+        }
       }
     }
   }
