@@ -881,15 +881,28 @@
   padding-right: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar .navbar-brand .navbar-item {
+    padding: 0;
+  }
+}
+
 .navbar .navbar-brand .navbar-item:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar .navbar-brand .navbar-item .logo-image {
-  height: 3.5rem;
+  height: 4rem;
   margin-left: 20px;
   margin-right: 1rem;
   max-height: 6rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .navbar-brand .navbar-item .logo-image {
+    height: 3rem;
+    margin: 0;
+  }
 }
 
 .navbar .navbar-start .navbar-item {
@@ -994,87 +1007,106 @@
   font-size: 0.85rem;
   text-align: center;
 }
-.stub-page {
+.stub-page,
+.error-page {
   font-family: 'Open Sans', sans-serif;
   padding: 4rem 1rem;
   text-align: center;
 }
 
 .stub-page a:link,
-.stub-page a:visited {
+.stub-page a:visited,
+.error-page a:link,
+.error-page a:visited {
   color: inherit;
 }
 
-.stub-page .logo {
+.stub-page .logo,
+.error-page .logo {
   margin-bottom: 1rem;
   width: 8rem;
 }
 
-.stub-page .title {
+.stub-page .title,
+.error-page .title {
   font-size: 2.5rem;
   font-weight: 300;
 }
 
-.stub-page .title-alt {
+.stub-page .title-alt,
+.error-page .title-alt {
   color: #808080;
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-.stub-page .subtitle {
+.stub-page .subtitle,
+.error-page .subtitle {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.stub-page .links {
+.stub-page .links,
+.error-page .links {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.stub-page .links-alignment {
+.stub-page .links-alignment,
+.error-page .links-alignment {
   display: inline-block;
   vertical-align: middle;
 }
 
-.stub-page .button {
+.stub-page .button,
+.error-page .button {
   font-size: 1.3rem;
 }
 
-.stub-page .social {
+.stub-page .social,
+.error-page .social {
   font-size: 2rem;
 }
 
-.stub-page .social i {
+.stub-page .social i,
+.error-page .social i {
   margin: 0 0.7rem;
 }
 
 @media screen and (max-width: 1023px) {
-  .stub-page .social i {
+  .stub-page .social i,
+  .error-page .social i {
     margin: 0 0.4rem;
   }
 }
 
-.stub-page .social .facebook:hover {
+.stub-page .social .facebook:hover,
+.error-page .social .facebook:hover {
   color: #3b5998;
 }
 
-.stub-page .social .vk:hover {
+.stub-page .social .vk:hover,
+.error-page .social .vk:hover {
   color: #45668e;
 }
 
-.stub-page .social .twitter:hover {
+.stub-page .social .twitter:hover,
+.error-page .social .twitter:hover {
   color: #1da1f2;
 }
 
-.stub-page .social .telegram:hover {
+.stub-page .social .telegram:hover,
+.error-page .social .telegram:hover {
   color: #08c;
 }
 
-.stub-page .social .youtube:hover {
+.stub-page .social .youtube:hover,
+.error-page .social .youtube:hover {
   color: #b00;
 }
 
-.stub-page .social .instagram:hover {
+.stub-page .social .instagram:hover,
+.error-page .social .instagram:hover {
   color: #517fa4;
 }
 
