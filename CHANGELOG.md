@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/babajka/babajka-markup/compare/v1.0.12...v1.0.13) (2018-11-12)
+
+
+### Bug Fixes
+
+* **stubs:** wir.by metadata for proper visualization in social networks ([01a95fe](https://github.com/babajka/babajka-markup/commit/01a95fe))
+
 ## [1.0.12](https://github.com/babajka/babajka-markup/compare/v1.0.11...v1.0.12) (2018-11-03)
 
 
