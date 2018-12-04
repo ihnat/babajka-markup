@@ -123,7 +123,7 @@
 
     img {
       float: left;
-      height: 7rem;
+      height: 13rem;
       margin: 0.5rem;
       margin-right: 1rem;
 
@@ -138,6 +138,12 @@
 
       @include touch {
         margin: 0.5rem;
+        text-align: center;
+      }
+
+      .sw-title {
+        font-size: 1.3rem;
+        font-weight: bold;
       }
     }
   }
@@ -195,6 +201,14 @@
     .thanks {
       font-size: 0.75rem;
       text-align: center;
+    }
+  }
+
+  .partner-logo {
+    margin: auto;
+
+    @include touch {
+      padding: 0 5rem;
     }
   }
 }
