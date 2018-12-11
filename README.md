@@ -45,6 +45,6 @@ All commit messages checked with [commitlint](https://github.com/marionebl/commi
 
 > enjoy coding!
 
-- `npm run lint` for check `sass` & `html` codestyle
+- `npm run lint` to check `sass` & `html` codestyle
 - `npm run deploy` for hosting templates under [`github-pages`](https://babajka.github.io/babajka-markup/)
 - `npm run release` for publish new version of markups (automatically run `prerelease` & `postrelease` scripts)
