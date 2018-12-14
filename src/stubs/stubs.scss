@@ -107,6 +107,7 @@
     width: 50%;
 
     @include touch {
+      text-align: center;
       width: 90%;
     }
 
@@ -149,11 +150,18 @@
   }
 
   .project-description {
-    margin: 4rem 15% 0;
     text-align: left;
 
     @include touch {
-      margin: 2rem 1rem;
+      margin: 3rem 5% 0;
+    }
+
+    @include desktop-only {
+      margin: 4rem 10% 0;
+    }
+
+    @include widescreen {
+      margin: 4rem 15% 0;
     }
 
     h1 {
@@ -167,7 +175,11 @@
   }
 
   .team {
-    margin: 1.5rem 5rem;
+    margin: 1.5rem 1rem;
+
+    @include widescreen {
+      margin: 1.5rem 5rem;
+    }
 
     .title {
       color: $primary;
@@ -206,9 +218,10 @@
 
   .partner-logo {
     margin: auto;
+    text-align: center;
 
-    @include touch {
-      padding: 0 5rem;
+    @include mobile {
+      padding: 0 25%;
     }
   }
 }
