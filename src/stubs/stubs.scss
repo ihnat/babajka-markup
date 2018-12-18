@@ -149,6 +149,18 @@
     }
   }
 
+  .banner {
+    margin: auto;
+    
+    @include touch {
+      width: 90%;
+    }
+
+    @include desktop {
+      width: 50%;
+    }
+  }
+
   .project-description {
     text-align: left;
 
