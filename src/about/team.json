@@ -1,5 +1,10 @@
 [
   {
+    "name": "Кацярына Алімпіева",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1545303238/production/team/alimpieva.jpg",
+    "role": "Перакладчыца"
+  },
+  {
     "name": "Марына Анісімава",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990358/production/team/anisimava.jpg",
     "role": "Рэдактарка"
@@ -12,7 +17,7 @@
   {
     "name": "Уладзь Богдан",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/bohdan.jpg",
-    "role": "DevOps / Backend / Design"
+    "role": "DevOps / Backend"
   },
   {
     "name": "Ірына Бурак",
@@ -22,7 +27,7 @@
   {
     "name": "Тоня Вярцінская",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/viarcinskaja.jpg",
-    "role": "Frontend / Design"
+    "role": "Frontend"
   },
   {
     "name": "Ірына Галухіна",
@@ -37,7 +42,7 @@
   {
     "name": "Вікторыя Дрозд",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/drozd.jpg",
-    "role": "Frontend / Design"
+    "role": "Frontend"
   },
   {
     "name": "Лізавета Дубінчына",
@@ -47,7 +52,7 @@
   {
     "name": "Елізавета Лысенка",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/lysenka.jpg",
-    "role": "PR, SMMк"
+    "role": "PR, SMM"
   },
   {
     "name": "Вікторыя Міхнюк",
@@ -75,9 +80,14 @@
     "role": "Мантаж"
   },
   {
+    "name": "Віталік Янушэўскі",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1545303565/production/team/butuk.jpg",
+    "role": "Design"
+  },
+  {
     "name": "Марына Яромка",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990361/production/team/yaromka.jpg",
-    "role": "Aўтарка, перакладчыца, рэдактарка"
+    "role": "Aўтарка, рэдактарка, перакладчыца"
   },
   {
     "name": "Марыя Бадзей",
