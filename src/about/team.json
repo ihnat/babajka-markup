@@ -1,7 +1,7 @@
 [
   {
     "name": "Кацярына Алімпіева",
-    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1545303238/production/team/alimpieva.jpg",
+    "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1545347348/production/team/alimpieva.jpg",
     "role": "Перакладчыца"
   },
   {
@@ -50,7 +50,7 @@
     "role": "Ілюстратар"
   },
   {
-    "name": "Елізавета Лысенка",
+    "name": "Лізавета Лысенка",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/lysenka.jpg",
     "role": "PR, SMM"
   },
@@ -62,7 +62,7 @@
   {
     "name": "Іван Пажытных",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1528990359/production/team/drapegnik.jpg",
-    "role": "Tech Leader / Full-stack JS Developer"
+    "role": "Lead Developer"
   },
   {
     "name": "Антось Спясівых",
@@ -82,7 +82,7 @@
   {
     "name": "Віталік Янушэўскі",
     "imageUrl": "https://res.cloudinary.com/wir-by/image/upload/v1545303565/production/team/butuk.jpg",
-    "role": "Design"
+    "role": "Дызайнер"
   },
   {
     "name": "Марына Яромка",
