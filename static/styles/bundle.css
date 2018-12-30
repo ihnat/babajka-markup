@@ -1126,64 +1126,163 @@
   }
 }
 
-.in-development-stub .social-weekend {
-  border: 2px solid #0fabdd;
-  border-radius: 10px;
+.in-development-stub .specials {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  overflow: hidden;
-  text-align: left;
-  width: 50%;
+  overflow: auto;
 }
 
 @media screen and (max-width: 1023px) {
-  .in-development-stub .social-weekend {
+  .in-development-stub .specials {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .specials {
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+}
+
+.in-development-stub .special-section {
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .in-development-stub .special-section {
+    margin-bottom: 1rem;
+    text-align: center;
     width: 90%;
   }
 }
 
-.in-development-stub .social-weekend .sent {
-  background-color: #0fabdd;
-  border-radius: 10px;
+.in-development-stub .special-section__action {
+  border-radius: 7px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
   padding: 0.15rem 0.6rem;
 }
 
-.in-development-stub .social-weekend img {
-  float: left;
-  height: 7rem;
+@media screen and (max-width: 1023px) {
+  .in-development-stub .special-section img {
+    margin: 0.5rem;
+  }
+}
+
+.in-development-stub .special-section__text {
   margin: 0.5rem;
-  margin-right: 1rem;
+  text-align: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 1024px) {
+  .in-development-stub .special-section__text {
+    margin: 0.5rem;
+    text-align: left;
+  }
+}
+
+.in-development-stub .special-section__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .special-section__left {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .special-section__right {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .special-section__large {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .special-section__small {
+    width: 35%;
+  }
+}
+
+.in-development-stub .social-weekend {
+  border-color: #0fabdd;
+}
+
+.in-development-stub .social-weekend img {
+  width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
   .in-development-stub .social-weekend img {
-    float: none;
+    float: left;
     margin: 0.5rem;
+    width: 25%;
   }
 }
 
-.in-development-stub .social-weekend .text {
-  margin: 0.5rem 0;
+.in-development-stub .wir-stickers {
+  border-color: #eb008b;
+}
+
+.in-development-stub .wir-stickers img {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 1024px) {
+  .in-development-stub .wir-stickers img {
+    float: right;
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-  .in-development-stub .social-weekend .text {
-    margin: 0.5rem;
+  .in-development-stub .wir-stickers img {
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 35%;
   }
+}
+
+.in-development-stub .wir-stickers__action {
+  background-color: #eb008b;
+  color: #fff;
 }
 
 .in-development-stub .project-description {
-  margin: 4rem 15% 0;
   text-align: left;
 }
 
 @media screen and (max-width: 1023px) {
   .in-development-stub .project-description {
-    margin: 2rem 1rem;
+    margin: 3rem 5% 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .in-development-stub .project-description {
+    margin: 4rem 10% 0;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .in-development-stub .project-description {
+    margin: 4rem 15% 0;
   }
 }
 
@@ -1197,7 +1296,13 @@
 }
 
 .in-development-stub .team {
-  margin: 1.5rem 5rem;
+  margin: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 1216px) {
+  .in-development-stub .team {
+    margin: 1.5rem 5rem;
+  }
 }
 
 .in-development-stub .team .title {
@@ -1232,6 +1337,17 @@
 .in-development-stub .team .thanks {
   font-size: 0.75rem;
   text-align: center;
+}
+
+.in-development-stub .partner-logo {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .in-development-stub .partner-logo {
+    padding: 0 25%;
+  }
 }
 article {
   border-bottom-left-radius: 3px;
