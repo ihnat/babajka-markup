@@ -1247,6 +1247,8 @@
 @media screen and (min-width: 1024px) {
   .in-development-stub .wir-stickers img {
     float: right;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
     width: 45%;
   }
 }
