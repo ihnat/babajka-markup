@@ -536,6 +536,14 @@
 .article__more-text {
   padding-bottom: 1.5rem;
 }
+.modal-card-foot.confirm-footer {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.modal-card.size-small {
+  width: 400px;
+}
 .article-page-edit .title {
   color: #808080;
 }
@@ -689,14 +697,6 @@
 
 .edit-info__item {
   width: 50rem;
-}
-.modal-card-foot.confirm-footer {
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.modal-card.size-small {
-  width: 400px;
 }
 .app-footer {
   background-color: #1a9582;
@@ -1006,6 +1006,24 @@
 .navbar .navbar-end .navbar-item .lang {
   font-size: 0.85rem;
   text-align: center;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+}
+
+.section__front {
+  background-color: #f00;
+  min-height: 100%;
+}
+
+.section__following {
+  background-color: #0f0;
 }
 .stub-page,
 .error-page {
