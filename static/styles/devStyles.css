@@ -1603,6 +1603,10 @@ a:visited {
   color: inherit;
 }
 
+.section__front {
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 1023px) {
   .section__front {
     margin: 1rem;
@@ -1612,6 +1616,7 @@ a:visited {
 @media screen and (min-width: 1024px) {
   .section__front {
     min-height: 100%;
+    padding: 15vh 15vw;
   }
 }
 
@@ -1648,7 +1653,7 @@ a:visited {
 
 @media screen and (min-width: 1024px) {
   .section__heading {
-    padding: 15% 10% 20% 40%;
+    padding-right: 5vw;
   }
 }
 
@@ -1658,7 +1663,7 @@ a:visited {
 
 @media screen and (min-width: 1024px) {
   .section__social-weekend {
-    padding: 15% 30% 20% 10%;
+    padding-left: 5vw;
   }
 }
 
@@ -1673,14 +1678,24 @@ a:visited {
   }
 }
 
+.section__text-description {
+  line-height: 1.42em;
+}
+
 .section__text-description ul {
   list-style-position: outside;
   padding-left: 1.5em;
 }
 
 .section__team {
-  margin: 3rem auto;
+  margin: 1rem auto;
   width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__team {
+    margin: 3rem auto;
+  }
 }
 
 .section__team .columns {
@@ -1694,44 +1709,29 @@ a:visited {
 
 .section__teammate {
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 1024px) {
   .section__teammate {
-    padding: 0;
-    padding-bottom: 0.75rem;
+    padding: 0 0.5rem 1rem;
   }
 }
 
-.section__teammate img {
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
+.section__partners {
+  margin: 3rem auto;
+  width: 75%;
 }
 
 .section__partners .columns {
+  margin: 0;
   max-width: 100%;
 }
 
-.section__partners img {
-  width: 60%;
-}
-
-@media screen and (max-width: 1023px) {
-  .section__partners img {
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section__partners img {
-    width: 95%;
-  }
-}
-
 .section__partner-logo {
+  box-sizing: border-box;
   margin: auto;
   padding: 0;
   text-align: center;
@@ -1808,12 +1808,12 @@ a:visited {
   width: 2.5rem;
 }
 
-.image__main-logo img {
+.image__main-logo {
   width: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .image__main-logo img {
+  .image__main-logo {
     width: 6rem;
   }
 }
@@ -1831,6 +1831,48 @@ a:visited {
   .image__social-weekend-final-certificate {
     margin: 1.5rem 0;
     width: 18rem;
+  }
+}
+
+.image__team-member {
+  border-radius: 45%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.image__partner-logo {
+  width: 60%;
+}
+
+@media screen and (max-width: 1023px) {
+  .image__partner-logo {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image__partner-logo {
+    width: 85%;
+  }
+}
+
+.image__partner-logo--smaller {
+  width: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .image__partner-logo--smaller {
+    width: 75%;
+  }
+}
+
+.image__partner-logo--smallest {
+  width: 45%;
+}
+
+@media screen and (min-width: 1024px) {
+  .image__partner-logo--smallest {
+    width: 60%;
   }
 }
 
@@ -1877,7 +1919,8 @@ a:visited {
 
 .label__teammate-name {
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 400;
+  padding-top: 0.1rem;
   text-align: center;
 }
 
