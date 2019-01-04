@@ -1728,13 +1728,19 @@ a:visited {
 }
 
 .section__partners {
-  margin: 3rem auto;
+  margin: 2rem auto 3rem;
   width: 75%;
 }
 
-.section__partners .columns {
+.section__partners-columns {
   margin: 0;
   max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__partners-columns {
+    margin: 1.5rem 0;
+  }
 }
 
 .section__partner-logo {
