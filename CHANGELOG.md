@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/babajka/babajka-markup/compare/v1.0.13...v1.1.0) (2019-01-05)
+
+
+### Features
+
+* **core:** code separated between landing, src and stubs; gulp fixes ([45813bd](https://github.com/babajka/babajka-markup/commit/45813bd))
+
 ## [1.0.13](https://github.com/babajka/babajka-markup/compare/v1.0.12...v1.0.13) (2018-11-12)
 
 
