@@ -18,6 +18,8 @@
 
             <!-- UNPUBLISHED ARTICLE -->
             <%- include('../tiles/tile.ejs', {
+                        isUnpublished: false,
+                        isDraft: false,
                         authorVar: 'Змітр Корнеў',
                         authorPhotoVar: 'mock/vajc.jpg',
                         isUnpublished: true,
@@ -25,9 +27,14 @@
                         photoVar: 'mock/photo2.jpg',
                         subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
                         titleVar: 'Крама "як з крамы"',
+                        specialHeadingNameVar: null,
+                        specialHeadingHandmadeVar: null,
+                        isVideoArticle: false,
                     }); %>
 
             <%- include('../tiles/tile.ejs', {
+                        isUnpublished: false,
+                        isDraft: false,
                         authorVar: 'Вальжына Морт',
                         authorPhotoVar: 'mock/mort.jpg',
                         isVideoArticle: true,
@@ -35,6 +42,9 @@
                         photoVar: 'mock/photo3.jpg',
                         subtitleVar: 'Вальжына Морт пра адносіны з сусветам',
                         titleVar: '"Гэта ня тое як склеіць разьбіты кубак..."',
+                        specialHeadingNameVar: null,
+                        specialHeadingHandmadeVar: null,
+                        isVideoArticle: false,
                     }); %>
 
             <%- include('../tiles/tile.ejs', {
@@ -47,15 +57,23 @@
                         photoVar: 'mock/photo5.jpg',
                         subtitleVar: '"Настоящую нежность не спутаешь ни с чем..."',
                         titleVar: 'Некоратка аб Ахматавай',
+                        specialHeadingNameVar: null,
+                        specialHeadingHandmadeVar: null,
+                        isVideoArticle: false,
                     }); %>
 
             <%- include('../tiles/tile.ejs', {
+                        authorVar: null,
+                        isUnpublished: false,
+                        isDraft: false,
                         photoClassVar: 'is-3by2',
                         photoVar: 'mock/photo4.jpg',
                         specialHeadingNameVar: 'Курылка Гутэнберга',
                         specialHeadingPhotoVar: 'references/kurilka_icon.png',
                         subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
                         titleVar: 'Культура і псіхалогія',
+                        isVideoArticle: false,
+                        specialHeadingHandmadeVar: null,
                     }); %>
 
           </div>
@@ -68,15 +86,21 @@
             <div class="tile is-ancestor">
 
               <%- include('../tiles/tile.ejs', {
+                            authorVar: null,
+                            isUnpublished: false,
+                            isDraft: false,
                             photoClassVar: 'is-3by2',
                             photoVar: 'mock/photo3.jpg',
                             specialHeadingHandmadeVar: '(не)',
                             specialHeadingNameVar: 'расстраляная паэзія',
                             subtitleVar: 'Лекцыі з Ганнай Севярынец',
                             titleVar: 'Ад біяграфія да творчасці: Алесь Дудар',
+                            isVideoArticle: false,
                         }); %>
 
               <%- include('../tiles/tile.ejs', {
+                            isUnpublished: false,
+                            isDraft: false,
                             authorVar: 'Змітр Корнеў',
                             authorPhotoVar: 'mock/vajc.jpg',
                             isVideoArticle: true,
@@ -84,6 +108,8 @@
                             photoVar: 'mock/photo2.jpg',
                             subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
                             titleVar: 'Крама "як з крамы"',
+                            specialHeadingNameVar: null,
+                            specialHeadingHandmadeVar: null,
                         }); %>
 
               <% include ../specials/diary/diary.ejs %>
@@ -93,30 +119,44 @@
             <div class="tile is-ancestor">
 
               <%- include('../tiles/tile.ejs', {
+                            isUnpublished: false,
+                            isDraft: false,
                             authorVar: 'Наталля Ламека',
                             authorPhotoVar: 'mock/vajc.jpg',
                             photoClassVar: 'is-3by1',
                             photoVar: 'mock/photo6.jpg',
                             subtitleVar: 'Наталля Ламека. Серыя лекцый',
                             titleVar: 'Eўрапейскі мадэрнізм',
+                            specialHeadingNameVar: null,
+                            specialHeadingHandmadeVar: null,
+                            isVideoArticle: false,
                         }); %>
 
               <%- include('../tiles/tile.ejs', {
+                            authorVar: null,
+                            isUnpublished: false,
+                            isDraft: false,
                             photoClassVar: 'is-3by2',
                             photoVar: 'mock/photo3.jpg',
                             specialHeadingNameVar: 'Мінск',
                             specialHeadingPhotoVar: 'references/15_icon.png',
                             subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
                             titleVar: 'Культура і псіхалогія',
+                            isVideoArticle: false,
+                            specialHeadingHandmadeVar: null,
                         }); %>
 
               <%- include('../tiles/tile.ejs', {
+                            isUnpublished: false,
+                            isDraft: false,
                             photoClassVar: 'is-3by2',
                             photoVar: 'mock/photo3.jpg',
                             specialHeadingNameVar: 'Мінск',
                             specialHeadingPhotoVar: 'references/15_icon.png',
                             subtitleVar: 'Выкладчык з ЕГУ распавядзе пра складаны лёс выкладчыка з ЕГУ. Хацеў бы ён выкладаць у БДУ замест таго!..',
                             titleVar: 'Культура і псіхалогія',
+                            isVideoArticle: false,
+                            specialHeadingHandmadeVar: null,
                         }); %>
 
             </div>
@@ -138,15 +178,22 @@
           <div class="first-line tile is-ancestor">
 
             <%- include('../tiles/tile.ejs', {
+                        isUnpublished: false,
+                        isDraft: false,
                         authorVar: 'Змітр Корнеў',
                         authorPhotoVar: 'mock/vajc.jpg',
                         photoClassVar: 'is-16by9',
                         photoVar: 'mock/photo2.jpg',
                         subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
                         titleVar: 'Крама "як з крамы"',
+                        specialHeadingNameVar: null,
+                        specialHeadingHandmadeVar: null,
+                        isVideoArticle: false,
                     }); %>
 
             <%- include('../tiles/tile.ejs', {
+                        isUnpublished: false,
+                        isDraft: false,
                         authorVar: 'Змітр Корнеў',
                         authorPhotoVar: 'mock/vajc.jpg',
                         isVideoArticle: true,
@@ -154,6 +201,8 @@
                         photoVar: 'mock/white.png',
                         subtitleVar: 'Новы альбом: як, дзе і для каго. Учора Крама прадставіла новы альбом, а мы вам пра яго распавядзем. Назва новага альбома - "Крама". Яго...',
                         titleVar: 'Крама "як з крамы"',
+                        specialHeadingNameVar: null,
+                        specialHeadingHandmadeVar: null,
                     }); %>
 
             <div class="tile"></div>
