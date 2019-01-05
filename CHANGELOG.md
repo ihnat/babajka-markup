@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/babajka/babajka-markup/compare/v1.1.0...v1.1.1) (2019-01-05)
+
+
+### Bug Fixes
+
+* **tools:** add prettier, add stylelint airbnb config [[#51](https://github.com/babajka/babajka-markup/issues/51)] ([0142b0f](https://github.com/babajka/babajka-markup/commit/0142b0f))
+
 # [1.1.0](https://github.com/babajka/babajka-markup/compare/v1.0.13...v1.1.0) (2019-01-05)
 
 
