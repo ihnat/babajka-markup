@@ -1245,15 +1245,6 @@ article:hover {
 .user-ava {
   margin: 0 10px 0 0;
 }
-.select-temp-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.select-temp-item {
-  margin: 10px;
-}
-
 .babajka-dropdown {
   width: 15rem;
 }
