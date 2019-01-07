@@ -177,6 +177,160 @@
 .team .teammate .role {
   font-size: 0.8rem;
 }
+.article-page-edit .title {
+  color: #808080;
+}
+
+.article-page-edit .localized-data-title {
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.article-page-edit .localized-data .add-locale-button {
+  margin: 1rem 0;
+}
+
+.article-page-edit .localized-data .add-locale-button button {
+  border-color: #1a9582;
+}
+
+.article-page-edit .localized-data .add-locale-button button:hover {
+  background-color: #1a9582;
+  color: white;
+}
+
+.article-page-edit .localized-data .inputs .basics {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-page-edit .localized-data .inputs .spaced {
+  margin: 0.5rem;
+}
+
+.article-page-edit .localized-data .inputs .long-input {
+  width: 35%;
+}
+
+.article-page-edit .localized-data .inputs .editor {
+  margin-top: 1rem;
+}
+
+.article-page-edit .localized-data .inputs .action-buttons {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  vertical-align: center;
+}
+
+.article-page-edit .localized-data .inputs .remove-button {
+  float: left;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+}
+
+.article-page-edit .localized-data .inputs .remove-button:hover {
+  background-color: #bb0000;
+  color: white;
+}
+
+.article-page-edit .localized-data .inputs .save-button {
+  background-color: #1a9582;
+  color: white;
+  float: right;
+}
+
+.article-page-edit .common-data {
+  margin-bottom: 1rem;
+}
+
+.article-page-edit .common-data-title {
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.article-page-edit .common-data .inputs {
+  align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.article-page-edit .common-data .inputs .form-field {
+  margin: 1rem;
+}
+
+.article-page-edit .common-data .inputs .long-input {
+  width: 40%;
+}
+
+.article-page-edit .common-data .new-entity {
+  background-color: #f2f2f2;
+  margin-bottom: 2rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.article-page-edit .common-data .new-entity-title {
+  color: #808080;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.article-page-edit .common-data .new-entity .entity-locale-section {
+  border: 1px dashed #808080;
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-around;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.article-page-edit .common-data .new-entity .short-input {
+  width: 20%;
+}
+
+.article-page-edit .common-data .new-entity .long-input {
+  width: 40%;
+}
+
+.article-page-edit .common-data .new-entity .add-locale-button {
+  color: #1a9582;
+  font-size: 1.5rem;
+  padding: 0 0.2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.article-page-edit .common-data .new-entity i {
+  transition: 0.5s;
+}
+
+.article-page-edit .common-data .new-entity i:hover {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.article-page-edit .common-data .new-entity .action-buttons {
+  float: right;
+  margin-top: 1rem;
+}
+
+.article-page-edit .common-data .new-entity .save-button {
+  background-color: #1a9582;
+  color: white;
+}
+
+.edit-info {
+  padding: 1rem 0;
+}
+
+.edit-info__item {
+  width: 50rem;
+}
 .article-content {
   flex: 1 0 auto;
 }
@@ -535,160 +689,6 @@
 
 .article__more-text {
   padding-bottom: 1.5rem;
-}
-.article-page-edit .title {
-  color: #808080;
-}
-
-.article-page-edit .localized-data-title {
-  color: #808080;
-  font-size: 1.4rem;
-}
-
-.article-page-edit .localized-data .add-locale-button {
-  margin: 1rem 0;
-}
-
-.article-page-edit .localized-data .add-locale-button button {
-  border-color: #1a9582;
-}
-
-.article-page-edit .localized-data .add-locale-button button:hover {
-  background-color: #1a9582;
-  color: white;
-}
-
-.article-page-edit .localized-data .inputs .basics {
-  display: flex;
-  flex-direction: row;
-}
-
-.article-page-edit .localized-data .inputs .spaced {
-  margin: 0.5rem;
-}
-
-.article-page-edit .localized-data .inputs .long-input {
-  width: 35%;
-}
-
-.article-page-edit .localized-data .inputs .editor {
-  margin-top: 1rem;
-}
-
-.article-page-edit .localized-data .inputs .action-buttons {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-  vertical-align: center;
-}
-
-.article-page-edit .localized-data .inputs .remove-button {
-  float: left;
-  padding-left: 1rem;
-  padding-top: 0.2rem;
-}
-
-.article-page-edit .localized-data .inputs .remove-button:hover {
-  background-color: #bb0000;
-  color: white;
-}
-
-.article-page-edit .localized-data .inputs .save-button {
-  background-color: #1a9582;
-  color: white;
-  float: right;
-}
-
-.article-page-edit .common-data {
-  margin-bottom: 1rem;
-}
-
-.article-page-edit .common-data-title {
-  color: #808080;
-  font-size: 1.4rem;
-}
-
-.article-page-edit .common-data .inputs {
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 1rem;
-}
-
-.article-page-edit .common-data .inputs .form-field {
-  margin: 1rem;
-}
-
-.article-page-edit .common-data .inputs .long-input {
-  width: 40%;
-}
-
-.article-page-edit .common-data .new-entity {
-  background-color: #f2f2f2;
-  margin-bottom: 2rem;
-  overflow: auto;
-  padding: 1rem;
-}
-
-.article-page-edit .common-data .new-entity-title {
-  color: #808080;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.article-page-edit .common-data .new-entity .entity-locale-section {
-  border: 1px dashed #808080;
-  display: flex;
-  font-size: 0.5rem;
-  justify-content: space-around;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-}
-
-.article-page-edit .common-data .new-entity .short-input {
-  width: 20%;
-}
-
-.article-page-edit .common-data .new-entity .long-input {
-  width: 40%;
-}
-
-.article-page-edit .common-data .new-entity .add-locale-button {
-  color: #1a9582;
-  font-size: 1.5rem;
-  padding: 0 0.2rem;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.article-page-edit .common-data .new-entity i {
-  transition: 0.5s;
-}
-
-.article-page-edit .common-data .new-entity i:hover {
-  -webkit-transform: rotate(15deg);
-  transform: rotate(15deg);
-  -webkit-transform-origin: center;
-  transform-origin: center;
-}
-
-.article-page-edit .common-data .new-entity .action-buttons {
-  float: right;
-  margin-top: 1rem;
-}
-
-.article-page-edit .common-data .new-entity .save-button {
-  background-color: #1a9582;
-  color: white;
-}
-
-.edit-info {
-  padding: 1rem 0;
-}
-
-.edit-info__item {
-  width: 50rem;
 }
 .modal-card-foot.confirm-footer {
   justify-content: space-between;
