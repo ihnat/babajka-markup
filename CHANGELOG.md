@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/babajka/babajka-markup/compare/v1.1.3...v1.1.4) (2019-01-08)
+
+
+### Bug Fixes
+
+* **landing:** reapplying BEM [[#56](https://github.com/babajka/babajka-markup/issues/56)] ([4534d1b](https://github.com/babajka/babajka-markup/commit/4534d1b))
+
 ## [1.1.3](https://github.com/babajka/babajka-markup/compare/v1.1.2...v1.1.3) (2019-01-08)
 
 
