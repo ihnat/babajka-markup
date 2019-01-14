@@ -65,6 +65,7 @@ const allEjs = [
   `${config.landingPath}/*.ejs`,
   `${config.stubsPath}/*.ejs`,
 ];
+const landingJs = `${config.landingPath}/**/*.js`;
 
 templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${
   config.stylesPath
@@ -115,6 +116,11 @@ gulp.task('sass:bundle:landing', () =>
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
 );
 
+gulp.task('landing:js:bundle', () =>
+  // TODO: add compilation (?), minification
+  gulp.src(landingJs).pipe(gulp.dest(`${config.buildPath}`))
+);
+
 gulp.task('sass:assets', () =>
   gulp
     .src(`${config.srcPath}/index.scss`)
@@ -149,6 +155,11 @@ gulp.task('sass:watch', done => {
     allSass,
     gulp.series('sass:bundle:main', 'sass:bundle:landing', 'sass:assets', 'sass:lint')
   );
+  done();
+});
+
+gulp.task('landing:js:watch', done => {
+  gulp.watch(landingJs, gulp.series(['landing:js:bundle']));
   done();
 });
 
@@ -198,6 +209,7 @@ gulp.task('serve', done => {
 gulp.task('livereload', done => {
   watch([
     `${config.buildPath}/**/*.html`,
+    `${config.buildPath}/**/*.js`,
     `${config.buildPath}/${config.staticPath}/${config.stylesPath}/**/*.css`,
   ]).pipe(connect.reload());
   done();
@@ -210,6 +222,7 @@ gulp.task(
     'ejs:compile',
     'sass:bundle:main',
     'sass:bundle:landing',
+    'landing:js:bundle',
     'sass:assets',
     'fa:fonts',
     'static:copy'
@@ -218,5 +231,8 @@ gulp.task(
 gulp.task('lint', gulp.parallel('sass:lint', 'html:lint'));
 gulp.task(
   'watch',
-  gulp.series('build', gulp.parallel('serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch'))
+  gulp.series(
+    'build',
+    gulp.parallel('serve', 'livereload', 'lint', 'sass:watch', 'ejs:watch', 'landing:js:watch')
+  )
 );
