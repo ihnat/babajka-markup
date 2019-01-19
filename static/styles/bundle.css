@@ -18,8 +18,6 @@ body {
 .article__content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  height: 100%;
   justify-content: space-between;
 }
 
@@ -30,6 +28,12 @@ body {
 .article__author {
   font-size: 14px;
   line-height: 21px;
+}
+
+.article__content-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .article__read {
@@ -66,7 +70,6 @@ body {
 .size-xxl .article__content-bottom {
   font-size: 20px;
   line-height: 36px;
-  margin-top: 57px;
 }
 
 .size-xl .article {
@@ -95,7 +98,6 @@ body {
 .size-xl .article__content-bottom {
   font-size: 14px;
   line-height: 21px;
-  margin-top: 26px;
 }
 
 .size-l .article {
@@ -124,7 +126,6 @@ body {
 .size-l .article__content-bottom {
   font-size: 14px;
   line-height: 21px;
-  margin-top: 26px;
 }
 
 .size-m .article {
@@ -175,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .square-article__title {
@@ -186,6 +187,7 @@ body {
 .square-article__author {
   font-size: 14px;
   line-height: 21px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -195,7 +197,7 @@ body {
 }
 
 .size-square-m .square-article__content {
-  padding: 3px 39px 42px;
+  padding: 0 39px 42px;
 }
 
 .size-square-m .square-article__title {
@@ -209,7 +211,7 @@ body {
 }
 
 .size-square-s .square-article__content {
-  padding: 21px 0 42px;
+  padding: 0 5px 42px;
 }
 
 .size-square-s .square-article__title {
@@ -220,18 +222,18 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.article {
+.collection {
   border-radius: 3px;
   color: #ffffff;
   display: flex;
   flex-direction: row;
 }
 
-.article .theme-dark {
+.collection .theme-dark {
   color: #000000;
 }
 
-.article__content {
+.collection__content {
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -239,20 +241,20 @@ body {
   flex-grow: 1;
 }
 
-.article__title {
+.collection__title {
   font-weight: bold;
 }
 
-.article__author {
+.collection__author {
   font-size: 14px;
   line-height: 21px;
 }
 
-.article__read {
+.collection__read {
   color: #0dc6aa;
 }
 
-.article__read .theme-dark {
+.collection__read .theme-dark {
   color: #1a9582;
 }
 
@@ -283,154 +285,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   margin-top: 57px;
-}
-
-.size-xl .article {
-  height: 504px;
-  width: 818px;
-}
-
-.size-xl .article__cover {
-  min-width: 313px;
-  max-width: 313px;
-}
-
-.size-xl .article__content {
-  padding: 24px 62px 48px 23px;
-}
-
-.size-xl .article__title {
-  font-size: 60px;
-  line-height: 72px;
-}
-
-.size-xl .article__author {
-  margin-top: 24px;
-}
-
-.size-xl .article__content-bottom {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: 26px;
-}
-
-.size-l .article {
-  height: 390px;
-  width: 624px;
-}
-
-.size-l .article__cover {
-  min-width: 240px;
-  max-width: 240px;
-}
-
-.size-l .article__content {
-  padding: 28px 42px 42px 30px;
-}
-
-.size-l .article__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.size-l .article__author {
-  margin-top: 18px;
-}
-
-.size-l .article__content-bottom {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: 26px;
-}
-
-.size-m .article {
-  height: 300px;
-  width: 480px;
-}
-
-.size-m .article__cover {
-  min-width: 186px;
-  max-width: 186px;
-}
-
-.size-m .article__content {
-  padding: 30px 30px 42px 24px;
-}
-
-.size-m .article__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.size-m .article__author {
-  margin-top: 12px;
-}
-
-.size-m .article__content-bottom {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.size-m .article__description {
-  display: none;
-}
-
-.square-article {
-  border-radius: 3px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-
-.square-article .theme-dark {
-  color: #000000;
-}
-
-.square-article__content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.square-article__title {
-  font-weight: bold;
-  text-align: center;
-}
-
-.square-article__author {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.size-square-m .square-article {
-  height: 390px;
-  width: 390px;
-}
-
-.size-square-m .square-article__content {
-  padding: 3px 39px 42px 39px;
-}
-
-.size-square-m .square-article__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.size-square-s .square-article {
-  height: 300px;
-  width: 300px;
-}
-
-.size-square-s .square-article__content {
-  padding: 21px 0 42px;
-}
-
-.size-square-s .square-article__title {
-  font-size: 20px;
-  line-height: 24px;
 }
 .stub-page,
 .error-page {
