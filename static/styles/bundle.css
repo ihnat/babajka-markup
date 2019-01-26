@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 body {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -494,6 +495,180 @@ body {
 
 .size-square-s .collection__author {
   margin-top: 12px;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.person {
+  background-color: #000000;
+  border-radius: 3px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.person.theme-dark {
+  color: #000000;
+}
+
+.person__cover-wrapper {
+  height: 100%;
+}
+
+.person__cover {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.person__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.person__years {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.person__title {
+  font-weight: bold;
+}
+
+.size-l .person {
+  height: 390px;
+  width: 624px;
+}
+
+.size-l .person__cover-wrapper {
+  width: 390px;
+}
+
+.size-l .person__content {
+  bottom: 42px;
+  left: 30px;
+  position: absolute;
+  width: 240px;
+}
+
+.size-l .person__title {
+  font-size: 72px;
+  line-height: 72px;
+  margin-top: 18px;
+}
+
+.size-l .person__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 19px;
+}
+
+.size-square-m .person {
+  height: 390px;
+  width: 390px;
+}
+
+.size-square-m .person__cover-wrapper {
+  width: 100%;
+}
+
+.size-square-m .person__content {
+  bottom: 42px;
+  left: 30px;
+  position: absolute;
+  right: 48px;
+  width: 100%;
+}
+
+.size-square-m .person__title {
+  font-size: 48px;
+  line-height: 60px;
+  margin-top: 18px;
+}
+
+.size-square-m .person__description {
+  display: none;
+}
+
+.size-square-s .person {
+  height: 300px;
+  width: 300px;
+}
+
+.size-square-s .person__cover-wrapper {
+  width: 100%;
+}
+
+.size-square-s .person__content {
+  bottom: 42px;
+  left: 23px;
+  position: absolute;
+  right: 37px;
+  width: 100%;
+}
+
+.size-square-s .person__title {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.size-square-s .person__description {
+  display: none;
+}
+
+.size-s .person {
+  height: 194px;
+  width: 390px;
+}
+
+.size-s .person__cover-wrapper {
+  width: 194px;
+}
+
+.size-s .person__content {
+  bottom: 42px;
+  left: 30px;
+  position: absolute;
+  width: 230px;
+}
+
+.size-s .person__title {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.size-s .person__description {
+  display: none;
+}
+
+.size-xs .person {
+  height: 194px;
+  width: 232px;
+}
+
+.size-xs .person__cover-wrapper {
+  width: 194px;
+}
+
+.size-xs .person__content {
+  bottom: 42px;
+  left: 30px;
+  position: absolute;
+  width: 150px;
+}
+
+.size-xs .person__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 7px;
+}
+
+.size-xs .person__description {
+  display: none;
 }
 body {
   font-family: 'Ubuntu', sans-serif;
