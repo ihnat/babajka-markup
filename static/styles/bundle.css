@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu bold', sans-serif;
 }
 
 .article {
@@ -285,7 +286,7 @@ body {
   line-height: 24px;
 }
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu bold', sans-serif;
 }
 
 .collection {
@@ -497,7 +498,83 @@ body {
   margin-top: 12px;
 }
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu bold', sans-serif;
+}
+
+.location {
+  background-size: cover;
+  border-radius: 3px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.location.theme-dark {
+  color: #000000;
+}
+
+.location__title {
+  font-weight: bold;
+}
+
+.size-l .location {
+  height: 390px;
+  width: 624px;
+  padding: 0 39px 43px;
+}
+
+.size-l .location__title {
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.size-square-m .location {
+  height: 390px;
+  width: 390px;
+  padding: 0 30px 42px;
+}
+
+.size-square-m .location__title {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.size-square-s .location {
+  height: 300px;
+  width: 300px;
+  padding: 0 30px 42px;
+}
+
+.size-square-s .location__title {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.size-s .location {
+  height: 194px;
+  width: 390px;
+  padding: 0 30px 42px;
+}
+
+.size-s .location__title {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.size-xs .location {
+  height: 194px;
+  width: 232px;
+  padding: 0 30px 42px;
+}
+
+.size-xs .location__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+body {
+  font-family: 'Ubuntu bold', sans-serif;
 }
 
 .person {
@@ -671,7 +748,7 @@ body {
   display: none;
 }
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu bold', sans-serif;
 }
 
 .video {
