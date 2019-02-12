@@ -46,137 +46,6 @@
   opacity: 0.45;
 }
 
-.about-container {
-  font-family: "Open Sans", sans-serif;
-  margin: 4rem;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .about-container {
-    margin: 2rem 1rem;
-  }
-}
-
-.about-container hr {
-  background: #ffffff;
-  border: 0;
-  border-bottom: 4px dotted #808080;
-  margin: 2.5rem 25%;
-}
-
-.about-container .title {
-  color: #1a9582;
-  font-size: 2.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  .about-container .title {
-    font-size: 2rem;
-  }
-}
-
-.about-container .goal {
-  margin: 2rem 10rem;
-}
-
-@media screen and (max-width: 1023px) {
-  .about-container .goal {
-    margin: 2rem;
-  }
-}
-
-.about-container .team {
-  margin: 0 4rem;
-}
-
-.about-container .team .title {
-  color: #1a9582;
-  font-size: 1.7rem;
-}
-
-.about-container .team .thanks {
-  margin-top: 1.5rem;
-}
-
-.about-container .helpus .title {
-  color: #1a9582;
-  font-size: 1.7rem;
-}
-
-.about-container .helpus .positions {
-  display: flex;
-  font-weight: 600;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  .about-container .helpus .positions {
-    flex-direction: column;
-  }
-}
-
-.about-container .helpus .positions .position {
-  border: 1px solid #1a9582;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-.about-container .helpus .positions .position.is-active,
-.about-container .helpus .positions .position:hover {
-  background-color: #1a9582;
-  color: #ffffff;
-}
-
-.about-container .helpus .position-description {
-  background-color: #f2f2f2;
-  padding: 1rem;
-  text-align: left;
-}
-
-.about-container .helpus .position-description .name {
-  color: #808080;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-container .helpus .hidden {
-  display: none;
-}
-
-.about-container .contact {
-  font-size: 1.1rem;
-}
-
-.about-container .talaka {
-  margin-top: 2rem;
-}
-
-.about-container .talaka .talaka-text {
-  display: inline-block;
-  vertical-align: middle;
-}
-.team .teammate {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.team .teammate img {
-  border-radius: 50%;
-  height: 7rem;
-  width: 7rem;
-}
-
-.team .teammate .name {
-  font-weight: bold;
-}
-
-.team .teammate .role {
-  font-size: 0.8rem;
-}
 .article-content {
   flex: 1 0 auto;
 }
@@ -535,6 +404,137 @@
 
 .article__more-text {
   padding-bottom: 1.5rem;
+}
+.about-container {
+  font-family: "Open Sans", sans-serif;
+  margin: 4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    margin: 2rem 1rem;
+  }
+}
+
+.about-container hr {
+  background: #ffffff;
+  border: 0;
+  border-bottom: 4px dotted #808080;
+  margin: 2.5rem 25%;
+}
+
+.about-container .title {
+  color: #1a9582;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container .title {
+    font-size: 2rem;
+  }
+}
+
+.about-container .goal {
+  margin: 2rem 10rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-container .goal {
+    margin: 2rem;
+  }
+}
+
+.about-container .team {
+  margin: 0 4rem;
+}
+
+.about-container .team .title {
+  color: #1a9582;
+  font-size: 1.7rem;
+}
+
+.about-container .team .thanks {
+  margin-top: 1.5rem;
+}
+
+.about-container .helpus .title {
+  color: #1a9582;
+  font-size: 1.7rem;
+}
+
+.about-container .helpus .positions {
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container .helpus .positions {
+    flex-direction: column;
+  }
+}
+
+.about-container .helpus .positions .position {
+  border: 1px solid #1a9582;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.about-container .helpus .positions .position.is-active,
+.about-container .helpus .positions .position:hover {
+  background-color: #1a9582;
+  color: #ffffff;
+}
+
+.about-container .helpus .position-description {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: left;
+}
+
+.about-container .helpus .position-description .name {
+  color: #808080;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-container .helpus .hidden {
+  display: none;
+}
+
+.about-container .contact {
+  font-size: 1.1rem;
+}
+
+.about-container .talaka {
+  margin-top: 2rem;
+}
+
+.about-container .talaka .talaka-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.team .teammate {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.team .teammate img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.team .teammate .name {
+  font-weight: bold;
+}
+
+.team .teammate .role {
+  font-size: 0.8rem;
 }
 .article-page-edit .title {
   color: #808080;
