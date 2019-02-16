@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.wir-link {
+  display: block;
+
+  &.theme-dark {
+    color: $primary-caribbean-green;
+
+    &:hover {
+      color: $primary-bright-turquoise;
+    }
+  }
+
+  &__icon {
+    align-items: center;
+    display: inline-flex;
+    font-size: 20px;
+    height: 1.5rem;
+    justify-content: center;
+    width: 1.5rem;
+  }
+
+  &:hover {
+    color: $primary-caribbean-green;
+  }
+
+  &-disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
