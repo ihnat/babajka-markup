@@ -78,7 +78,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^7.0.0",
-    "gulp-watch": "^5.0.0",
+    "gulp-watch": "^5.0.1",
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "node-sass": "^4.11.0",
