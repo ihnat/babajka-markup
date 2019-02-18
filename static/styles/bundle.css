@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
 body {
-  font-family: 'Ubuntu bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .article {
@@ -286,7 +287,7 @@ body {
   line-height: 24px;
 }
 body {
-  font-family: 'Ubuntu bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .collection {
@@ -498,7 +499,7 @@ body {
   margin-top: 12px;
 }
 body {
-  font-family: 'Ubuntu bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .location {
@@ -574,7 +575,7 @@ body {
   line-height: 36px;
 }
 body {
-  font-family: 'Ubuntu bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .person {
@@ -748,7 +749,7 @@ body {
   display: none;
 }
 body {
-  font-family: 'Ubuntu bold', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .video {
@@ -990,6 +991,200 @@ body {
   font-size: 14px;
   line-height: 18px;
   margin-top: 11px;
+}
+.container {
+  margin: 30px;
+  width: 250px;
+}
+
+.container.theme-dark {
+  background-color: #000000;
+}
+
+.link {
+  padding: 30px;
+}
+.sidebar {
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 24px;
+  min-width: 240px;
+  padding: 21px 24px;
+  width: 240px;
+}
+
+.sidebar .search {
+  margin-top: 30px;
+}
+
+.sidebar .langs {
+  color: #1a9582;
+  letter-spacing: 1px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+
+.sidebar .about {
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.sidebar .icon {
+  color: #1a9582;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sidebar .divider {
+  border: 0.5px solid #888888;
+}
+
+.sidebar .section {
+  margin: 60px 0;
+  padding: 0;
+}
+
+.sidebar .section__title {
+  color: #000000;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.sidebar .section__list {
+  color: #1a9582;
+  font-size: 20px;
+}
+
+.sidebar .section__list-item {
+  padding: 6px 0;
+}
+
+.sidebar .section__list-item::first-letter {
+  text-transform: capitalize;
+}
+
+.sidebar .section__link-to-all {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.wir-input {
+  display: flex;
+  position: relative;
+}
+
+.wir-input__icon {
+  color: #000000;
+  font-size: 20px;
+  margin: 5px 0 8px;
+}
+
+.wir-input__icon-left {
+  margin-right: 11.5px;
+  order: -1;
+}
+
+.wir-input__icon-right {
+  margin-left: 11.5px;
+}
+
+.wir-input__icon-loading {
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.wir-input__bar {
+  background-color: #000000;
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+.wir-input input {
+  background: inherit;
+  border: 0;
+  flex-grow: 1;
+  font-size: 20px;
+  height: 30px;
+  margin: 5px 0 8px;
+  min-width: 0;
+  outline: none;
+}
+
+.wir-input input:hover ~ .wir-input__bar,
+.wir-input input:focus ~ .wir-input__bar {
+  background-color: #1a9582;
+}
+
+.wir-input input:hover ~ .wir-input__icon,
+.wir-input input:focus ~ .wir-input__icon {
+  color: #1a9582;
+}
+
+.wir-input input:disabled ~ .wir-input__bar {
+  background-color: #888888;
+}
+
+.wir-input input:disabled ~ .wir-input__icon {
+  color: #888888;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.wir-link {
+  display: block;
+}
+
+.wir-link.theme-dark {
+  color: #0dc6aa;
+}
+
+.wir-link.theme-dark:hover {
+  color: #00ffd8;
+}
+
+.wir-link__icon {
+  align-items: center;
+  display: inline-flex;
+  font-size: 20px;
+  height: 1.5rem;
+  justify-content: center;
+  width: 1.5rem;
+}
+
+.wir-link:hover {
+  color: #0dc6aa;
+}
+
+.wir-link-disabled {
+  opacity: 0.2;
+  pointer-events: none;
 }
 .stub-page,
 .error-page {
