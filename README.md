@@ -7,14 +7,6 @@
 
 Styles &amp; Markup for Babajka team project
 
-## How to use
-
-- run `npm install babajka-markup`
-- import files from your `node_modules`:
-  - `../node_modules/babajka-markup/dist/styles/bundle.min.css` - all our styles in one file
-  - `../node_modules/babajka-markup/dist/styles/assets.min.css` - all 3rd-party libs in one file
-  - `../node_modules/babajka-markup/dist/fonts`
-
 ## Development
 
 ### proper commit naming
