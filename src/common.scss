@@ -19,24 +19,3 @@ body {
 .babajka-content {
   flex: 1 0 auto;
 }
-
-@mixin mobile {
-
-  @media screen and (max-width: $mobile-large) {
-    @content;
-  }
-}
-
-@mixin tablet {
-
-  @media screen and (min-width: $mobile-large+1) and (max-width: $tablet-large) {
-    @content;
-  }
-}
-
-@mixin desktop {
-
-  @media screen and (min-width: $tablet-large+1) {
-    @content;
-  }
-}

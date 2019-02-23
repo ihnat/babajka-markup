@@ -3,12 +3,14 @@ import { text, boolean } from '@storybook/addon-knobs';
 
 import renderInput from './input/input.ejs';
 import renderLink from './link/link.ejs';
+import renderSocialButtons from './social-buttons/social-buttons.ejs';
 
 import './stories.scss';
 import './input/input.scss';
 import './link/link.scss';
+import './social-buttons/social-buttons.scss';
 
-const kit = storiesOf('KIT', module);
+const kit = storiesOf('UI Kit', module);
 kit.add('Input', ({ parameters: { defaultData } }) => {
   const disabled = boolean('is disabled', false);
   const loading = boolean('is loading', false);
@@ -42,3 +44,9 @@ kit.add('Link', ({ parameters: { defaultData } }) => {
 
   return `<div class="container link ${isDarkTheme && 'theme-dark'}">${renderLink(data)}</div>`;
 });
+
+kit.add(
+  'Social buttons',
+  ({ parameters: { defaultData } }) =>
+    `<div class="container">${renderSocialButtons(defaultData)}</div>`
+);

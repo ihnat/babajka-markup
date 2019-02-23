@@ -1,0 +1,35 @@
+// Upper bounds of screen sizes.
+// TODO: TO DISCUSS NAMING.
+$mobile-small: 499px;
+$mobile-large: 649px;
+$tablet-small: 799px;
+$tablet-large: 1099px;
+$desktop: 1599px;
+
+@mixin mobile {
+
+  @media screen and (max-width: $mobile-large) {
+    @content;
+  }
+}
+
+@mixin tablet {
+
+  @media screen and (min-width: $mobile-large+1) and (max-width: $tablet-large) {
+    @content;
+  }
+}
+
+@mixin touch {
+
+  @media screen and (min-width: $mobile-large+1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+
+  @media screen and (min-width: $tablet-large+1) {
+    @content;
+  }
+}

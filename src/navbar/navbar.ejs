@@ -1,6 +1,10 @@
 <div class="navbar">
   <img class="navbar__logo" src="<%= imagesPath %>/logo/favicon.png" />
   <div class="navbar__title">
-    Беларуская, а таксама сусветная культура і гісторыя
+    <%- include('../kit/link/link.ejs', { locals: { text: 'Беларуская' } }) %>,
+    а таксама
+    <%- include('../kit/link/link.ejs', { locals: { text: 'сусветная' } }) %>
+    культура і
+    <%- include('../kit/link/link.ejs', { locals: { text: 'гісторыя' } }) %>
   </div>
 </div>
