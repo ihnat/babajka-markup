@@ -1,7 +1,9 @@
 @import '../../variables';
 
 .wir-link {
-  display: block;
+  // WHY ?
+  // display: block;
+  color: $primary;
 
   &.theme-dark {
     color: $primary-caribbean-green;

@@ -1,0 +1,14 @@
+.navbar {
+  &__logo {
+    float: left;
+    margin-right: 0.75rem;
+    width: 2.45rem;
+  }
+
+  &__title {
+    // margin-left: 1rem;
+    // padding: 0.3rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}

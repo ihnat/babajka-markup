@@ -1,0 +1,107 @@
+<footer class="footer">
+  <div class="footer__nested1">
+    <div class="footer__nested2">
+
+      <div class="footer__links">
+        <div class="footer__links-column">
+          <div class="footer__header">
+            Матэрыялы
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Па тэмах' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Персаналіях' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Храналогіі' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Лакацыях' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Партнёрах' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Аўтарах' } }) %>
+          </div>
+        </div>
+        <div class="footer__links-column">
+          <div class="footer__header">
+            Мы ў сетках
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Facebook' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Instagram' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'Twitter' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'ВКонтакте' } }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { locals: { text: 'YouTube' } }) %>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__interactions">
+        <div class="footer__mailing">
+          <div class="footer__header">
+            Падпісацца на абнаўленні
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/input/input.ejs', { locals: { leftIcon: 'envelope' } }) %>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__header">
+            Расказаць пра нас усім
+          </div>
+          <div class="footer__social-button-list tabs">
+            <div class="tabs__container">
+              <div class="tabs__item footer__social-button footer__social-button--facebook">
+                <span>
+                  <i class="fa fa-facebook"></i>
+                </span>
+              </div>
+              <div class="tabs__item footer__social-button footer__social-button--vk">
+                <span>
+                  <i class="fa fa-vk"></i>
+                </span>
+              </div>
+              <div class="tabs__item footer__social-button footer__social-button--twitter">
+                <span>
+                  <i class="fa fa-twitter"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__help-us">
+      <div class="footer__header">
+        Дапамагчы нам
+      </div>
+      <div class="footer__help-text">
+        Калі вы знайшлі памылку, у вас ёсць заўвагі па сайце,
+        ці хочаце дапамагчы нам, калі ласка, напішыце
+        <a class="wir-link theme-dark" href="mailto:help@wir.by"><span>на help@wir.by</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__copyright">
+      © Wir.by, 2019
+    </span>
+    <%- include('../kit/link/link.ejs', { locals: { text: 'Пра праект' } }) %>
+  </div>
+</footer>

@@ -72,6 +72,9 @@ templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${
 templateVariables.assetsPath = `${pathPrefix}/${config.staticPath}/${
   config.stylesPath
 }/assets.min.css`;
+// templateVariables.fontsPath = `${pathPrefix}/${config.staticPath}/${
+//   config.stylesPath
+// }/fontawesome-webfont.woff2?v=4.7.0`;
 templateVariables.landingPath = `${pathPrefix}/${config.staticPath}/${
   config.stylesPath
 }/landing.min.css`;
