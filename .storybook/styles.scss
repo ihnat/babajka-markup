@@ -1,5 +1,9 @@
 // fix fa path
 $fa-font-path: '../node_modules/font-awesome/fonts';
 
+// I am not sure if that helps with normalizing styles in Storybook.
+// But it is at least delivered.
+@import '../node_modules/normalize.css/normalize';
+
 @import '../legacy/index';
 @import '../src/index';

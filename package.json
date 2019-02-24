@@ -41,7 +41,8 @@
   "dependencies": {
     "bulma": "^0.6.2",
     "bulma-badge": "^2.0.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

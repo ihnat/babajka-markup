@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="be">
+
+<%- include('../head/head.ejs', { title: 'Пустая старонка' }) %>
+
+<body>
+
+  <script>
+    function toggleSidebar() {
+      console.log('toggled');
+      document.getElementById("wir-sidebar").classList.toggle("wir-sidebar--present");
+    }
+  </script>
+
+  <div class="wir-root">
+
+    <div class="wir-space">
+      <% include ../navbar/navbar.ejs %>
+
+      <div class="wir-content"></div>
+
+      <% include ../footer/footer.ejs %>
+    </div>
+
+    <div id="wir-sidebar" class="wir-sidebar wir-sidebar--present">
+      <%- include('../sidebar/sidebar.ejs', { locals: sidebarData }) %>
+    </div>
+
+    <a class="wir-up" href="#">
+      <span>
+        <i class="fa fa-arrow-circle-o-up"></i>
+      </span>
+    </a>
+
+  </div>
+
+</body>
+
+</html>
