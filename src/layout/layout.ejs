@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="be">
 
-<%- include('../head/head.ejs', { title: 'Пустая старонка' }) %>
+<%- include('../head/head.ejs', { locals: { title: locals.title || 'Layout' } }) %>
 
 <body>
 
   <script>
     function toggleSidebar() {
       console.log('toggled');
-      document.getElementById("wir-sidebar").classList.toggle("wir-sidebar--present");
+      document.getElementById("wir-sidebar").classList.toggle("wir-sidebar--expanded");
     }
   </script>
 
@@ -17,20 +17,25 @@
     <div class="wir-space">
       <% include ../navbar/navbar.ejs %>
 
-      <div class="wir-content"></div>
+      <div class="wir-content">
+        <% if (locals.content) { %>
+          <%- include(locals.content) %>
+        <% } %>
+      </div>
 
       <% include ../footer/footer.ejs %>
     </div>
 
-    <div id="wir-sidebar" class="wir-sidebar wir-sidebar--present">
+    <div id="wir-sidebar" class="wir-sidebar">
       <%- include('../sidebar/sidebar.ejs', { locals: sidebarData }) %>
     </div>
 
-    <a class="wir-up" href="#">
-      <span>
-        <i class="fa fa-arrow-circle-o-up"></i>
-      </span>
-    </a>
+    <div class="wir-up">
+      <%- include('../kit/link/link.ejs', { locals: {
+        text: '<span><i class="fa fa-arrow-circle-o-up"></i></span>',
+        href: '#'
+      } }) %>
+    </div>
 
   </div>
 

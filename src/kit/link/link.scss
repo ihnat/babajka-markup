@@ -3,9 +3,15 @@
 .wir-link {
   color: $primary;
   cursor: pointer;
+  text-decoration: none;
 
-  &.theme-dark {
+  &--theme-dark {
     color: $primary-caribbean-green;
+
+    &:link,
+    &:visited {
+      color: $primary-caribbean-green;
+    }
 
     &:hover {
       color: $primary-bright-turquoise;
@@ -21,11 +27,16 @@
     width: 1.5rem;
   }
 
+  &:link,
+  &:visited {
+    color: $primary;
+  }
+
   &:hover {
     color: $primary-caribbean-green;
   }
 
-  &-disabled {
+  &--disabled {
     opacity: 0.2;
     pointer-events: none;
   }

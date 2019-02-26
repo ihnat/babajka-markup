@@ -18,11 +18,15 @@ body {
   }
 }
 
+footer {
+  flex-shrink: 0;
+}
+
 .wir-root {
   background-color: $primary-white;
-  height: 100%;
   margin: auto;
   max-width: $widescreen;
+  min-height: 100vh;
   position: relative;
 
   @include sidebar-visible {
@@ -53,7 +57,7 @@ body {
     display: unset;
   }
 
-  &--present {
+  &--expanded {
     // This represents the state when sidebar is positioned on top of other content.
     // This happens when one toggles burger button.
     // This only possible on screens which are less than $desktop-with-sidebar.
@@ -69,8 +73,6 @@ body {
 
 .wir-up {
   bottom: 30px;
-  color: $primary;
-  cursor: pointer;
   font-size: 3rem;
   position: absolute;
   right: 30px;
