@@ -969,10 +969,6 @@
   line-height: 18px;
   margin-top: 11px;
 }
-footer {
-  flex-shrink: 0;
-}
-
 .footer-layout {
   margin: 1rem 2rem 1rem 1rem;
   padding: 2rem 0 0;
@@ -1132,6 +1128,10 @@ body {
     height: unset;
     overflow: auto;
   }
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 .wir-root {
