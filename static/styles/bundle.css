@@ -1165,9 +1165,28 @@ footer {
   flex: 1 0 auto;
 }
 
+.wir-overlay {
+  background-color: #000000;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wir-overlay--active {
+  display: block;
+}
+
 .wir-sidebar {
   display: none;
   flex-shrink: 0;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1360px) {
@@ -1190,6 +1209,7 @@ footer {
   font-size: 3rem;
   position: absolute;
   right: 30px;
+  z-index: 4;
 }
 .navbar {
   align-items: center;

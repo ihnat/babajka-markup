@@ -22,8 +22,8 @@
 
   <script>
     function toggleSidebar() {
-      console.log('toggled');
       document.getElementById("wir-sidebar").classList.toggle("wir-sidebar--expanded");
+      document.getElementById("wir-overlay").classList.toggle("wir-overlay--active");
     }
   </script>
 
@@ -271,12 +271,20 @@
   </div>
 </footer>
 
+
+      <div id="wir-overlay" class="wir-overlay"></div>
     </div>
 
     <div id="wir-sidebar" class="wir-sidebar">
       <aside class="sidebar">
   <span class="sidebar__icon-close" onclick="toggleSidebar()">
-    <i class="fa fa-times"></i>
+    <a class="wir-link 
+  
+  " href="">
+  <span><i class="fa fa-times"></i></span>
+  
+</a>
+
   </span>
 
   <ul class="sidebar__langs">
