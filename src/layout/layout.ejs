@@ -7,8 +7,8 @@
 
   <script>
     function toggleSidebar() {
-      console.log('toggled');
       document.getElementById("wir-sidebar").classList.toggle("wir-sidebar--expanded");
+      document.getElementById("wir-overlay").classList.toggle("wir-overlay--active");
     }
   </script>
 
@@ -24,6 +24,8 @@
       </div>
 
       <% include ../footer/footer.ejs %>
+
+      <div id="wir-overlay" class="wir-overlay"></div>
     </div>
 
     <div id="wir-sidebar" class="wir-sidebar">

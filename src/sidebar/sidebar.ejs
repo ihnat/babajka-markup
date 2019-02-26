@@ -1,6 +1,8 @@
 <aside class="sidebar">
   <span class="sidebar__icon-close" onclick="toggleSidebar()">
-    <i class="fa fa-times"></i>
+    <%- include('../kit/link/link.ejs', { locals: {
+      text: '<i class="fa fa-times"></i>'
+    } }) %>
   </span>
 
   <ul class="sidebar__langs">
