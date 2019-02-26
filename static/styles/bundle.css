@@ -1187,8 +1187,6 @@ body {
 
 .wir-up {
   bottom: 30px;
-  color: #1a9582;
-  cursor: pointer;
   font-size: 3rem;
   position: absolute;
   right: 30px;
@@ -1408,13 +1406,19 @@ body {
 .wir-link {
   color: #1a9582;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.wir-link.theme-dark {
+.wir-link--theme-dark {
   color: #0dc6aa;
 }
 
-.wir-link.theme-dark:hover {
+.wir-link--theme-dark:link,
+.wir-link--theme-dark:visited {
+  color: #0dc6aa;
+}
+
+.wir-link--theme-dark:hover {
   color: #00ffd8;
 }
 
@@ -1427,11 +1431,16 @@ body {
   width: 1.5rem;
 }
 
+.wir-link:link,
+.wir-link:visited {
+  color: #1a9582;
+}
+
 .wir-link:hover {
   color: #0dc6aa;
 }
 
-.wir-link-disabled {
+.wir-link--disabled {
   opacity: 0.2;
   pointer-events: none;
 }
