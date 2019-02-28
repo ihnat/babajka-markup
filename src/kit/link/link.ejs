@@ -1,6 +1,8 @@
 <a class="wir-link <%= locals.class %>
   <% if (locals.disabled) { %>wir-link--disabled<% } %>
-  <% if (locals.isDarkTheme) { %>wir-link--theme-dark<% } %>" href="<%= locals.href %>">
+  <% if (locals.isDarkTheme) { %>wir-link--theme-dark<% } %>"
+  <% if (locals.href) { %> href="<%= locals.href %>"<% } %>
+  <% if (locals.openNewTab) { %> target="_blank" rel="noopener noreferrer" <% } %> >
   <span><%- locals.text %></span>
   <% if (locals.rightIcon) { %>
     <span class="wir-link__icon is-pulled-right">

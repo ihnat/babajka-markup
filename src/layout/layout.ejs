@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="be">
 
-<%- include('../head/head.ejs', { locals: { title: locals.title || 'Layout' } }) %>
+<%- include('../head/head.ejs', { title: locals.title || 'Layout' }) %>
 
 <body>
 
@@ -29,14 +29,14 @@
     </div>
 
     <div id="wir-sidebar" class="wir-sidebar">
-      <%- include('../sidebar/sidebar.ejs', { locals: sidebarData }) %>
+      <%- include('../sidebar/sidebar.ejs', sidebarData ) %>
     </div>
 
     <div class="wir-up">
-      <%- include('../kit/link/link.ejs', { locals: {
+      <%- include('../kit/link/link.ejs', {
         text: '<span><i class="fa fa-arrow-circle-o-up"></i></span>',
         href: '#'
-      } }) %>
+      }) %>
     </div>
 
   </div>

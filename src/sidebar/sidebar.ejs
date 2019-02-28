@@ -1,20 +1,18 @@
 <aside class="sidebar">
   <span class="sidebar__icon-close" onclick="toggleSidebar()">
-    <%- include('../kit/link/link.ejs', { locals: {
-      text: '<i class="fa fa-times"></i>'
-    } }) %>
+    <%- include('../kit/link/link.ejs', { text: '<i class="fa fa-times"></i>' }) %>
   </span>
 
   <ul class="sidebar__langs">
     <% for(var i = 0; i < locals.langs.length; i ++) { %>
       <li class="langs__item">
-        <%- include('../kit/link/link.ejs', { locals: { text: locals.langs[i] } }) %>
+        <%- include('../kit/link/link.ejs', { text: locals.langs[i] }) %>
       </li>
     <% } %>
   </ul>
 
   <div class="sidebar__about-label">
-    <%- include('../kit/link/link.ejs', { locals: { text: 'пра праект'} }) %>
+    <%- include('../kit/link/link.ejs', { text: 'пра праект'}) %>
   </div>
 
   <div class="sidebar__divider"></div>
@@ -23,7 +21,7 @@
     <ul class="sidebar__section-list">
       <% ['Топ-10', 'Самае актуальнае', '&lt5 хвілін на прагляд'].forEach(function(label) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: label } }) %>
+          <%- include('../kit/link/link.ejs', { text: label }) %>
         </li>
       <% }) %>
     </ul>
@@ -35,7 +33,7 @@
     <ul class="sidebar__section-list">
       <% ['Артыкулы', 'Відэалекцыі', 'падкасты', 'гульні і тэсты'].forEach(function(label) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: label } }) %>
+          <%- include('../kit/link/link.ejs', { text: label }) %>
         </li>
       <% }) %>
     </ul>
@@ -50,7 +48,7 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.topics.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.topics[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.topics[i] }) %>
         </li>
       <% } %>
     </ul>
@@ -65,12 +63,12 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.persons.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.persons[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.persons[i] }) %>
         </li>
       <% } %>
     </ul>
     <span class="sidebar__section-link-to-all">
-      <%- include('../kit/link/link.ejs', { locals: { text: 'усе асобы' } }) %>
+      <%- include('../kit/link/link.ejs', { text: 'усе асобы' }) %>
     </span>
   </section>
 
@@ -83,12 +81,12 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.times.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.times[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.times[i] }) %>
         </li>
       <% } %>
     </ul>
     <span class="sidebar__section-link-to-all">
-      <%- include('../kit/link/link.ejs', { locals: { text: 'уся храналогія' } }) %>
+      <%- include('../kit/link/link.ejs', { text: 'уся храналогія' }) %>
     </span>
   </section>
 
@@ -101,12 +99,12 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.locations.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.locations[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.locations[i] }) %>
         </li>
       <% } %>
     </ul>
     <span class="sidebar__section-link-to-all">
-      <%- include('../kit/link/link.ejs', { locals: { text: 'усе лакацыі' } }) %>
+      <%- include('../kit/link/link.ejs', { text: 'усе лакацыі' }) %>
     </span>
   </section>
 
@@ -119,7 +117,7 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.partners.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.partners[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.partners[i] }) %>
         </li>
       <% } %>
     </ul>
@@ -134,12 +132,12 @@
     <ul class="sidebar__section-list">
       <% for(var i = 0; i < locals.authors.length; i ++) { %>
         <li class="sidebar__section-list-item">
-          <%- include('../kit/link/link.ejs', { locals: { text: locals.authors[i] } }) %>
+          <%- include('../kit/link/link.ejs', { text: locals.authors[i] }) %>
         </li>
       <% } %>
     </ul>
     <span class="sidebar__section-link-to-all">
-      <%- include('../kit/link/link.ejs', { locals: { text: 'уся каманда wir.by' } }) %>
+      <%- include('../kit/link/link.ejs', { text: 'уся каманда wir.by' }) %>
     </span>
   </section>
 </aside>

@@ -1,11 +1,11 @@
 <div class="navbar">
   <img class="navbar__logo" src="<%= imagesPath %>/logo/favicon.png" />
   <div class="navbar__title">
-    <%- include('../kit/link/link.ejs', { locals: { text: 'Беларуская' } }) %>
+    <%- include('../kit/link/link.ejs', { text: 'Беларуская' }) %>
     , а таксама
-    <%- include('../kit/link/link.ejs', { locals: { text: 'сусветная' } }) %>
+    <%- include('../kit/link/link.ejs', { text: 'сусветная' }) %>
     культура і
-    <%- include('../kit/link/link.ejs', { locals: { text: 'гісторыя' } }) %>
+    <%- include('../kit/link/link.ejs', { text: 'гісторыя' }) %>
   </div>
   <div class="navbar__burger" onclick="toggleSidebar()">
     <div class="navbar__burger-item"></div>
