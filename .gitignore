@@ -4,6 +4,5 @@ dist/
 dist-legacy/
 *.DS_Store
 npm-debug.log
-package-lock.json
 static/styles/
 static/fonts/

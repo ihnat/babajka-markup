@@ -145,9 +145,6 @@
     max-width: 130px;
   }
 
-  &__title {
-  }
-
   &__block {
     color: #ffffff;
     font-family: Ubuntu;
@@ -198,9 +195,6 @@
     max-width: 130px;
   }
 
-  &__title {
-  }
-
   &__block {
     color: #ffffff;
     font-family: Ubuntu;
@@ -233,7 +227,7 @@
 }
 
 .horizontal-banner {
-  background: black;
+  background: black; // ???
   display: flex;
   height: 200px;
   width: 100%;
