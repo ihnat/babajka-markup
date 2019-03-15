@@ -23,7 +23,8 @@ const config = {
   libsPath: 'node_modules',
   buildPath: BABAJKA_LEGACY ? 'dist-legacy' : 'dist',
   stylesPath: 'styles',
-  fontsPath: 'fonts',
+  legacyFontsPath: 'fonts',
+  fontsPath: 'webfonts',
   imagesPath: 'images',
   landingPath: 'landing',
   srcPath: BABAJKA_LEGACY ? 'legacy' : 'src',
@@ -41,6 +42,7 @@ const team = rawTeam.map(teammate => ({
   ...teammate,
   imageUrl: teammate.imageUrl.replace('upload/', `upload/${teammateImageScaleOptions}/`),
 }));
+const sidebarData = JSON.parse(fs.readFileSync('./data/sidebar.json', 'utf8'));
 
 const getPrefix = () => {
   if (BABAJKA_PREFIX && BABAJKA_LEGACY) {
@@ -72,11 +74,15 @@ templateVariables.bundlePath = `${pathPrefix}/${config.staticPath}/${
 templateVariables.assetsPath = `${pathPrefix}/${config.staticPath}/${
   config.stylesPath
 }/assets.min.css`;
+templateVariables.normalizeCssPath = `${pathPrefix}/${config.staticPath}/${
+  config.stylesPath
+}/normalize.css`;
 templateVariables.landingPath = `${pathPrefix}/${config.staticPath}/${
   config.stylesPath
 }/landing.min.css`;
 templateVariables.imagesPath = `${pathPrefix}/${config.staticPath}/${config.imagesPath}`;
 templateVariables.team = team;
+templateVariables.sidebarData = sidebarData;
 
 gulp.task('sass:bundle:main', () =>
   gulp
@@ -152,9 +158,21 @@ gulp.task('sass:watch', done => {
   done();
 });
 
-gulp.task('fa:fonts', () =>
+gulp.task('css:normalize', () =>
+  gulp
+    .src(`${config.libsPath}/normalize.css/normalize.css`)
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.stylesPath}`))
+);
+
+gulp.task('fa:fonts:legacy', () =>
   gulp
     .src(`${config.libsPath}/font-awesome/fonts/fontawesome-webfont.*`)
+    .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.legacyFontsPath}`))
+);
+
+gulp.task('fa:fonts', () =>
+  gulp
+    .src(`${config.libsPath}/@fortawesome/fontawesome-free/webfonts/*`)
     .pipe(gulp.dest(`${config.buildPath}/${config.staticPath}/${config.fontsPath}`))
 );
 
@@ -211,7 +229,9 @@ gulp.task(
     'sass:bundle:main',
     'sass:bundle:landing',
     'sass:assets',
+    'css:normalize',
     'fa:fonts',
+    'fa:fonts:legacy',
     'static:copy'
   )
 );

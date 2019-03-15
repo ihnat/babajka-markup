@@ -1,10 +1,12 @@
-<a class="wir-link <%= locals.class %> 
-  <% if (locals.disabled) { %>wir-link-disabled<% } %> 
-  <% if (locals.isDarkTheme) { %>theme-dark<% } %>">
-  <span><%= locals.text %></span>
+<a class="wir-link <%= locals.class %>
+  <% if (locals.disabled) { %>wir-link--disabled<% } %>
+  <% if (locals.isDarkTheme) { %>wir-link--theme-dark<% } %>"
+  <% if (locals.href) { %> href="<%= locals.href %>"<% } %>
+  <% if (locals.openNewTab) { %> target="_blank" rel="noopener noreferrer" <% } %> >
+  <span><%- locals.text %></span>
   <% if (locals.rightIcon) { %>
     <span class="wir-link__icon is-pulled-right">
-      <i class="fa fa-<%= locals.rightIcon %>"></i>
+      <i class="<%= locals.rightIcon %>"></i>
     </span>
   <% } %>
 </a>

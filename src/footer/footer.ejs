@@ -1,0 +1,94 @@
+<footer class="footer footer-layout">
+  <div class="footer-layout__nested1">
+    <div class="footer-layout__nested2">
+
+      <div class="footer-layout__block1 footer__links">
+        <div class="footer__links-column">
+          <div class="footer__header">
+            Матэрыялы
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Па тэмах' }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Персаналіях' }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Храналогіі' }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Лакацыях' }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Партнёрах' }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Аўтарах' }) %>
+          </div>
+        </div>
+        <div class="footer__links-column">
+          <div class="footer__header">
+            Мы ў сетках
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Facebook', href: 'https://facebook.com/wirdotby', openNewTab: true }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Instagram', href: 'https://instagram.com/wir_by', openNewTab: true }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'ВКонтакте', href: 'https://vk.com/wir_by', openNewTab: true }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Telegram', href: 'https://t.me/wir_by', openNewTab: true }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'Twitter', href: 'https://twitter.com/wir_by', openNewTab: true }) %>
+          </div>
+          <div class="footer__item">
+            <%- include('../kit/link/link.ejs', { text: 'YouTube', href: 'https://www.youtube.com/channel/UCoj_6A55mEPeba8ZfBHqfCw', openNewTab: true }) %>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-layout__block2">
+        <div class="footer__interactions">
+          <div class="footer__mailing">
+            <div class="footer__header">
+              Падпісацца на абнаўленні
+            </div>
+            <%- include('../kit/input/input.ejs', { leftIcon: 'far fa-envelope' }) %>
+          </div>
+          <div class="footer__social">
+            <div class="footer__header">
+              Расказаць пра нас усім
+            </div>
+            <%- include('../kit/social-buttons/social-buttons.ejs') %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-layout__block3">
+      <div class="footer__help-us">
+        <div class="footer__header">
+          Дапамагчы нам
+        </div>
+        <div class="footer__help-text">
+          Калі вы&nbsp;знайшлі памылку, у&nbsp;вас ёсць заўвагі па&nbsp;сайце,
+          ці&nbsp;хочаце дапамагчы нам, калі ласка, напішыце
+          <%- include('../kit/link/link.ejs', { text: 'на&nbsp;help@wir.by', href: 'mailto:help@wir.by' }) %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-layout__block4 footer__bottom">
+    <span class="footer__copyright">
+      © Wir.by, 2019
+    </span>
+
+  </div>
+</footer>
