@@ -1,120 +1,137 @@
 <aside class="sidebar">
-  <span class="icon is-pulled-right">
-    <i class="fa fa-times"></i>
+  <span class="sidebar__icon-close" onclick="toggleSidebar()">
+    <%- include('../kit/link/link.ejs', { text: '<i class="fas fa-times"></i>' }) %>
   </span>
 
-  <ul class="langs">
+  <ul class="sidebar__langs">
     <% for(var i = 0; i < locals.langs.length; i ++) { %>
       <li class="langs__item">
-          <a><%= locals.langs[i] %></a>
+        <%- include('../kit/link/link.ejs', { text: locals.langs[i] }) %>
       </li>
-   <% } %>
+    <% } %>
   </ul>
 
-  <%- include('../kit/link/link.ejs', { rightIcon: 'user', text: 'аб праекце', class: 'about'}) %>
+  <div class="sidebar__about-label">
+    <%- include('../kit/link/link.ejs', { text: 'пра праект'}) %>
+  </div>
 
-  <div class="divider"></div>
-
-  <%- include('../kit/input/input.ejs', { leftIcon: 'search' }) %>
-
-  <section class="section">
-    <ul class="section__list">
-      <li class="section__list-item"><a>Топ-10</a></li>
-      <li class="section__list-item"><a>Самае актуальнае</a></li>
-      <li class="section__list-item"><a>&lt5 хвілін на прагляд</a></li>
+  <section class="sidebar__section sidebar__section--short">
+    <ul class="sidebar__section-list">
+      <% ['Спасылкі', 'Для кароткага', 'Сайдбара'].forEach(function(label) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: label }) %>
+        </li>
+      <% }) %>
     </ul>
   </section>
 
-  <div class="divider"></div>
-
-  <section class="section">
-    <ul class="section__list">
-      <li class="section__list-item"><a>Артыкулы</a></li>
-      <li class="section__list-item"><a>Відэалекцыі</a></li>
-      <li class="section__list-item"><a>падкасты</a></li>
-      <li class="section__list-item"><a>гульні і тэсты</a></li>
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <% ['Топ-10', 'Самае актуальнае', '&lt5 хвілін на прагляд'].forEach(function(label) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: label }) %>
+        </li>
+      <% }) %>
     </ul>
   </section>
 
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      тэмы
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.topics.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.topics[i] %></a></li>
-       <% } %>
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <% ['Артыкулы', 'Відэалекцыі', 'Падкасты', 'Гульні і тэсты'].forEach(function(label) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: label }) %>
+        </li>
+      <% }) %>
     </ul>
   </section>
 
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      асноўныя персаналіі
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.persons.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.persons[i] %></a></li>
-       <% } %>
-    </ul>
-    <span class="section__link-to-all"><a>усе персаналіі</a></span>
-  </section>
-
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      асноўныя часы
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.times.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.times[i] %></a></li>
-       <% } %>
-    </ul>
-    <span class="section__link-to-all"><a>уся храналогія</a></span>
-  </section>
-
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      асноўныя лакацыі
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.locations.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.locations[i] %></a></li>
-       <% } %>
-    </ul>
-    <span class="section__link-to-all"><a>усе лакацыі</a></span>
-  </section>
-
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      матэрыялы партнераў
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.partners.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.partners[i] %></a></li>
-       <% } %>
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        тэмы
+      </li>
+      <% for(var i = 0; i < locals.topics.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.topics[i] }) %>
+        </li>
+      <% } %>
     </ul>
   </section>
 
-  <div class="divider"></div>
-
-  <section class="section">
-    <div class="section__title">
-      папулярныя аўтары
-    </div>
-    <ul class="section__list">
-        <% for(var i = 0; i < locals.authors.length; i ++) { %>
-          <li class="section__list-item"><a><%= locals.authors[i] %></a></li>
-       <% } %>
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        асноўныя асобы
+      </li>
+      <% for(var i = 0; i < locals.persons.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.persons[i] }) %>
+        </li>
+      <% } %>
     </ul>
-    <span class="section__link-to-all"><a>уся каманда wir.by</a></span>
+    <span class="sidebar__section-link-to-all">
+      <%- include('../kit/link/link.ejs', { text: 'усе асобы' }) %>
+    </span>
+  </section>
+
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        асноўныя часы
+      </li>
+      <% for(var i = 0; i < locals.times.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.times[i] }) %>
+        </li>
+      <% } %>
+    </ul>
+    <span class="sidebar__section-link-to-all">
+      <%- include('../kit/link/link.ejs', { text: 'уся храналогія' }) %>
+    </span>
+  </section>
+
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        асноўныя лакацыі
+      </li>
+      <% for(var i = 0; i < locals.locations.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.locations[i] }) %>
+        </li>
+      <% } %>
+    </ul>
+    <span class="sidebar__section-link-to-all">
+      <%- include('../kit/link/link.ejs', { text: 'усе лакацыі' }) %>
+    </span>
+  </section>
+
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        матэрыялы партнёраў
+      </li>
+      <% for(var i = 0; i < locals.partners.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.partners[i] }) %>
+        </li>
+      <% } %>
+    </ul>
+  </section>
+
+  <section class="sidebar__section sidebar__section--long sidebar__section--visible">
+    <ul class="sidebar__section-list">
+      <li class="sidebar__section-list-item sidebar__section-title">
+        папулярныя аўтары
+      </li>
+      <% for(var i = 0; i < locals.authors.length; i ++) { %>
+        <li class="sidebar__section-list-item">
+          <%- include('../kit/link/link.ejs', { text: locals.authors[i] }) %>
+        </li>
+      <% } %>
+    </ul>
+    <span class="sidebar__section-link-to-all">
+      <%- include('../kit/link/link.ejs', { text: 'уся каманда wir.by' }) %>
+    </span>
   </section>
 </aside>

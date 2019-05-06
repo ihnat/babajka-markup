@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/html';
-import { text, array } from '@storybook/addon-knobs';
+import { array } from '@storybook/addon-knobs';
 
 import renderSidebar from './sidebar.ejs';
 import renderInput from '../kit/input/input.ejs';
@@ -11,7 +11,7 @@ import './sidebar.scss';
 import '../kit/input/input.scss';
 import '../kit/link/link.scss';
 
-import { TOPICS, PERSONS, TIMES, LOCATIONS, PARTNERS, AUTHORS } from './staticData';
+import sidebarData from '../../data/sidebar.json';
 
 const render = withIncludes({
   '../kit/input/input.ejs': renderInput,
@@ -20,25 +20,15 @@ const render = withIncludes({
 
 const sidebar = storiesOf('Sidebar', module);
 sidebar.add('playground', ({ parameters: { defaultData } }) => {
-  const russianLang = text('russian lang text', 'по-русски');
-  const englishLang = text('english lang text', 'in english');
-
-  const topics = array('topics', TOPICS);
-  const persons = array('persons', PERSONS);
-  const times = array('times', TIMES);
-  const locations = array('locations', LOCATIONS);
-  const partners = array('partners', PARTNERS);
-  const authors = array('authors', AUTHORS);
-
   const data = {
     ...defaultData,
-    langs: [russianLang, englishLang],
-    topics,
-    persons,
-    times,
-    locations,
-    partners,
-    authors,
+    langs: array('langs', sidebarData.langs),
+    topics: array('topics', sidebarData.topics),
+    persons: array('persons', sidebarData.persons),
+    times: array('times', sidebarData.times),
+    locations: array('locations', sidebarData.locations),
+    partners: array('partners', sidebarData.partners),
+    authors: array('authors', sidebarData.authors),
     leftIcon: 'search',
   };
 
